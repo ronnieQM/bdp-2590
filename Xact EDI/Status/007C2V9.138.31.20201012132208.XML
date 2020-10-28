@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+  <XACTDOC>
+    <XACTNET_INFO
+      transactionId = "007C2V9"
+      recipientsXNAddress = "ACSC.BETA.ONLINE"
+      recipientsXM8UserId = "NGBOARDE"
+    >
+      <CONTROL_POINTS>
+        <CONTROL_POINT
+          stamp = "2020-10-12T13:22:05"
+          type = "Reviewed"
+        />
+      </CONTROL_POINTS>
+    </XACTNET_INFO>
+    <CONTACTS>
+      <CONTACT
+        type = "ClaimRep"
+        name = "Nicholas Boarden"
+      >
+        <CONTACTMETHODS>
+          <PHONE
+            type = "Office"
+            number = "801-932-8267"
+            extension = ""
+          />
+        </CONTACTMETHODS>
+      </CONTACT>
+    </CONTACTS>
+    <ADM>
+      <TYPESOFLOSS>
+        <TYPEOFLOSS
+          claimNumber = "003122810-8-W"
+        />
+      </TYPESOFLOSS>
+    </ADM>
+  </XACTDOC>
