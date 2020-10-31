@@ -21,7 +21,6 @@ status_dir = os.path.join(data_dir, 'status')
 xsds_dir = os.path.join(project_dir, 'xsds')
 status_xsd = os.path.join(xsds_dir, 'StandardStatusExport.xsd')
 
-
 ################################
 ######## metadata
 ################################
@@ -47,7 +46,7 @@ def read_xsds(xsd_file):
         status tree path: {}
         print status tree: {},
         status tree type: {},"""
-    .format(status_xsd, status_tree, type(status_tree)))
+          .format(xsd_file, status_tree, type(status_tree)))
 
     root = status_tree.getroot()
     print("""
@@ -61,14 +60,23 @@ def read_xsds(xsd_file):
         print(i.tag, i.attrib)
 
     print('iterating through entire tree:')
-    all_elements=[elem.tag for elem in root.iter()]
+    all_elements = [elem.tag for elem in root.iter()]
     for i in all_elements:
         print(type(i))
         print(i)
 
+
+
+
 def main():
     print('inside of main')
     read_xsds(status_xsd)
+
+    count = 1
+    for i in files:
+        x = os.path.join(status_dir, i)
+        read_xsd(x)
+        count += 1
 
 
 if __name__ == '__main__':
