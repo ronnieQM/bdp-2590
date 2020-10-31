@@ -22,7 +22,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$USER_HOME$/Desktop" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -34,5 +39,15 @@
       <updated>1603852216159</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="4419" y="1650" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603912787612">
+      <screen x="3841" y="0" width="2160" height="3840" />
+    </state>
+    <state x="4419" y="1650" key="#com.intellij.fileTypes.FileTypeChooser/0.626.3840.2160/3841.0.2160.3840@3841.0.2160.3840" timestamp="1603912787612" />
+    <state x="4541" y="1467" key="FileChooserDialogImpl" timestamp="1603913066824">
+      <screen x="3841" y="0" width="2160" height="3840" />
+    </state>
+    <state x="4541" y="1467" key="FileChooserDialogImpl/0.626.3840.2160/3841.0.2160.3840@3841.0.2160.3840" timestamp="1603913066824" />
   </component>
 </project>
