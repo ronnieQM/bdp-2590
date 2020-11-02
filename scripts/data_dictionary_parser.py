@@ -1160,47 +1160,47 @@ def main():
     # get every possible data type from the documentation
     # get every row in the csv
 
-    # test_file = files[5]
-    # z = os.path.join(path, test_file)
-    # test_file_tree = ET.parse(z, parser=None)
-    # root = test_file_tree.getroot()
-    #
-    # print('~ ' * 70)
-    # print('fuckin around with parsing an example XML:')
-    # print("""
-    # test file path/name:            {}
-    # test file root:                 {}
-    # test file, # of child nodes:    {}
-    # """
-    #       .format(z, root, 'tbd'))
-    # for i in list_of_data_dict:
+    test_file = files[5]
+    test_file_path = os.path.join(path, test_file)
+    test_file_tree = ET.parse(test_file_paths, parser=None)
+    root = test_file_tree.getroot()
+
+    print('~ ' * 70)
+    print('parsing an example XML:')
+    print("""
+    test file path/name:            {}
+    test file root:                 {}
+    test file, # of child nodes:    {}
+    """
+          .format(z, root, 'tbd'))
+    for i in list_of_data_dict:
+        print(i)
+    print('~ ' * 70)
+    for i in root:
+        print(i)
+        print(i.tag)
+        print(i.attrib)
+        print('_ ' * 20)
+
+    print('?/???///??/?///////')
+    for child in root.iter():
+        print('child:')
+        print(child)
+        print('child.attribute:')
+        print(child.attrib)
+        try:
+            for i, j in child.attrib.items():
+                print(' ')
+                print(i, ' : ', j)
+        except:
+            pass
+        print('child.tag:')
+        print(child.tag)
+        print(' ')
+
+    # for i in root.findall('CONTACT'):
+    #     print('#$!')
     #     print(i)
-    # print('~ ' * 70)
-    # for i in root:
-    #     print(i)
-    #     print(i.tag)
-    #     print(i.attrib)
-    #     print('_ ' * 20)
-    #
-    # print('?/???///??/?///////')
-    # for child in root.iter():
-    #     print('child:')
-    #     print(child)
-    #     print('child.attribute:')
-    #     print(child.attrib)
-    #     try:
-    #         for i, j in child.attrib.items():
-    #             print(' ')
-    #             print(i, ' : ', j)
-    #     except:
-    #         pass
-    #     print('child.tag:')
-    #     print(child.tag)
-    #     print(' ')
-    #
-    # # for i in root.findall('CONTACT'):
-    # #     print('#$!')
-    # #     print(i)
 
 
 if __name__ == '__main__':
