@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+  <XACTDOC>
+    <XACTNET_INFO
+      transactionId = "00701FK"
+    >
+      <CONTROL_POINTS>
+        <CONTROL_POINT
+          stamp = "2020-05-07T07:10:49"
+          type = "Assignment Note"
+          userName = "XactNet System"
+        >
+          <NOTES><![CDATA[[EDI] SVM Note for Admin Job 3012-WTR:  
+This job was dispatched to NGSTesting Oxford and is pending acceptance. The following note was entered during dispatch. .
+(Created by [EDI]_SVM_Nick Hindle (Provider))]]></NOTES>
+        </CONTROL_POINT>
+      </CONTROL_POINTS>
+    </XACTNET_INFO>
+  </XACTDOC>

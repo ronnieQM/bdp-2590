@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+  <XACTDOC>
+    <XACTNET_INFO
+      transactionId = "006HMQL"
+    >
+      <CONTROL_POINTS>
+        <CONTROL_POINT
+          stamp = "2020-05-12T14:39:20"
+          type = "Assignment Note"
+          userName = "Paola Torres"
+        >
+          <NOTES><![CDATA[Demo Notes]]></NOTES>
+        </CONTROL_POINT>
+      </CONTROL_POINTS>
+    </XACTNET_INFO>
+  </XACTDOC>
