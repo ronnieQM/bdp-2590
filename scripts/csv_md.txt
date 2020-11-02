@@ -1,0 +1,41 @@
+------------------------------
+| FILE:  StandardCarrierDataDictionary.csv
+| COLUMNS:
+ *  Element
+ *  Attribute
+ *  Description
+| ROW_COUNT:  248
+ 
+------------------------------
+| FILE:  CustomDocDataDictionary.csv
+| COLUMNS:
+ *  Element
+ *  Attribute
+ *  Description
+| ROW_COUNT:  6
+ 
+------------------------------
+| FILE:  NoteExportDataDictionary.csv
+| COLUMNS:
+ *  Element
+ *  Attribute
+ *  Description
+| ROW_COUNT:  5
+ 
+------------------------------
+| FILE:  ActivityDiaryDataDictionary.csv
+| COLUMNS:
+ *  Element
+ *  Attribute
+ *  Description
+| ROW_COUNT:  24
+ 
+------------------------------
+| FILE:  StandardStatusExportDataDictionary.csv
+| COLUMNS:
+ *  Element
+ *  Attribute
+ *  Value
+ *  Description
+| ROW_COUNT:  13
+ 

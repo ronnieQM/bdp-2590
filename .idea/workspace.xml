@@ -20,21 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1f17cf4-e375-4241-8208-812f5043e1bb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data_dicts/ActivityDiaryDataDictionary.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_dicts/ActivityDiaryDataDictionary.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_dicts/CustomDocDataDictionary.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_dicts/CustomDocDataDictionary.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_dicts/NoteExportDataDictionary.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_dicts/NoteExportDataDictionary.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_dicts/StandardCarrierDataDictionary.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_dicts/StandardCarrierDataDictionary.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_dicts/StandardStatusExportDataDictionary.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_dicts/StandardStatusExportDataDictionary.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/ActivityDiaryDataDictionary.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/CustomDocDataDictionary.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/NoteExportDataDictionary.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/StandardCarrierDataDictionary.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/StandardStatusExportDataDictionary.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_dicts/ActivityDiaryDataDictionary.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_dicts/CustomDocDataDictionary.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_dicts/GenericRoughDraftDataDictionary.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_dicts/GenericRoughDraftDataDictionary.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_dicts/NoteExportDataDictionary.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_dicts/StandardCarrierDataDictionary.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_dicts/StandardStatusExportDataDictionary.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/csv_md.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/temp.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/data_dictionary_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/data_dictionary_parser.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
