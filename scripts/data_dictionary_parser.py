@@ -27,6 +27,78 @@ xsds_dir = os.path.join(project_dir, 'xsds')
 status_xsd = os.path.join(xsds_dir, 'StandardStatusExport.xsd')
 
 
+class GenericDataDictionaryClass:
+    """This is a representations of a generic class file"""
+
+    def __init__(self, elem, attr, val, desc):
+        self.element = elem
+        self.attribute = attr
+        self.value = val
+        self.description = desc
+
+    def __str__(self):
+        return """
+        element: {}
+        attribute: {}
+        value: {}
+        description: {}
+        """.format(self.element, self.attribute, self.value, self.description)
+# class ActivityDiaryDataDictionary:
+#     """This is a representations of the StatusExportDataDict.xlsx file"""
+#
+#     def __init__(self, elem, attr, val, desc):
+#         self.element = elem
+#         self.attribute = attr
+#         self.description = desc
+#
+#     def __str__(self):
+#         return """
+#         element: {}
+#         attribute: {}
+#         description: {}
+#         """.format(self.element, self.attribute, self.description)
+# class CustomDocDataDictClass:
+#     """This is a representations of the StatusExportDataDict.xlsx file"""
+#
+#     def __init__(self, elem, attr, val, desc):
+#         self.element = elem
+#         self.attribute = attr
+#         self.description = desc
+#
+#     def __str__(self):
+#         return """
+#         element: {}
+#         attribute: {}
+#         description: {}
+#         """.format(self.element, self.attribute, self.description)
+# class NoteDataDictClass:
+#     """This is a representations of the StatusExportDataDict.xlsx file"""
+#
+#     def __init__(self, elem, attr, val, desc):
+#         self.element = elem
+#         self.attribute = attr
+#         self.description = desc
+#
+#     def __str__(self):
+#         return """
+#         element: {}
+#         attribute: {}
+#         description: {}
+#         """.format(self.element, self.attribute, self.description)
+# class CarrierDataDictClass:
+#     """This is a representations of the StatusExportDataDict.xlsx file"""
+#
+#     def __init__(self, elem, attr, val, desc):
+#         self.element = elem
+#         self.attribute = attr
+#         self.description = desc
+#
+#     def __str__(self):
+#         return """
+#         element: {}
+#         attribute: {}
+#         description: {}
+#         """.format(self.element, self.attribute, self.description)
 class StatusDataDictClass:
     """This is a representations of the StatusExportDataDict.xlsx file"""
 
@@ -65,10 +137,28 @@ class Status:
         self.XACTNET_INFO_transactionId = xactnet_info_transactionid
         self.XACTNET_INFO_origTransactionId = xactnet_info_origtransactionid
 
+
     def __str__(self):
         return """
         CONTACT_name: {}
-        """.format('asdf')
+        CONTACT_type: {}
+        CONTROL_POINT_stamp: {}
+        CONTROL_POINT_type: {}
+        PHONE_extension: {}
+        PHONE_number: {}
+        PHONE_type: {}
+        TYPEOFLOSS_claimNumber: {}
+        XACTNET_INFO_recipientsXNAddress: {}
+        XACTNET_INFO_recipientsXM8UserId: {}
+        XACTNET_INFO_transactionId: {}
+        XACTNET_INFO_origTransactionId: {}
+
+        """.format(self.CONTACT_name, self.CONTACT_type, self.CONTROL_POINT_stamp, self.CONTROL_POINT_type,
+                   self.PHONE_extension,
+                   self.PHONE_number, self.PHONE_type, self.TYPEOFLOSS_claimNumber,
+                   self.XACTNET_INFO_recipientsXNAddress,
+                   self.XACTNET_INFO_recipientsXM8UserId, self.XACTNET_INFO_transactionId,
+                   self.XACTNET_INFO_origTransactionId)
 
 
 def read_xml(xsd_file):
@@ -91,11 +181,13 @@ def read_xml(xsd_file):
     for i in root:
         print(i.tag, i.attrib)
 
+    print('#######################################################')
     print('iterating through entire tree:')
     all_elements = [elem.tag for elem in root.iter()]
     for i in all_elements:
         print(type(i))
         print(i)
+    print('#######################################################')
 
 
 def metadata():
@@ -108,10 +200,16 @@ def metadata():
     /metadata"""
           .format(len(files), project_dir, os.getcwd()))
     print('#' * 40)
-    
+
 
 def printing_class_init():
     print('.')
+    # for i in list_of_data_dict:
+    #     x = i.element
+    #     y = i.attribute
+    #     j = x + '_' + y
+    #     print(j)
+
     # for i in list_of_data_dict:
     #     a = 'self.'
     #     x = i.element
@@ -129,6 +227,45 @@ def printing_class_init():
     #     a += name
     #     a += ', '
     #     print(a)
+
+def xlxs2csv():
+    data_dicts_dir = os.path.join(project_dir, 'data_dicts')
+    path, dir, files = next(os.walk(data_dicts_dir))
+    for i in files:
+        base_name = os.path.splitext(i)[0] + '.csv'
+        print(base_name)
+        p = os.path.join(path,i)
+        save_path = os.path.join(data_dicts_dir, base_name)
+        read_file = pd.read_excel(p)
+        read_file.to_csv(save_path, index=None, header=True)
+    print(files)
+    path, dir, files = next(os.walk(data_dicts_dir))
+    print(files)
+    print('done')
+
+def csv2json():
+    data_dicts_dir = os.path.join(project_dir, 'data_dicts')
+    path, dir, files = next(os.walk(data_dicts_dir))
+    for file in files:
+        if file.endswith('.csv'):
+            with open(file) as f:
+                csv_reader = csv.reader(f)
+                line_count = 0
+                for row in csv_reader:
+                    if line_count ==0:
+                        print(file, 'COLUMNS:')
+                        for column in row:
+                            print(column)
+                    else:
+                        line_count+=1
+                print(file, '| ROW_COUNT: ', line_count)
+                print(' ')
+
+
+
+
+
+
 
 
 def main():
@@ -152,7 +289,6 @@ def main():
         pair = {}
         for row in csv_reader:
             if line_count == 0:
-                print('Column names are {}'.format('| '.join(row)))
                 line_count += 1
             else:
                 x, y, z, a = row[0], row[1], row[2], row[3]
@@ -160,22 +296,50 @@ def main():
                 temp = StatusDataDictClass(x, y, z, a)
                 list_of_data_dict.append(temp)
 
-    print(len(list_of_data_dict))
     test_file = files[5]
     z = os.path.join(path, test_file)
     test_file_tree = ET.parse(z, parser=None)
     root = test_file_tree.getroot()
 
-    print('~ ' * 50)
+    print('~ ' * 70)
     print('fuckin around with parsing an example XML:')
     print("""
-test file path/name:            {}
-test file root:                 {}
-test file, # of child nodes:    {}
+    test file path/name:            {}
+    test file root:                 {}
+    test file, # of child nodes:    {}
     """
           .format(z, root, 'tbd'))
-    print('~ ' * 50)
+    for i in list_of_data_dict:
+        print(i)
+    print('~ ' * 70)
+    for i in root:
+        print(i)
+        print(i.tag)
+        print(i.attrib)
+        print('_ ' * 20)
+
+    print('?/???///??/?///////')
+    for child in root.iter():
+        print('child:')
+        print(child)
+        print('child.attribute:')
+        print(child.attrib)
+        try:
+            for i, j in child.attrib.items():
+                print(' ')
+                print(i, ' : ', j)
+        except:
+            pass
+        print('child.tag:')
+        print(child.tag)
+        print(' ')
+
+    # for i in root.findall('CONTACT'):
+    #     print('#$!')
+    #     print(i)
 
 
 if __name__ == '__main__':
-    main()
+    # main()
+    csv2json()
+    # # xlxs2csv()

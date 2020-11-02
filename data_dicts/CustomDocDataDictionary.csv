@@ -1,0 +1,6 @@
+Element,Attribute,Description
+CONTROL_POINT,stamp,Time and date document was added
+CONTROL_POINT,type,Type of Document that was added (Custom Doc Received)
+CONTROL_POINT,filename,Name of the document that was added
+TYPEOFLOSS,claimNumber,Claim number for the claim the document was added to
+XACTNET_INFO,transactionId,This is the ID assigned to the claim by XactAnalysis. This is also referred to as MFN (Master File Name). This will be unique for each claim.
