@@ -1155,14 +1155,35 @@ def csv2json():
 
 def main():
     # all example XML files in 'file'
-    path, dirs, files = next(os.walk(data_dict_dir))
-
+    path, dirs, files = next(os.walk(status_dir))
+    data = [
+        {"element": "CONTACT", "attribute": "name", "value": "xs:string", "description": "The contact\u2019s name."},
+        {"element": "CONTACT", "attribute": "type", "value": "contactType",
+         "description": "The contact's type (Client, Estimator, ClaimRep, Claimant, etc\u2026"},
+        {"element": "CONTROL_POINT", "attribute": "stamp", "value": "xs:dateTime",
+         "description": "Date and Time status updated occurred"},
+        {"element": "CONTROL_POINT", "attribute": "type", "value": "xs:string",
+         "description": "The Type of status that triggered the export."},
+        {"element": "PHONE", "attribute": "extension", "value": "xs:integer",
+         "description": "Contacts Phone Extension"},
+        {"element": "PHONE", "attribute": "number", "value": "phoneNumber", "description": "Contacts Phone Number"},
+        {"element": "PHONE", "attribute": "type", "value": "phoneType",
+         "description": "Contacts Phone Type (Home, Business, Cell, Other)"},
+        {"element": "TYPEOFLOSS", "attribute": "claimNumber", "value": "xs:string", "description": "Claim Number"},
+        {"element": "XACTNET_INFO", "attribute": "recipientsXNAddress", "value": "xs:string",
+         "description": "The XactAnalysis address of the person (adjustor/contractor) receiving the assignment in the field. Xactimate users receive a XactAnalysis address when they successfully register. Either the recipient\u2019s XactAnalysis Address or the recipient\u2019s ID is required. For online addresses (user@), this address is everything after the @."},
+        {"element": "XACTNET_INFO", "attribute": "recipientsXM8UserId", "value": "xs:string",
+         "description": "The specific adjuster/contractors user on the user@ instance. This will be everything before the @, in an XactNet address."},
+        {"element": "XACTNET_INFO", "attribute": "transactionId", "value": "xs:string",
+         "description": "Unique Identifier that is assigned to each claim by Xactware. "},
+        {"element": "XACTNET_INFO", "attribute": "origTransactionId", "value": "xs:string",
+         "description": "This is the Original Transaction ID for the claim."}]
     # get every possible data type from the documentation
     # get every row in the csv
 
     test_file = files[5]
     test_file_path = os.path.join(path, test_file)
-    test_file_tree = ET.parse(test_file_paths, parser=None)
+    test_file_tree = ET.parse(test_file_path, parser=None)
     root = test_file_tree.getroot()
 
     print('~ ' * 70)
@@ -1172,17 +1193,15 @@ def main():
     test file root:                 {}
     test file, # of child nodes:    {}
     """
-          .format(z, root, 'tbd'))
-    for i in list_of_data_dict:
-        print(i)
+          .format(test_file_path, root, 'tbd'))
     print('~ ' * 70)
+
     for i in root:
         print(i)
         print(i.tag)
         print(i.attrib)
         print('_ ' * 20)
 
-    print('?/???///??/?///////')
     for child in root.iter():
         print('child:')
         print(child)
@@ -1190,13 +1209,17 @@ def main():
         print(child.attrib)
         try:
             for i, j in child.attrib.items():
-                print(' ')
+                print(' %$& ')
                 print(i, ' : ', j)
         except:
             pass
         print('child.tag:')
         print(child.tag)
         print(' ')
+
+    print('!?*' * 15)
+
+    results =
 
     # for i in root.findall('CONTACT'):
     #     print('#$!')
