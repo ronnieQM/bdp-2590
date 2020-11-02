@@ -6,13 +6,14 @@ import xml.etree.ElementTree as ET
 
 import pandas as pd
 
+################################
+######### directories  & paths
+################################
+
 # change current directory to script directory
 abspath = os.path.abspath(__file__)
 dname = os.path.dirname(abspath)
 os.chdir(dname)
-################################
-######### directories  & paths
-################################
 # scripts directory, inside of project directory
 curr_dir = os.getcwd()
 # home, this project's files
@@ -22,15 +23,11 @@ data_dir = os.path.join(project_dir, 'data')
 status_dir = os.path.join(data_dir, 'status')
 xsds_dir = os.path.join(project_dir, 'xsds')
 status_xsd = os.path.join(xsds_dir, 'StandardStatusExport.xsd')
-
 path, dirs, files = next(os.walk(status_dir))
-
 standard_carrier_data_dic = '/home/rqm/main/dev/ace/bdp-2590/xact-edi/XactAnalysis Export Documentation/Estimate Export/StandardCarrier data dictionary.xlsx'
 
 
-
-
-def read_xsds(xsd_file):
+def read_xml(xsd_file):
     xsd_file = xsd_file
     status_tree = ET.parse(xsd_file, parser=None)
     print("""
@@ -83,8 +80,6 @@ def something(xml_file):
         #         print(i, ' : ', j)
 
 
-
-
 def main():
     # read file
     read_file = pd.read_excel(standard_carrier_data_dic)
@@ -101,6 +96,7 @@ def main():
     /metadata"""
           .format(len(files), project_dir, os.getcwd()))
     print('#' * 40)
+
 
 if __name__ == '__main__':
     main()
