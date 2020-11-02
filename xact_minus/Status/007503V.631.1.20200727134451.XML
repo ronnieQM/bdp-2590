@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+  <XACTDOC>
+    <XACTNET_INFO
+      transactionId = "007503V"
+      recipientsXNAddress = "XACTNET.QUEUE"
+      recipientsXM8UserId = ""
+    >
+      <CONTROL_POINTS>
+        <CONTROL_POINT
+          stamp = "2020-07-27T13:44:36"
+          type = "In Assign Queue"
+        />
+      </CONTROL_POINTS>
+    </XACTNET_INFO>
+    <CONTACTS>
+      <CONTACT
+        type = "ClaimRep"
+        name = ""
+      >
+        <CONTACTMETHODS/>
+      </CONTACT>
+    </CONTACTS>
+    <ADM>
+      <TYPESOFLOSS>
+        <TYPEOFLOSS
+          claimNumber = "003116012-8-W"
+        />
+      </TYPESOFLOSS>
+    </ADM>
+  </XACTDOC>

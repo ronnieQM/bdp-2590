@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+  <XACTDOC>
+    <XACTNET_INFO
+      transactionId = "006Y3ZG"
+      recipientsXNAddress = "ACSC.TEST.DP5"
+      recipientsXM8UserId = ""
+    >
+      <CONTROL_POINTS>
+        <CONTROL_POINT
+          stamp = "2020-04-21T14:17:58"
+          type = "Notification Pending"
+        />
+      </CONTROL_POINTS>
+    </XACTNET_INFO>
+    <CONTACTS>
+      <CONTACT
+        type = "ClaimRep"
+        name = "Jerry&#39;s Interiors Inc"
+      >
+        <CONTACTMETHODS/>
+      </CONTACT>
+    </CONTACTS>
+    <ADM>
+      <TYPESOFLOSS>
+        <TYPEOFLOSS
+          claimNumber = "003103092-8-W"
+        />
+      </TYPESOFLOSS>
+    </ADM>
+  </XACTDOC>

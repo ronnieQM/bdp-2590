@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+  <XACTDOC>
+    <XACTNET_INFO
+      transactionId = "007B180"
+      recipientsXNAddress = "TEST.XNA.GL"
+      recipientsXM8UserId = "LANCAST1"
+    >
+      <CONTROL_POINTS>
+        <CONTROL_POINT
+          stamp = "2020-09-22T23:00:00"
+          type = "Site Inspected"
+        />
+      </CONTROL_POINTS>
+    </XACTNET_INFO>
+    <CONTACTS>
+      <CONTACT
+        type = "ClaimRep"
+        name = "lancaster"
+      >
+        <CONTACTMETHODS/>
+      </CONTACT>
+    </CONTACTS>
+    <ADM>
+      <TYPESOFLOSS>
+        <TYPEOFLOSS
+          claimNumber = "003098255-8-W"
+        />
+      </TYPESOFLOSS>
+    </ADM>
+  </XACTDOC>

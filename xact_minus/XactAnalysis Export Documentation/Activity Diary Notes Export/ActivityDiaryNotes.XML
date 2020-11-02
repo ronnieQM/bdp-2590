@@ -1,0 +1,294 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+  <XACTDOC>
+    <XACTNET_INFO
+      carrierId = "3216541"
+      estimateType = "CONTR"
+      rotationTrade = ""
+      jobSizeCode = ""
+      businessUnit = "Unit 1"
+      transactionId = "01RFYCP"
+      senderId = "1321654"
+	  qualify = "1"
+      sendersXNAddress = "SAFEHAVEN.HOME.WEB"
+      creatorsUserNumber = "12321B3572"
+      recipientsXNAddress = "HP.LOCAL.USPROD"
+      recipientsUserNumber = "12321B3572"
+    />
+    <ATTACHMENTS/>
+    <EXT_FILES/>
+    <PROJECT_INFO
+      showIADeskAdjuster = "1"
+      showDeskAdjuster = "1"
+      stamp = "OOOObmpLNOMc}"
+      status = "In_Progress"
+    >
+      <NOTES><![CDATA[This assignment is for Base Service Charge Factored in!]]></NOTES>
+      <XPERT_VARS>
+        <ITERATED_XPERT_VAR
+          name = "SERVH_IDX"
+        >
+          <IXV_VALUE
+            type = "Numeric"
+            value = "0"
+          >
+            <XPERT_VAR
+              name = "RES_BLDG_IDX"
+              type = "Numeric"
+              value = "0"
+            />
+            <XPERT_VAR
+              name = "RES_APS_IDX"
+              type = "Numeric"
+              value = "0"
+            />
+            <XPERT_VAR
+              name = "RES_UPP_IDX"
+              type = "Numeric"
+              value = "0"
+            />
+            <XPERT_VAR
+              name = "RES_ALE_IDX"
+              type = "Numeric"
+              value = "0"
+            />
+          </IXV_VALUE>
+        </ITERATED_XPERT_VAR>
+        <ITERATED_XPERT_VAR
+          name = "INS_INFO_IDX"
+        >
+          <IXV_VALUE
+            type = "Numeric"
+            value = "0"
+          >
+            <XPERT_VAR
+              name = "BLDG_COV_IDX"
+              type = "Numeric"
+              value = "0"
+            />
+            <XPERT_VAR
+              name = "ALE_COV_IDX"
+              type = "Numeric"
+              value = "0"
+            />
+            <XPERT_VAR
+              name = "BLDG_DED_IDX"
+              type = "Numeric"
+              value = "0"
+            />
+            <XPERT_VAR
+              name = "BLDG_RCB_IDX"
+              type = "Bool"
+              value = "1"
+            />
+          </IXV_VALUE>
+        </ITERATED_XPERT_VAR>
+        <ITERATED_XPERT_VAR
+          name = "REPORT_INFO"
+        >
+          <IXV_VALUE
+            type = "Numeric"
+            value = "0"
+          >
+            <ITERATED_XPERT_VAR
+              name = "REPORT_TITLE"
+            >
+              <IXV_VALUE
+                type = "String"
+                value = "CrawfordLossAcknowledge"
+              >
+                <XPERT_VAR
+                  name = "DEDALLCOVERAGES"
+                  type = "Bool"
+                  value = "1"
+                />
+                <XPERT_VAR
+                  name = "TELEPHONECHARGE"
+                  type = "Bool"
+                  value = "0"
+                />
+                <XPERT_VAR
+                  name = "CASECREATIONHOUR"
+                  type = "Bool"
+                  value = "0"
+                />
+                <XPERT_VAR
+                  name = "DESCLOSSDAMAGE"
+                  type = "String"
+                  value = "This assignment is for Base Service Charge Factored in!"
+                />
+              </IXV_VALUE>
+            </ITERATED_XPERT_VAR>
+          </IXV_VALUE>
+        </ITERATED_XPERT_VAR>
+        <ITERATED_XPERT_VAR
+          name = "CRAWFORD_SHARE"
+        >
+          <IXV_VALUE
+            type = "Numeric"
+            value = "0"
+          >
+            <XPERT_VAR
+              name = "BRANCH"
+              type = "String"
+              value = "Utah County"
+            />
+            <XPERT_VAR
+              name = "HOMEOWNER"
+              type = "Bool"
+              value = "1"
+            />
+          </IXV_VALUE>
+        </ITERATED_XPERT_VAR>
+        <ITERATED_XPERT_VAR
+          name = "ACTIVITIES"
+        >
+          <IXV_VALUE
+            type = "Numeric"
+            value = "0"
+          >
+            <ITERATED_XPERT_VAR
+              name = "ACTIVITIES"
+            >
+              <IXV_VALUE
+                type = "String"
+                value = "1"
+              >
+                <XPERT_VAR
+                  name = "PROCESS"
+                  type = "String"
+                  value = "Claim Completion"
+                />
+                <XPERT_VAR
+                  name = "ACT"
+                  type = "String"
+                  value = "Closed"
+                />
+                <XPERT_VAR
+                  name = "START_DT"
+                  type = "Date"
+                  value = "2013-04-02"
+                />
+                <XPERT_VAR
+                  name = "FINISH_DT"
+                  type = "Date"
+                  value = "2013-04-02"
+                />
+                <XPERT_VAR
+                  name = "DESC"
+                  type = "String"
+                  value = "Completion of Claim"
+                />
+                <XPERT_VAR
+                  name = "LONG_DESC"
+                  type = "String"
+                  value = "This claim is done. &#13;&#10;"
+                />
+                <XPERT_VAR
+                  name = "LAST_UPDATED"
+                  type = "DateTime"
+                  value = "2013-04-02T13:05:02"
+                />
+              </IXV_VALUE>
+            </ITERATED_XPERT_VAR>
+          </IXV_VALUE>
+        </ITERATED_XPERT_VAR>
+      </XPERT_VARS>
+    </PROJECT_INFO>
+    <ADM
+      agentCode = ""
+      dateOfLoss = "2013-02-01"
+      dateReceived = "2013-03-21T21:01:00Z"
+      subrogationFlag = "0"
+    >
+      <SUBROGATION_NOTES/>
+      <TYPESOFLOSS>
+        <TYPEOFLOSS
+          deductible = "0"
+          claimNumber = "HP-130321-302PM"
+          policyNumber = "PN130321303"
+        >
+          <TOL
+            code = "FIRE"
+            desc = "Fire"
+          />
+        </TYPEOFLOSS>
+      </TYPESOFLOSS>
+    </ADM>
+    <CONTACTS>
+      <CONTACT
+        type = "Client"
+        name = "Reese Schmitz"
+      >
+        <ADDRESSES>
+          <ADDRESS
+            type = "Home"
+            street = "99 S State St"
+            city = "Provo"
+            state = "UT"
+            postal = "84601"
+            country = "US"
+          />
+          <ADDRESS
+            type = "Property"
+            street = "99 S State St"
+            city = "Provo"
+            state = "UT"
+            postal = "84601"
+            country = "US"
+            lon = "-111.64595"
+            lat = "40.228985"
+            accuracy = "CITY BLOCK"
+          />
+        </ADDRESSES>
+        <CONTACTMETHODS>
+          <PHONE
+            type = "Business"
+            number = ""
+            extension = ""
+          />
+          <PHONE
+            type = "Home"
+            number = "8012585711"
+            extension = ""
+            primary = "1"
+          />
+          <PHONE
+            type = "Cellular"
+            number = ""
+          />
+          <PHONE
+            type = "Pager"
+            number = ""
+          />
+          <EMAIL
+            address = ""
+          />
+        </CONTACTMETHODS>
+      </CONTACT>
+      <CONTACT
+        type = "ClaimRep"
+        qcode = ""
+        name = ""
+      />
+    </CONTACTS>
+    <PARAMS
+      checkpointPL = "UTOR7X_MAR13"
+      priceList = "UTOR7X_MAR13"
+      checkpointPLVersion = "12"
+    />
+    <CLAIM_INFO>
+      <ACTIVITIES>
+        <ACTIVITY
+          process = "Claim Completion"
+          activity = "Closed"
+          start = "2013-04-02"
+          finish = "2013-04-02"
+          updated = "2013-04-02T13:05:02"
+          desc = "Completion of Claim"
+          longDesc = "This claim is done. &#13;&#10;"
+        >
+          <EXPENSES/>
+        </ACTIVITY>
+      </ACTIVITIES>
+    </CLAIM_INFO>
+  </XACTDOC>

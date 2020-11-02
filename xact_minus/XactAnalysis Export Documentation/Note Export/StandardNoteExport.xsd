@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+    <xs:element name="XACTDOC" type="XACTDOC"/>
+    <xs:complexType name="CONTROL_POINT">
+        <xs:all>
+            <xs:element name="NOTES" type="xs:string"/>
+        </xs:all>
+        <xs:attribute name="type" type="xs:string" fixed="Assignment Note"/>
+        <xs:attribute name="stamp" type="xs:dateTime"/>
+        <xs:attribute name="userName" type="xs:string"/>
+    </xs:complexType>
+    <xs:complexType name="CONTROL_POINTS">
+        <xs:all>
+            <xs:element name="CONTROL_POINT" type="CONTROL_POINT"/>
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="XACTDOC">
+        <xs:all>
+            <xs:element name="XACTNET_INFO" type="XACTNET_INFO"/>
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="XACTNET_INFO">
+        <xs:all>
+            <xs:element name="CONTROL_POINTS" type="CONTROL_POINTS"/>
+        </xs:all>
+        <xs:attribute name="transactionId" type="xs:string"/>
+    </xs:complexType>
+</xs:schema>

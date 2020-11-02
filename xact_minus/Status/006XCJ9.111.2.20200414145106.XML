@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+  <XACTDOC>
+    <XACTNET_INFO
+      transactionId = "006XCJ9"
+      recipientsXNAddress = "ACSC.TEST.LG"
+      recipientsXM8UserId = ""
+    >
+      <CONTROL_POINTS>
+        <CONTROL_POINT
+          stamp = "2020-04-14T14:50:41"
+          type = "Notification Pending"
+        />
+      </CONTROL_POINTS>
+    </XACTNET_INFO>
+    <CONTACTS>
+      <CONTACT
+        type = "ClaimRep"
+        name = "Leonard Gutomen"
+      >
+        <CONTACTMETHODS>
+          <PHONE
+            type = "Office"
+            number = "714-898-1122"
+            extension = ""
+          />
+        </CONTACTMETHODS>
+      </CONTACT>
+    </CONTACTS>
+    <ADM>
+      <TYPESOFLOSS>
+        <TYPEOFLOSS
+          claimNumber = "003102387-8-W"
+        />
+      </TYPESOFLOSS>
+    </ADM>
+  </XACTDOC>

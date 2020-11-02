@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="XACTDOC" type="XACTDOC"/>
+	<xs:complexType name="ACTIVITIES">
+		<xs:sequence>
+			<xs:element name="ACTIVITY" type="ACTIVITY" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ACTIVITY">
+		<xs:all>
+			<xs:element name="EXPENSES" type="EXPENSES" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="longDesc" type="xs:string" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>There really isn't a hard limit on the size of the longDesc - in general it should be under 8,000 characters</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:all>
+		<xs:attribute name="process" type="str100" use="optional"/>
+		<xs:attribute name="updated" type="xs:dateTime" use="optional"/>
+        <xs:attribute name="activity" type="str20" use="optional"/>
+		<xs:attribute name="desc" type="str100" use="optional"/>
+		<xs:attribute name="start" type="xs:date" use="optional"/>
+		<xs:attribute name="finish" type="xs:date" use="optional"/>
+		<xs:attribute name="remind" type="bool" use="optional" default="0"/>
+		<xs:attribute name="toDo" type="bool" use="optional" default="0"/>
+	</xs:complexType>
+		<xs:complexType name="ADM">
+		<xs:all>
+			<xs:element name="COVERAGE_LOSS" type="COVERAGE_LOSS" minOccurs="0" maxOccurs="1"/>
+		</xs:all>
+	</xs:complexType>
+	<xs:complexType name="CLAIM_INFO">
+		<xs:all>
+			<xs:element name="ACTIVITIES" type="ACTIVITIES" minOccurs="1" maxOccurs="1"/>
+		</xs:all>
+	</xs:complexType>
+	<xs:complexType name="CONTROL_POINTS">
+		<xs:attribute name="testAssignment" type="bool" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="COVERAGE_LOSS">
+		<xs:attribute name="claimNumber" type="str30" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="EXPENSE">
+		<xs:attribute name="desc" type="str100" use="optional"/>
+		<xs:attribute name="hours" type="xs:decimal" use="optional"/>
+        <xs:attribute name="amount" type="xs:decimal" use="optional"/>
+		<xs:attribute name="code" type="str2" use="optional"/>
+		<xs:attribute name="codeDesc" type="str100" use="optional"/>
+		<xs:attribute name="miles" type="xs:decimal" use="optional"/>
+		<xs:attribute name="paidByEmp" type="bool" use="optional" default="0"/>
+		<xs:attribute name="personalCar" type="bool" use="optional" default="0"/>
+		<xs:attribute name="noCharge" type="bool" use="optional" default="0"/>
+		<xs:attribute name="prorated" type="bool" use="optional" default="0"/>
+	</xs:complexType>
+	<xs:complexType name="EXPENSES">
+		<xs:sequence>
+			<xs:element name="EXPENSE" type="EXPENSE" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="XACTDOC">
+		<xs:all>
+			<xs:element name="ADM" type="ADM" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="CLAIM_INFO" type="CLAIM_INFO" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="XACTNET_INFO" type="XACTNET_INFO" minOccurs="1" maxOccurs="1"/>
+		</xs:all>
+	</xs:complexType>
+	<xs:complexType name="XACTNET_INFO">
+		<xs:all>
+			<xs:element name="CONTROL_POINTS" type="CONTROL_POINTS" minOccurs="0" maxOccurs="1"/>
+		</xs:all>
+		<xs:attribute name="recipientsXNAddress" type="str31" use="required"/>
+		<xs:attribute name="originalTransactionId" type="str7" use="required"/>
+		<xs:attribute name="transactionId" type="str7" use="required">
+			<xs:annotation>
+				<xs:documentation>XactAnalysis's internal ID for the assignment. This is added by XactAnalysis for new assignments.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:simpleType name="bool">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="0"/>
+			<xs:enumeration value="1"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="str2">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="2"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="str7">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="7"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="str20">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="20"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="str30">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="30"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="str31">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="31"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="str100">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="100"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>
