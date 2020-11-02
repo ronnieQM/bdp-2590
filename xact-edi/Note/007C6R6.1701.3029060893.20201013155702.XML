@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+  <XACTDOC>
+    <XACTNET_INFO
+      transactionId = "007C6R6"
+    >
+      <CONTROL_POINTS>
+        <CONTROL_POINT
+          stamp = "2020-10-13T15:56:28"
+          type = "Assignment Note"
+          userName = "Paola Torres"
+        >
+          <NOTES><![CDATA[Notification Pending]]></NOTES>
+        </CONTROL_POINT>
+      </CONTROL_POINTS>
+    </XACTNET_INFO>
+  </XACTDOC>

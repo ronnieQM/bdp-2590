@@ -1,0 +1,409 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+  <XACTDOC>
+    <XACTNET_INFO
+      assignmentType = "1"
+      transactionId = "006VT1W"
+      carrierId = "1860800"
+      senderId = "1200000"
+      recipientsXNAddress = "ACSC.TEST.PT"
+      recipientsXM8UserId = "TORRES.P"
+      sendersXNAddress = "ACSC-NON-IRP.HOME.WEB"
+      carrierAttribute2 = "ClaimsPortalACSC"
+      recipientsId = "FIELD_Q"
+      rotationTrade = "General"
+      jobSizeCode = "2"
+      emergency = "0"
+      transactionType = "EST,ASG"
+      estimateCount = "1"
+      carrierName = "ACE - Staff"
+      mitigation = "0"
+      profileCode = "76"
+    >
+      <CONTROL_POINTS
+        testAssignment = "0"
+      />
+      <ATTACHMENTS>
+        <ATT_FILE
+          fileName = "GENERIC_ROUGHDRAFT.XML"
+          fileDesc = "Rough Draft XML"
+          fileDate = "2020-05-19T11:53:30"
+          fileType = "XML"
+        />
+        <ATT_FILE
+          fileName = "VARIATION_REPORT.PDF"
+          fileDesc = "VARIATION REPORT"
+          fileDate = "2020-05-19T11:53:30"
+          fileType = "PDF"
+        />
+        <ATT_FILE
+          fileName = "Report_Rough_Draft.PDF"
+          fileDesc = "Report Rough Draft"
+          fileDate = "2020-05-19T11:53:30"
+          fileType = "PDF"
+        />
+        <ATT_FILE
+          fileName = "FINAL_DRAFT_WITH_AGE_LIFE_AND_CONDITION_Report.PDF"
+          fileDesc = "FINAL DRAFT WITH AGE LIFE AND CONDITION Report"
+          fileDate = "2020-05-19T11:53:30"
+          fileType = "PDF"
+        />
+        <ATT_FILE
+          fileName = "FINAL_DRAFT_BY_COVERAGE_TYPE_Report.PDF"
+          fileDesc = "FINAL DRAFT BY COVERAGE TYPE Report"
+          fileDate = "2020-05-19T11:53:30"
+          fileType = "PDF"
+        />
+        <ATT_FILE
+          fileName = "ESTIMATE_AUDIT_REPORT.PDF"
+          fileDesc = "ESTIMATE AUDIT REPORT"
+          fileDate = "2020-05-19T11:53:30"
+          fileType = "PDF"
+        />
+        <ATT_FILE
+          fileName = "Sketch_Summary.PDF"
+          fileDesc = "Sketch Summary"
+          fileDate = "2020-05-19T11:53:30"
+          fileType = "PDF"
+        />
+        <ATT_FILE
+          fileName = "XACTDOC.XML"
+          fileDesc = "Stndard Carrier Export XML"
+          fileDate = "2020-05-19T11:53:30"
+          fileType = "XML"
+        />
+      </ATTACHMENTS>
+      <SUMMARY
+        homeOwnerItems = "0.00"
+        contractorItems = "10162.88"
+        estimateLineItemTotal = "9738.60"
+        minimumChargeAdjustments = "0.00"
+        overhead = "0.00"
+        profit = "0.00"
+        salesTax = "424.28"
+        grossEstimate = "10162.88"
+        recoverableDepreciation = "1075.11"
+        nonRecoverableDepreciation = "0.00"
+        netEstimate = "9087.77"
+        priceListLineItemTotal = "9738.60"
+        deductible = "0.00"
+      />
+    </XACTNET_INFO>
+    <CONTACTS>
+      <CONTACT
+        type = "Client"
+        name = "SHIPLEY SR, NHEAN"
+        qcode = ""
+        mortgageHolder = "QUICKEN LOANS INC, ISAOA"
+        birthDate = ""
+        reference = ""
+        language = ""
+        title = ""
+      >
+        <ADDRESSES>
+          <ADDRESS
+            type = "Home"
+            street = "44 TALLWOOD DR"
+            city = "HAMPTON"
+            state = "VA"
+            postal = "23666-3945"
+            country = "US"
+          />
+          <ADDRESS
+            type = "Property"
+            street = "44 TALLWOOD DR"
+            city = "HAMPTON"
+            state = "VA"
+            postal = "23666-3945"
+            country = "US"
+            lat = "37.0513"
+            lon = "-76.4052"
+          />
+        </ADDRESSES>
+        <CONTACTMETHODS>
+          <PHONE
+            type = "Business"
+            number = "233-675-0603"
+          />
+          <PHONE
+            type = "Home"
+            number = "233-243-1462"
+          />
+          <EMAIL
+            address = ""
+          />
+        </CONTACTMETHODS>
+      </CONTACT>
+      <CONTACT
+        type = "Estimator"
+        name = "Paola Torres"
+        qcode = "PAOLA"
+        birthDate = ""
+        reference = ""
+        language = ""
+        position = "EP"
+        title = ""
+      >
+        <ADDRESSES/>
+        <CONTACTMETHODS>
+          <PHONE
+            type = "Business"
+            number = "714-111-1111"
+          />
+          <EMAIL
+            address = ""
+          />
+        </CONTACTMETHODS>
+      </CONTACT>
+      <CONTACT
+        type = "ClaimRep"
+        name = "Paola Torres"
+        qcode = "PAOLA"
+        birthDate = ""
+        reference = ""
+        language = ""
+        title = ""
+      >
+        <ADDRESSES/>
+        <CONTACTMETHODS>
+          <PHONE
+            type = "Business"
+            number = "714-111-1111"
+          />
+          <EMAIL
+            address = ""
+          />
+        </CONTACTMETHODS>
+      </CONTACT>
+      <CONTACT
+        type = "Claimant"
+        name = ""
+        qcode = ""
+        birthDate = ""
+        reference = ""
+        language = ""
+        title = ""
+      >
+        <ADDRESSES/>
+        <CONTACTMETHODS>
+          <EMAIL
+            address = ""
+          />
+        </CONTACTMETHODS>
+      </CONTACT>
+    </CONTACTS>
+    <PROJECT_INFO
+      assignmentCode = "WEB"
+      name = "SHIPLEY_SR__NHEAN"
+      version = "16"
+      profile = "76"
+      xactnetAddress = "ACSC-NON-IRP.HOME.WEB"
+      created = "2020-05-19T17:49:39Z"
+      userId = "TORRES.P"
+      status = "Completed"
+      showIADeskAdjuster = "1"
+      showDeskAdjuster = "1"
+    >
+      <NOTES><![CDATA[From: ACE - Staff
+
+ASSIGNMENT PROFILE:
+Type: Normal
+Claim Rep: 
+Date of Loss: 03/08/2020
+Claim Number: 003100324-8-W
+Insured Name: SHIPLEY SR, NHEAN
+Day Phone: (233) 675-0603
+Evening Phone: (233) 243-1462
+
+Type of Loss: Other
+Job Type: General
+Location of Property: 44 TALLWOOD DR, HAMPTON, VA 23666-3945
+
+Instructions:
+
+Years of Membership: 005
+
+HO253 Named Storm Deductible Endorsement
+2758 Amendatory Endorsement - Virginia
+HO401 Deluxe Homeowners Endorsement
+HO216 Alarm Or Fire Protection System Endorsement
+Risk Deductible: 1000
+Wind/Hail Deductible: 1410
+Named Storm Deductible: 4230
+Policy Type: HOB
+Square Footage: 1104
+Year of Construction: 1955
+
+Roof Year 2011
+Roof Type Composition
+TEST
+
+
+Assignment Received by XactAnalysis:  03/31/2020 01:24PM MT
+(XactAnalysis ID: 006VT1W)
+]]></NOTES>
+    </PROJECT_INFO>
+    <ADM
+      dateOfLoss = "2020-03-08T00:00:01"
+      dateInspected = "2020-05-19T00:00:00"
+      dateReceived = "2020-03-20T00:00:01"
+      dateEntered = "2020-05-19T14:49:39Z"
+      dateProjCompleted = "2020-05-19T14:52:52Z"
+      dateContacted = "2020-05-19T00:00:00"
+      agentCode = ""
+      fileNumber = "003100324-8-W"
+      denial = "Covered Loss"
+    >
+      <COVERAGE_LOSS
+        claimNumber = "003100324-8-W"
+        policyNumber = "VAH039274016"
+        catastrophe = ""
+        policyStart = "2020-01-06"
+        policyEnd = "2021-01-06"
+        dateInitCov = "2015-01-06"
+      >
+        <TOL
+          code = "OTHER"
+          desc = "Other"
+        />
+        <COVERAGES
+          lossOfUseReserve = "0"
+          lossOfUse = "0"
+          doNotApplyLimits = "0"
+        >
+          <COVERAGE
+            covName = "Dwelling"
+            id = "COV1"
+            covType = "0"
+            policyLimit = "141000"
+            deductible = "0"
+            applyTo = "0"
+            coins = "0"
+            reserveAmt = "0"
+          >
+            <LOSS_DATA
+              deductApplied = "0"
+              overLimits = "0"
+            />
+          </COVERAGE>
+          <COVERAGE
+            covName = "Locks"
+            id = "COV15"
+            covType = "0"
+            policyLimit = "250"
+            deductible = "0"
+            applyTo = "0"
+            coins = "0"
+            reserveAmt = "0"
+          >
+            <LOSS_DATA
+              deductApplied = "0"
+              overLimits = "0"
+            />
+          </COVERAGE>
+          <COVERAGE
+            covName = "Other Structures"
+            id = "COV20"
+            covType = "0"
+            policyLimit = "14100"
+            deductible = "0"
+            applyTo = "0"
+            coins = "0"
+            reserveAmt = "0"
+          >
+            <LOSS_DATA
+              deductApplied = "0"
+              overLimits = "0"
+            />
+          </COVERAGE>
+          <COVERAGE
+            covName = "Personal Property"
+            id = "COV30"
+            covType = "0"
+            policyLimit = "98700"
+            deductible = "0"
+            applyTo = "0"
+            coins = "0"
+            reserveAmt = "0"
+          >
+            <LOSS_DATA
+              deductApplied = "0"
+              overLimits = "0"
+            />
+          </COVERAGE>
+          <COVERAGE
+            covName = "Personal Property Off Premises"
+            id = "COV60"
+            covType = "0"
+            policyLimit = "9870"
+            deductible = "0"
+            applyTo = "0"
+            coins = "0"
+            reserveAmt = "0"
+          >
+            <LOSS_DATA
+              deductApplied = "0"
+              overLimits = "0"
+            />
+          </COVERAGE>
+          <COVERAGE
+            covName = "Loss of Use"
+            id = "COV80"
+            covType = "0"
+            policyLimit = "42300"
+            deductible = "0"
+            applyTo = "0"
+            coins = "0"
+            reserveAmt = "0"
+          >
+            <LOSS_DATA
+              deductApplied = "0"
+              overLimits = "0"
+            />
+          </COVERAGE>
+          <COVERAGE
+            covName = "Loss Assessment (Applies to VA Tidewater only)"
+            id = "COV116"
+            covType = "0"
+            policyLimit = "1000"
+            deductible = "0"
+            applyTo = "0"
+            coins = "0"
+            reserveAmt = "0"
+          >
+            <LOSS_DATA
+              deductApplied = "0"
+              overLimits = "0"
+            />
+          </COVERAGE>
+        </COVERAGES>
+      </COVERAGE_LOSS>
+    </ADM>
+    <CLAIM_INFO>
+      <ADMIN_INFO
+        branch = ""
+      />
+    </CLAIM_INFO>
+    <PARAMS
+      priceList = "VANF8X_MAR20"
+      taxJurisdiction = "6%"
+      checkpointPL = "VANF8X_MAR20"
+      overhead = "0"
+      profit = "0"
+      cumulativeOP = "0"
+      plModifiedDateTime = "2020-03-01T17:00:00"
+      defaultRepairedBy = "Contractor"
+      depMat = "1"
+      maxDepr = "100"
+    />
+    <EMBEDDED_PL>
+      <MINIMUMS>
+        <MINIMUM
+          id = "MIN1"
+          desc = "Cabinetry labor minimum"
+          amount = "147.86"
+          cat = "CAB"
+          sel = "MN-A"
+        />
+      </MINIMUMS>
+    </EMBEDDED_PL>
+  </XACTDOC>

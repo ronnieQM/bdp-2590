@@ -1,0 +1,400 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+  <XACTDOC>
+    <XACTNET_INFO
+      assignmentType = "1"
+      transactionId = "03KWLMG"
+      carrierId = "2210000"
+      senderId = "2220000"
+      recipientsXNAddress = "XACTWARE.PSTEAM"
+      recipientsXM8UserId = "DJTUTTLE"
+      sendersXNAddress = "SAFEHAVEN.HOME.WEB"
+      businessUnit = "Construction"
+      carrierOffice1 = "Rocky Mountain"
+      carrierOffice2 = "Orem Area"
+      sendersOfficeDescription1 = "Rocky Mountain"
+      sendersOfficeDescription2 = "Orem Area"
+      rotationTrade = "General"
+      jobSizeCode = "4"
+      emergency = "0"
+      transactionType = "EST,ASG"
+      estimateCount = "1"
+      carrierName = "Safe Haven - Staff"
+      mitigation = "0"
+      profileCode = "5L"
+    >
+      <CONTROL_POINTS
+        testAssignment = "0"
+      >
+        <CONTROL_POINT
+          type = "Carrier Desk Adjuster Assigned"
+          userNumber = "81716J5486"
+          userId = "safedjt"
+          userLastName = "Tuttle"
+          userFirstName = "Dan"
+        />
+      </CONTROL_POINTS>
+      <ATTACHMENTS>
+        <ATT_FILE
+          fileName = "GENERIC_ROUGHDRAFT.XML"
+          fileDesc = "Rough Draft XML"
+          fileDate = "2019-02-01T11:13:57"
+          fileType = "XML"
+        />
+        <ATT_FILE
+          fileName = "VARIATION_REPORT.PDF"
+          fileDesc = "VARIATION REPORT"
+          fileDate = "2019-02-01T11:13:57"
+          fileType = "PDF"
+        />
+		<ATT_FILE
+          fileName = "RMA_REPORT_2018112809261190.PDF"
+          fileDesc = "Roof Measurement Analysis"
+          fileDate = "2018-11-28T09:26:12"
+          fileType = "PDF"
+        />
+        <ATT_FILE
+          fileName = "Report_Rough_Draft.PDF"
+          fileDesc = "Report Rough Draft"
+          fileDate = "2019-02-01T11:13:57"
+          fileType = "PDF"
+        />
+        <ATT_FILE
+          fileName = "Final_Draft_with_without_Removal_Depreciation_Report.PDF"
+          fileDesc = "Final Draft with/without Removal Depreciation Report"
+          fileDate = "2019-02-01T11:13:57"
+          fileType = "PDF"
+        />
+        <ATT_FILE
+          fileName = "ESTIMATE_AUDIT_REPORT.PDF"
+          fileDesc = "ESTIMATE AUDIT REPORT"
+          fileDate = "2019-02-01T11:13:57"
+          fileType = "PDF"
+        />
+        <ATT_FILE
+          fileName = "CONTENTS_Report.PDF"
+          fileDesc = "CONTENTS Report"
+          fileDate = "2019-02-01T11:13:57"
+          fileType = "PDF"
+        />
+        <ATT_FILE
+          fileName = "XACTDOC.XML"
+          fileDesc = "Standard Carrier XML"
+          fileDate = "2019-02-01T11:13:57"
+          fileType = "XML"
+        />
+      </ATTACHMENTS>
+      <SUMMARY
+        grossEstimate = "6087.34"
+      />
+    </XACTNET_INFO>
+    <CONTACTS>
+      <CONTACT
+        type = "Client"
+        name = "Jane Smith"
+        qcode = ""
+        mortgageHolder = "The Money Vault"
+        mortgageLoanNum = "GSD-112211518"
+        birthDate = ""
+        reference = ""
+        language = ""
+        title = ""
+      >
+        <ADDRESSES>
+          <ADDRESS
+            type = "Home"
+            street = "123 Eastern Way"
+            city = "Lehi"
+            state = "UT"
+            postal = "84043"
+            country = "US"
+          />
+          <ADDRESS
+            type = "Property"
+            street = "456 NE. Main Street"
+            city = "Lehi"
+            state = "UT"
+            postal = "84043"
+            country = "US"
+            lat = "40.3877"
+            lon = "-111.856"
+          />
+        </ADDRESSES>
+        <CONTACTMETHODS>
+          <PHONE
+            type = "Business"
+            number = "800-555-5551"
+            extension = "5678"
+          />
+          <PHONE
+            type = "Cell"
+            number = "800-555-5552"
+          />
+          <PHONE
+            type = "Home"
+            number = "800-555-5550"
+            extension = "1234"
+          />
+          <PHONE
+            type = "Pager"
+            number = "800-555-5553"
+          />
+          <EMAIL
+            address = "testing1@testing.com"
+          />
+        </CONTACTMETHODS>
+      </CONTACT>
+      <CONTACT
+        type = "Estimator"
+        name = "Davey Jones"
+        qcode = "DAVEY"
+        birthDate = ""
+        reference = ""
+        language = ""
+        position = "Adjuster"
+        title = ""
+      >
+        <ADDRESSES>
+          <ADDRESS
+            type = "Business"
+            street = "123 Drive"
+            city = "Lehi"
+            state = "UT"
+            postal = "84043"
+            country = "US"
+          />
+        </ADDRESSES>
+        <CONTACTMETHODS>
+          <PHONE
+            type = "Business"
+            number = "555-555-1234"
+          />
+          <EMAIL
+            address = "test@testing.com"
+          />
+        </CONTACTMETHODS>
+      </CONTACT>
+      <CONTACT
+        type = "ClaimRep"
+        name = "BRIAN"
+        qcode = "BRIAN"
+        birthDate = ""
+        reference = ""
+        language = ""
+        title = ""
+      >
+        <ADDRESSES/>
+        <CONTACTMETHODS>
+          <EMAIL
+            address = ""
+          />
+        </CONTACTMETHODS>
+      </CONTACT>
+      <CONTACT
+        type = "Claimant"
+        name = "Jim Jones"
+        qcode = ""
+        birthDate = ""
+        reference = ""
+        language = ""
+        title = ""
+      >
+        <ADDRESSES>
+          <ADDRESS
+            type = "Business"
+            street = "345 West Street"
+            city = "Lehi"
+            state = "UT"
+            postal = "84043"
+            country = "US"
+          />
+        </ADDRESSES>
+        <CONTACTMETHODS>
+          <PHONE
+            type = "Business"
+            number = "800-555-5554"
+            extension = "987"
+          />
+          <EMAIL
+            address = ""
+          />
+        </CONTACTMETHODS>
+      </CONTACT>
+      <CONTACT
+        type = "DeskAdjuster"
+        name = "Dan Tuttle"
+      >
+        <COMPANY
+          name = "Safe Haven"
+        />
+        <CONTACTMETHODS>
+          <EMAIL
+            address = "djtuttle@xactware.com"
+          />
+          <PHONE
+            type = "Cellular"
+            number = "801-932-8425"
+          />
+        </CONTACTMETHODS>
+      </CONTACT>
+    </CONTACTS>
+    <PROJECT_INFO
+      assignmentCode = "GSD-1152018-"
+      name = "JANE_SMITH"
+      version = "16"
+      profile = "5L"
+      xactnetAddress = "SAFEHAVEN.HOME.WEB"
+      created = "2019-02-01T17:34:08Z"
+      userId = "DJTUTTLE"
+      status = "Completed"
+      showIADeskAdjuster = "1"
+      showDeskAdjuster = "1"
+    >
+      <NOTES><![CDATA[From: Safe Haven - Staff
+
+ASSIGNMENT PROFILE:
+Type: Normal
+Claim Rep: 
+Date of Loss: 11/04/2018
+Claim Number: GSD-1152018-11
+Insured Name: Jane Smith
+Day Phone: (800) 555-5551 x 5678
+Evening Phone: (800) 555-5550 x 1234
+
+Type of Loss: Fire
+Job Type: General
+Location of Property: 456 NE. Main Street, Lehi, UT 84043
+
+Instructions:
+The home was damaged by fire. Please contact Jane Smith for access to the property.
+
+Assignment Received by XactAnalysis:  02/01/2019 10:32AM MT
+(XactAnalysis ID: 03KWLMG)
+]]></NOTES>
+    </PROJECT_INFO>
+    <ADM
+      dateOfLoss = "2018-11-04T10:15:00"
+      dateInspected = "2019-01-31T14:00:00"
+      dateReceived = "2018-11-05T10:42:00"
+      dateEntered = "2019-02-01T17:34:08Z"
+      dateProjCompleted = "2019-02-01T18:13:14Z"
+      dateContacted = "2019-01-28T10:00:00"
+      agentCode = ""
+      fileNumber = "111-222-3456"
+      denial = "Covered Loss"
+    >
+      <COVERAGE_LOSS
+        claimNumber = "GSD-1152018-11"
+        policyNumber = "DJT-123456-987"
+        catastrophe = "CC1"
+        policyStart = "2017-11-03"
+        policyEnd = "2019-11-22"
+        dateInitCov = "2017-11-02"
+      >
+        <TOL
+          code = "FIRE"
+          desc = "Fire"
+        >
+          <COL
+            desc = "Candle"
+          />
+        </TOL>
+        <COVERAGES
+          lossOfUseReserve = "0"
+          lossOfUse = "0"
+          doNotApplyLimits = "1"
+        >
+          <COVERAGE
+            covName = "Structure"
+            id = "COV1"
+            covType = "0"
+            policyLimit = "150000"
+            deductible = "500"
+            applyTo = "0"
+            coins = "10"
+            reserveAmt = "500"
+          >
+            <LOSS_DATA
+              deductApplied = "500"
+              overLimits = "0"
+            />
+          </COVERAGE>
+          <COVERAGE
+            covName = "Contents"
+            id = "COV2"
+            covType = "2"
+            policyLimit = "50000"
+            deductible = "100"
+            applyTo = "2"
+            coins = "5"
+            reserveAmt = "100"
+          >
+            <LOSS_DATA
+              deductApplied = "69.72"
+              overLimits = "0"
+            />
+          </COVERAGE>
+        </COVERAGES>
+      </COVERAGE_LOSS>
+    </ADM>
+    <CLAIM_INFO>
+      <ADMIN_INFO
+        branch = ""
+        accessName = "Cassy Jones"
+        accessPhone = "800-555-5555"
+        accessPhoneExt = "6543"
+      />
+    </CLAIM_INFO>
+    <PARAMS
+      priceList = "UTOR8X_FEB19"
+      taxJurisdiction = "6.75%"
+      checkpointPL = "UTOR8X_FEB19"
+      overhead = "0"
+      profit = "0"
+      cumulativeOP = "0"
+      plModifiedDateTime = "2019-02-01T00:00:00"
+      defaultRepairedBy = "Contractor"
+      depMat = "1"
+      depNonMat = "1"
+      depTaxes = "1"
+      maxDepr = "100"
+    />
+    <EMBEDDED_PL>
+      <MINIMUMS>
+        <MINIMUM
+          id = "MIN1"
+          desc = "Carpet labor minimum"
+          amount = "143.91"
+          cat = "FCC"
+          sel = "MN-A"
+        />
+        <MINIMUM
+          id = "MIN2"
+          desc = "Tile floor covering labor minimum"
+          amount = "255.25"
+          cat = "FCT"
+          sel = "MN-A"
+        />
+        <MINIMUM
+          id = "MIN3"
+          desc = "Drywall labor minimum"
+          amount = "292.84"
+          cat = "DRY"
+          sel = "MN-A"
+        />
+        <MINIMUM
+          id = "MIN4"
+          desc = "Cleaning labor minimum"
+          amount = "85.43"
+          cat = "CLN"
+          sel = "MN-A"
+        />
+        <MINIMUM
+          id = "MIN5"
+          desc = "Painting labor minimum"
+          amount = "180.06"
+          cat = "PNT"
+          sel = "MN-A"
+        />
+      </MINIMUMS>
+    </EMBEDDED_PL>
+  </XACTDOC>
