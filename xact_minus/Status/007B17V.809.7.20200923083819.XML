@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+  <XACTDOC>
+    <XACTNET_INFO
+      transactionId = "007B17V"
+      recipientsXNAddress = "TEST.XNA.GL"
+      recipientsXM8UserId = "LANCAST1"
+    >
+      <CONTROL_POINTS>
+        <CONTROL_POINT
+          stamp = "2020-09-23T08:37:54"
+          type = "Estimate Received"
+        />
+      </CONTROL_POINTS>
+    </XACTNET_INFO>
+    <CONTACTS>
+      <CONTACT
+        type = "ClaimRep"
+        name = "lancaster"
+      >
+        <CONTACTMETHODS/>
+      </CONTACT>
+    </CONTACTS>
+    <ADM>
+      <TYPESOFLOSS>
+        <TYPEOFLOSS
+          claimNumber = "003121499-8-W"
+        />
+      </TYPESOFLOSS>
+    </ADM>
+  </XACTDOC>

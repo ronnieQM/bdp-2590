@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+  <XACTDOC>
+    <XACTNET_INFO
+      transactionId = "03KWLMG"
+      recipientsXNAddress = "XA.ONLINE.TEST"
+      recipientsXM8UserId = "BWATWOOD"
+    >
+      <CONTROL_POINTS>
+        <CONTROL_POINT
+          stamp = "2017-08-08T09:53:20"
+          type = "Delivered"
+        />
+      </CONTROL_POINTS>
+    </XACTNET_INFO>
+    <CONTACTS>
+      <CONTACT
+        type = "ClaimRep"
+        name = "Brad Atwood"
+      >
+        <CONTACTMETHODS>
+          <PHONE
+            type = "Office"
+            number = "555-876-5432"
+            extension = ""
+          />
+        </CONTACTMETHODS>
+      </CONTACT>
+    </CONTACTS>
+    <ADM>
+      <TYPESOFLOSS>
+        <TYPEOFLOSS
+          claimNumber = "DJT-0000709"
+        />
+      </TYPESOFLOSS>
+    </ADM>
+  </XACTDOC>

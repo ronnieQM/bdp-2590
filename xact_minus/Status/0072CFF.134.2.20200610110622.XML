@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+  <XACTDOC>
+    <XACTNET_INFO
+      transactionId = "0072CFF"
+      recipientsXNAddress = "ACSC.TEST.STAFF"
+      recipientsXM8UserId = ""
+    >
+      <CONTROL_POINTS>
+        <CONTROL_POINT
+          stamp = "2020-06-10T11:06:00"
+          type = "Notification Pending"
+        />
+      </CONTROL_POINTS>
+    </XACTNET_INFO>
+    <CONTACTS>
+      <CONTACT
+        type = "ClaimRep"
+        name = "Paola Torres"
+      >
+        <CONTACTMETHODS>
+          <PHONE
+            type = "Office"
+            number = "949-933-3058"
+            extension = ""
+          />
+        </CONTACTMETHODS>
+      </CONTACT>
+    </CONTACTS>
+    <ADM>
+      <TYPESOFLOSS>
+        <TYPEOFLOSS
+          claimNumber = "003109409-8-W"
+        />
+      </TYPESOFLOSS>
+    </ADM>
+  </XACTDOC>
