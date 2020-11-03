@@ -3,28 +3,32 @@
     <XACTNET_INFO
       transactionId = "00734R8"
       recipientsXNAddress = "XACTNET.QUEUE"
-      recipientsXM8UserId = ""
-    >
+      recipientsXM8UserId = "">
       <CONTROL_POINTS>
         <CONTROL_POINT
           stamp = "2020-06-23T14:44:56"
           type = "In Assign Queue"
         />
       </CONTROL_POINTS>
-    </XACTNET_INFO>
+      </XACTNET_INFO>
+
     <CONTACTS>
       <CONTACT
         type = "ClaimRep"
-        name = ""
-      >
+        name = "">
         <CONTACTMETHODS/>
+
       </CONTACT>
-    </CONTACTS>
+
+       </CONTACTS>
+
     <ADM>
       <TYPESOFLOSS>
+      
         <TYPEOFLOSS
-          claimNumber = "003112883-8-W"
-        />
+          claimNumber = "003112883-8-W"/>
       </TYPESOFLOSS>
+
     </ADM>
+    
   </XACTDOC>

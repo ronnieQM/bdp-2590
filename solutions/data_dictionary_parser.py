@@ -2,6 +2,7 @@ import os
 import sys
 import csv
 import json
+import time
 
 import xml.etree.ElementTree as ET
 
@@ -36,109 +37,6 @@ status_xsd = os.path.join(xsds_dir, 'StandardStatusExport.xsd')
 class GenericDataDictionaryClass:
     """This is a representations of a generic class file"""
 
-    # def __int__(self, _majorversion, _minorversion, _transactionid, address_zip, address_type, address_street,
-    #             address_city, address_state, address_primary, phone_type, phone_phone, phone_ext, phone_primary,
-    #             contact_type, contact_name, contact_title, contact_company, dates_loss, dates_inspected,
-    #             dates_completed, dates_received, dates_entered, dates_contacted, est_change_reason, est_change_onsite,
-    #             estimate_info_estimatetype, estimate_info_deprmat, estimate_info_deprnonmat, estimate_info_deprremoval,
-    #             estimate_info_deproandp, estimate_info_deprtaxes, estimate_info_inspnotperformed,
-    #             estimate_info_roofdamage, estimate_info_scopetype, estimate_info_estimatecount, estimate_info_onsite,
-    #             estimate_info_printonsite, estimate_info_onsitepayment, estimate_info_estimatedonsite,
-    #             estimate_info_istotalloss, estimate_info_backinprogress, estimate_info_afo, estimate_info_xsimported,
-    #             estimate_info_recipientsxnaddress, estimate_info_causeofloss, estimate_info_othercause,
-    #             estimate_info_rotationtrade, estimate_info_carrierid, estimate_info_originaltransactionid,
-    #             estimate_info_usedaerialsketch, estimate_info_policynumber, estimate_info_claimnumber,
-    #             estimate_info_estimatename, estimate_info_insuredname, estimate_info_pricelist, estimate_info_laboreff,
-    #             estimate_info_typeofloss, estimate_info_laborcostmodel, estimate_info_waterlosscategory,
-    #             estimate_info_waterlossclass, address_zip, address_type, address_street, address_city, address_state,
-    #             address_primary, phone_type, phone_phone, phone_ext, phone_primary, opening_statement_, permit_fee_desc,
-    #             permit_fee_amount, sales_tax_desc, sales_tax_rate, sales_tax_base, sales_tax_amount,
-    #             sales_tax_taxondepr, sales_tax_taxonrecdepr, signature_estimator, signature_estimatortitle,
-    #             payment_tracker_ptestvalue, payment_tracker_ptnumitemacts, payment_tracker_ptitemswithremaining,
-    #             payment_tracker_pttotalpaid, payment_tracker_ptrecoverabledep, payment_tracker_ptnonrecoverabledep,
-    #             payment_tracker_ptestremaining, payment_tracker_ptnumitemoverrides, payment_tracker_ptitemoverrideamt,
-    #             fees_note_, overhead_rate, overhead_base, overhead_amount, profit_rate, profit_base, profit_amount,
-    #             sublimit_info_desc, sublimit_info_singleitemlimit, sublimit_info_agglimit, sublimit_info_acv,
-    #             sublimit_info_rc, sublimit_info_overage, totals_permit, totals_bsctotal, totals_recdepr,
-    #             totals_nonrecdepr, totals_actualrecdepr, totals_netclaim, totals_fulldeduct, totals_fullsalvret,
-    #             totals_fullresidualdeduct, totals_residualdeduct, totals_fullresidualsalvret, totals_residualsalvret,
-    #             totals_netclaimifrec, totals_acvcoins, totals_fullacvcoins, totals_replcostcoins,
-    #             totals_fullreplcostcoins, totals_fullamtoverlimits, totals_residualamtoverlimits,
-    #             totals_fullresamtoverlimits, totals_priorpmtsadj, totals_priorpmtsresidual, totals_priorpmtsresidualadj,
-    #             totals_settlementfactor, totals_subtotal, totals_lineitemtotal, totals_rcv, totals_acv,
-    #             totals_directreplacement, totals_directreplacementowed, totals_priorpmts, totals_insurancetovalue,
-    #             totals_deductible, totals_amtoverlimits, totals_salvretention, sales_tax_desc, sales_tax_rate,
-    #             sales_tax_base, sales_tax_amount, sales_tax_taxondepr, sales_tax_taxonrecdepr, sales_tax_taxop,
-    #             max_addl_amts_lineitemtotal, max_addl_amts_subtotal, max_addl_amts_totalpaidwhenincurred,
-    #             max_addl_amts_bscadjustment, max_addl_amts_overhead, max_addl_amts_profit, max_addl_amts_rcv,
-    #             max_addl_amts_rcvpwi, max_addl_amts_amountoverlimit, max_addl_amts_amountoverlimittodeduct,
-    #             max_addl_amts_maxaddlamount, max_addl_amts_fullresidualcoinspwi, max_addl_amts_residualcoinspwi,
-    #             max_addl_amts_fullsalvageretentionpwi, max_addl_amts_salvageretentionpwi,
-    #             max_addl_amts_fulladvancepaymentsresidualpwi, max_addl_amts_advancepaymentsresidualpwi,
-    #             max_addl_amts_fulldeductresidualpwi, max_addl_amts_deductresidualpwi, loss_data_rcl, loss_data_bd,
-    #             loss_data_acvloss, loss_data_nonrecdeprec, loss_data_deductapplied, loss_data_inscarried,
-    #             loss_data_rcvinscarried, loss_data_acvinscarried, loss_data_adjlossamt, loss_data_potentialsuppclaim,
-    #             loss_data_total, loss_data_acvclaim, loss_data_rcvclaim, loss_data_valacv, loss_data_valrcv,
-    #             loss_data_salvage, loss_data_directreplacement, loss_data_priorpmts, loss_data_coins,
-    #             loss_data_coinsformula, loss_data_overlimits, coverage_policydeductible, coverage_deductiblecredit,
-    #             coverage_deductible, coverage_coveragename, coverage_id, coverage_coveragetype, room_info_sketchceiling,
-    #             room_info_shape, room_info_dimstring, room_info_sketchthumbnailid, miss_wall_qty, miss_wall_dimstring,
-    #             miss_wall_opensinto, miss_wall_type, room_dim_vars_sfwalls, room_dim_vars_sfceiling,
-    #             room_dim_vars_sfwallsceiling, room_dim_vars_sffloor, room_dim_vars_syfloor, room_dim_vars_lffloorperim,
-    #             room_dim_vars_sflongwall, room_dim_vars_sfshortwall, room_dim_vars_lfceilingperim,
-    #             room_dim_vars_sfskroof, room_dim_vars_skroofsquares, room_dim_vars_lfskroofperim,
-    #             room_dim_vars_lfskroofridge, room_dim_vars_lfskroofhip, miss_wall_qty, miss_wall_dimstring,
-    #             miss_wall_opensinto, miss_wall_type, subroom_subroomnum, subroom_desc, subroom_shape, subroom_dimstring,
-    #             room_dim_vars_sfwalls, room_dim_vars_sfceiling, room_dim_vars_sfwallsceiling, room_dim_vars_sffloor,
-    #             room_dim_vars_syfloor, room_dim_vars_lffloorperim, room_dim_vars_sflongwall, room_dim_vars_sfshortwall,
-    #             room_dim_vars_lfceilingperim, room_dim_vars_sfskroof, room_dim_vars_skroofsquares,
-    #             room_dim_vars_lfskroofperim, room_dim_vars_lfskroofridge, room_dim_vars_lfskroofhip, item_act_act,
-    #             item_act_labunit, item_act_matunit, item_act_equunit, item_act_mktunit, item_act_trade, item_act_tax,
-    #             item_act_addons, item_act_deprtotal, item_act_acvtotal, item_act_rcvtotal, item_note, item_actprefix,
-    #             item_ishomeowner, item_iscredit, item_containsbscfactoredin, item_containsbscdontapply, item_jobtaxtype,
-    #             item_labortotal, item_laborbase, item_laborburden, item_labormarkup, item_laborhours, item_material,
-    #             item_equipment, item_marketcond, item_acv, item_linenum, item_sublimitname, item_tax, item_addons,
-    #             item_deprtotal, item_acvtotal, item_rcvtotal, item_ispartofinitsettle, item_type, item_cat, item_sel,
-    #             item_act, item_desc, item_descchanged, item_calc, item_qty, item_unit, item_unitchanged, item_remove,
-    #             item_replace, item_total, item_isexempt, item_isnonop, item_pricenote, item_pricechanged, item_deprtype,
-    #             item_recoverable, item_depruse, item_age, item_lifeexp, item_coveragename, item_originalvendor,
-    #             items_total, area_dim_vars_sfskfloor, area_dim_vars_sfsktotalfloor, area_dim_vars_sfskintwall,
-    #             area_dim_vars_sfskextwall, area_dim_vars_lfskextwallperim, area_dim_vars_sfwalls,
-    #             area_dim_vars_sfceiling, area_dim_vars_sfwallsceiling, area_dim_vars_sffloor, area_dim_vars_syfloor,
-    #             area_dim_vars_lffloorperim, area_dim_vars_sflongwall, area_dim_vars_sfshortwall,
-    #             area_dim_vars_lfceilingperim, area_dim_vars_sfskroof, area_dim_vars_skroofsquares,
-    #             area_dim_vars_lfskroofperim, area_dim_vars_lfskroofridge, area_dim_vars_lfskroofhip, group_tax,
-    #             group_addons, group_deprtotal, group_acvtotal, group_rcvtotal, group_desc, group_total, permit_fee_desc,
-    #             permit_fee_amount, cov_name, cov_rate, cov_amount, bsc_item_laborhours, bsc_item_isnonop,
-    #             bsc_item_isexempt, bsc_item_appliestype, bsc_item_desc, bsc_item_tradecode, bsc_item_amount,
-    #             bsc_item_qtychanged, bsc_items_bsctotal, cov_amounts_desc, cov_amounts_total, cov_amounts_grandtotal,
-    #             cov_amounts_totalpct, cov_amounts_grandtotalpct, cov_breakdown_grandtotal, cov_breakdown_total,
-    #             line_item_detail_permit, line_item_detail_total, line_item_detail_homeownertotal,
-    #             line_item_detail_contractortotal, recap_by_room_name, recap_by_room_rate, recap_by_room_amount,
-    #             recap_bsc_total_desc, recap_bsc_total_percentage, recap_bsc_total_rcv, recap_bsc_total_acv,
-    #             recap_bsc_total_deprec, cov_name, cov_rate, cov_amount, cov_name, cov_rate, cov_amount,
-    #             recap_group_subtotal, recap_group_subtotalpercentage, recap_group_items, recap_group_itemspercentage,
-    #             recap_group_desc, recap_by_room_total, cov_name, cov_rate, cov_amount, category_desc,
-    #             category_percentage, category_rcv, category_acv, category_deprec, op_items_subtotalrcv,
-    #             op_items_subtotalpercentage, op_items_subtotaldeprec, op_items_subtotalacv, cov_name, cov_rate,
-    #             cov_amount, category_desc, category_percentage, category_rcv, category_acv, category_deprec,
-    #             non_op_items_subtotalrcv, non_op_items_subtotalpercentage, non_op_items_subtotaldeprec,
-    #             non_op_items_subtotalacv, cov_name, cov_rate, cov_amount, recap_bsc_total_desc,
-    #             recap_bsc_total_percentage, recap_bsc_total_rcv, recap_bsc_total_acv, recap_bsc_total_deprec, cov_name,
-    #             cov_rate, cov_amount, recap_permit_desc, recap_permit_percentage, recap_permit_rcv, recap_permit_acv,
-    #             recap_permit_deprec, cov_name, cov_rate, cov_amount, overhead_rate, overhead_desc, overhead_percentage,
-    #             overhead_rcv, overhead_acv, overhead_deprec, cov_name, cov_rate, cov_amount, profit_rate, profit_desc,
-    #             profit_percentage, profit_rcv, profit_acv, profit_deprec, cov_name, cov_rate, cov_amount,
-    #             sales_tax_rate, sales_tax_desc, sales_tax_percentage, sales_tax_rcv, sales_tax_acv, sales_tax_deprec,
-    #             recap_by_category_subtotalrcv, recap_by_category_subtotalacv, recap_by_category_subtotaldeprec,
-    #             overhead_rate, overhead_amount, profit_rate, profit_amount, tax_detail_desc, tax_detail_rate,
-    #             tax_detail_taxnum, tax_detail_amount, tax_amount_taxnum, tax_amount_amount, line_items_overhead,
-    #             line_items_profit, tax_amount_taxnum, tax_amount_amount, addl_charges_overhead, addl_charges_profit,
-    #             tax_amount_taxnum, tax_amount_amount, base_service_charges_overhead, base_service_charges_profit,
-    #             closing_statement_, header_, header_comp_info, header_compname, header_datecreated, pt_payment_note,
-    #             pt_payment_date, pt_payment_checknum, pt_payment_type, pt_payment_userid, pt_payment_voided,
-    #             pt_payment_recut, pt_payment_rcdeferredamount, pt_payment_acvamount, pt_totals_ptalepaid,
-    #             pt_totals_ptnumpmts):
     def __init__(self, elem, attr, val, desc):
         self.element = elem
         self.attribute = attr
@@ -154,6 +52,7 @@ class GenericDataDictionaryClass:
             """.format(self.element, self.attribute, self.value, self.description)
 
 
+# six (6) data dictionary-derived classes
 class StandardStatus:  # add two (2) fields. One for file name, one for truncated file name
     """This is a instance of the any give STATUS xml file"""
 
@@ -987,42 +886,28 @@ class Note:
 def read_xml(xsd_file):
     xsd_file = xsd_file
     status_tree = ET.parse(xsd_file, parser=None)
-    print("""
-        status tree path: {}
-        print status tree: {},
-        status tree type: {},"""
-          .format(xsd_file, status_tree, type(status_tree)))
 
     root = status_tree.getroot()
-    print("""
-        root: {}
-        type: {}
-        root.tag: {}
-        root.attribute: {}
-    """.format(root, type(root), root.tag, root.attrib))
-    print('iterating through root:')
+
     for i in root:
         print(i.tag, i.attrib)
 
-    print('#######################################################')
-    print('iterating through entire tree:')
     all_elements = [elem.tag for elem in root.iter()]
     for i in all_elements:
         print(type(i))
         print(i)
-    print('#######################################################')
 
 
-def metadata():
-    print('#' * 40)
-    print("""metadata
-            there are {} xml files in the data/status dir
-
-            this project directory: {} 
-            this python script's directory: {}
-    /metadata"""
-          .format(len(files), project_dir, os.getcwd()))
-    print('#' * 40)
+# def metadata():
+#     print('#' * 40)
+#     print("""metadata
+#             there are {} xml files in the data/status dir
+#
+#             this project directory: {}
+#             this python script's directory: {}
+#     /metadata"""
+#           .format(len(files), project_dir, os.getcwd()))
+#     print('#' * 40)
 
 
 def printing_class_init():
@@ -1153,57 +1038,152 @@ def csv2json():
                     json.dump(some_list, jfile)
 
 
+def demo():
+    ############################################################
+    # from hackerman import welcome, breakpoint, clearit
+    # welcome()
+    breakpoint()
+    clearit()
+    ##################################################################################################################
+
+    print('inside of demo function')
+    spath, sdirs, sfiles = next(os.walk(status_dir))
+    npath, ndirs, nfiles = next(os.walk(note_dir))
+    epath, edirs, efiles = next(os.walk(estimate_dir))
+    cpath, cdirs, cfiles = next(os.walk(customDoc_dir))
+
+    print("""
+    
+    ---  overview  ---
+exports (data we're reading):
+
+STATUS file count:                      {}
+NOTE file count:                        {}
+ASSIGNMENT file count:                  {}
+ESTIMATE file count:                    {}
+ACTIVITY file count:                    {}
+CUSTOMDOC file count:                   {}
+
+    """.format(
+        len(sfiles), len(nfiles), 'na', len(efiles), 'na', len(cfiles)
+    ))
+    breakpoint()
+    clearit()
+    sample_status_file = sfiles[5]
+    ##################################################################################################################
+    print("""
+    
+    ---  going to read SAMPLE XML files  ---
+    
+SAMPLE FILE:                            {}
+number of files:                        {}
+    """.format(
+        os.path.join(spath, sample_status_file), len(sfiles)
+    ))
+    breakpoint()
+
+    print('end')
+    breakpoint()
+
+
+from hackerman import breakpoint
+
+
 def main():
-    # all example XML files in 'file'
-    path, dirs, files = next(os.walk(data_dict_dir))
+    data = [
+        {"element": "CONTACT", "attribute": "name", "value": "xs:string", "description": "The contact\u2019s name."},
+        {"element": "CONTACT", "attribute": "type", "value": "contactType",
+         "description": "The contact's type (Client, Estimator, ClaimRep, Claimant, etc\u2026"},
+        {"element": "CONTROL_POINT", "attribute": "stamp", "value": "xs:dateTime",
+         "description": "Date and Time status updated occurred"},
+        {"element": "CONTROL_POINT", "attribute": "type", "value": "xs:string",
+         "description": "The Type of status that triggered the export."},
+        {"element": "PHONE", "attribute": "extension", "value": "xs:integer",
+         "description": "Contacts Phone Extension"},
+        {"element": "PHONE", "attribute": "number", "value": "phoneNumber", "description": "Contacts Phone Number"},
+        {"element": "PHONE", "attribute": "type", "value": "phoneType",
+         "description": "Contacts Phone Type (Home, Business, Cell, Other)"},
+        {"element": "TYPEOFLOSS", "attribute": "claimNumber", "value": "xs:string", "description": "Claim Number"},
+        {"element": "XACTNET_INFO", "attribute": "recipientsXNAddress", "value": "xs:string",
+         "description": "The XactAnalysis address of the person (adjustor/contractor) receiving the assignment in the field. Xactimate users receive a XactAnalysis address when they successfully register. Either the recipient\u2019s XactAnalysis Address or the recipient\u2019s ID is required. For online addresses (user@), this address is everything after the @."},
+        {"element": "XACTNET_INFO", "attribute": "recipientsXM8UserId", "value": "xs:string",
+         "description": "The specific adjuster/contractors user on the user@ instance. This will be everything before the @, in an XactNet address."},
+        {"element": "XACTNET_INFO", "attribute": "transactionId", "value": "xs:string",
+         "description": "Unique Identifier that is assigned to each claim by Xactware. "},
+        {"element": "XACTNET_INFO", "attribute": "origTransactionId", "value": "xs:string",
+         "description": "This is the Original Transaction ID for the claim."}]
+    # 2276 xml files in data/status
+    path, dirs, files = next(os.walk(status_dir))
 
-    # get every possible data type from the documentation
-    # get every row in the csv
+    sample_status_export = files[5]
+    sample_status_path = os.path.join(path, sample_status_export)
 
-    test_file = files[5]
-    test_file_path = os.path.join(path, test_file)
-    test_file_tree = ET.parse(test_file_paths, parser=None)
-    root = test_file_tree.getroot()
+    # make xml into TREE
+    sample_status_tree = ET.parse(sample_status_path, parser=None)
+    root = sample_status_tree.getroot()
 
     print('~ ' * 70)
-    print('parsing an example XML:')
     print("""
+    
+    --- parsing an sample XML --
     test file path/name:            {}
     test file root:                 {}
     test file, # of child nodes:    {}
-    """
-          .format(z, root, 'tbd'))
-    for i in list_of_data_dict:
-        print(i)
+    
+    get number of elements:
+    list of elements:
+    
+    """.format(sample_status_path, root, 'tbd'))
     print('~ ' * 70)
+
+    # ------> blowup xml object
+    summary_statistics = {
+        'file': None,
+        'root': None,
+        '# of child nodes': None
+    }
+    print('root: ')
+    print(root)
+
+    print('loop through ~root~ ')
+    first_child_node_count = 0
     for i in root:
-        print(i)
-        print(i.tag)
-        print(i.attrib)
         print('_ ' * 20)
+        print('--child')
+        print(i)
+        print('--child.tag')
+        print(i.tag)
+        print('--child.attrib')
+        print(i.attrib)
+        first_child_node_count += 1
 
-    print('?/???///??/?///////')
-    for child in root.iter():
-        print('child:')
-        print(child)
-        print('child.attribute:')
-        print(child.attrib)
-        try:
-            for i, j in child.attrib.items():
-                print(' ')
-                print(i, ' : ', j)
-        except:
-            pass
-        print('child.tag:')
-        print(child.tag)
-        print(' ')
+    summary_statistics['file'] = sample_status_path
+    summary_statistics['root'] = root
+    summary_statistics['# of child nodes'] = first_child_node_count
 
-    # for i in root.findall('CONTACT'):
-    #     print('#$!')
-    #     print(i)
+
+    print('\n', '- ' * 10, 'dict', '- ' * 10)
+    for i, j in summary_statistics.items():
+        print(i, ' : ', j)
+
+    # for child in root.iter():
+    #     print('child:')
+    #     print(child)
+    #     print('child.attribute:')
+    #     print(child.attrib)
+    #     # try:
+    #     #     for i, j in child.attrib.items():
+    #     #         print('   -   ')
+    #     #         print(i, ' : ', j)
+    #     # except:
+    #     #     pass
+    #     print('child.tag:')
+    #     print(child.tag)
+    #     print(' ')
 
 
 if __name__ == '__main__':
     main()
+    # demo()
     # csv2json()
     # xlxs2csv()
