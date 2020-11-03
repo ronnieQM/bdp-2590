@@ -1253,13 +1253,24 @@ def main():
     cnt = 0
     tag_list = []
     tag_dict = {}
+    column_list = []
     for i in status_schema_tree.iter():
-        print(i)
         # print(i.tag)  # string
         x = i.tag.split("}")
         x = i.tag.split("}")[1]
-        print(i.attrib)
+        print(i)
         print(x)
+        print(i.attrib)
+        try:
+            j = i.attrib['type']
+            print('?$*&U')
+            print(j)
+            h = i.attrib['name']
+            column_list.append(h)
+        except Exception as ex:
+            # print(ex)
+            pass
+
         if x not in tag_list:
             tag_list.append(x)
         if x not in tag_dict.keys():
@@ -1274,9 +1285,13 @@ def main():
 
     # for i in tag_list:
     #     print(i)
+    print('unique elements COUNT: ')
     for i,j in tag_dict.items():
         print(i,' : ', j)
 
+
+    for i in column_list:
+        print(i)
     # for elem in root.findall('./'):
     #     x = elem.find('.')
     #     if not x:
