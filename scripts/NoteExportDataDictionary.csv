@@ -1,5 +1,0 @@
-Element,Attribute,Description
-NOTES,type,Type of Note that was added (Assignment Note)
-NOTES,stamp,Time and date note was added
-NOTES,userName,"User Name of the individual who added the Note, or XactAnalysis System for system generated notes"
-CONTROL_POINTS,transactionId,This is the ID assigned to the claim by XactAnalysis. This is also referred to as MFN (Master File Name). This will be unique for each claim.
