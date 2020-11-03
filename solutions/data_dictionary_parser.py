@@ -1112,19 +1112,29 @@ def main():
          "description": "Unique Identifier that is assigned to each claim by Xactware. "},
         {"element": "XACTNET_INFO", "attribute": "origTransactionId", "value": "xs:string",
          "description": "This is the Original Transaction ID for the claim."}]
-    # 2276 xml files in data/status
-    path, dirs, files = next(os.walk(status_dir))
+    summary_statistics = {
+        'file': None,
+        'root': None,
+        '# of child nodes': None
+    }
 
-    sample_status_export = files[5]
-    sample_status_path = os.path.join(path, sample_status_export)
+    #############################
+    #           schemas         #
+    #############################
+    path, dirs, files = next(os.walk(xsds_dir))
+    status_schema = files[0]
+    status_schema_path = os.path.join(path, status_schema)
+    status_schema_tree = ET.parse(status_schema_path, parser=None)
+    root = status_schema_tree.getroot()
 
-    # make xml into TREE
-    sample_status_tree = ET.parse(sample_status_path, parser=None)
-    root = sample_status_tree.getroot()
+    # path, dirs, files = next(os.walk(status_dir))
+    # sample_status = files[5]
+    # sample_status_path = os.path.join(path, sample_status)
+    # sample_status_tree = ET.parse(sample_status_path, parser=None)
+    # root = sample_status_tree.getroot()
 
     print('~ ' * 70)
     print("""
-    
     --- parsing an sample XML --
     test file path/name:            {}
     test file root:                 {}
@@ -1132,54 +1142,163 @@ def main():
     
     get number of elements:
     list of elements:
-    
-    """.format(sample_status_path, root, 'tbd'))
+    """.format(status_schema_path, root, 'tbd'))
     print('~ ' * 70)
+    print(' ')
 
     # ------> blowup xml object
-    summary_statistics = {
-        'file': None,
-        'root': None,
-        '# of child nodes': None
-    }
-    print('root: ')
+    print('# ' * 70)
+    print('iterate through root:     ')
+    print('\nfile: ')
+    print('_ ' * 20)
+    print(status_schema_path)
+
+    print('\nroot: ')
+    print('_ ' * 20)
     print(root)
 
-    print('loop through ~root~ ')
-    first_child_node_count = 0
-    for i in root:
-        print('_ ' * 20)
-        print('--child')
+    root_child_node_count = 0
+    print('\n\nroot.childs')
+    print('_ ' * 20)
+    for child in root:
+        print(child)
+        root_child_node_count += 1
+    print(root_child_node_count)
+
+    print('\n\nroot.child.tags')
+    print('_ ' * 20)
+    for child in root:
+        print(child.tag)
+
+    print('\n\nroot.child.attrs')
+    print('_ ' * 20)
+    for child in root:
+        print(child.attrib)
+
+    print('\n\nroot.child.attrs')
+    print('_ ' * 20)
+    for child in root:
+        print(child.attrib)
+
+    print('\n\nroot.findall(".")')
+    print('_ ' * 20)
+    t = root.findall("./")
+    for i in t:
+        print('\nchild count\n----  ')
+        print(len(i))
+        print('\nchild\n----  ')
         print(i)
-        print('--child.tag')
+        print('\nchild.tag\n---')
         print(i.tag)
-        print('--child.attrib')
+        print('\nchild.attrib\n---')
         print(i.attrib)
-        first_child_node_count += 1
+        print('\nchild.text\n---')
+        print(i.text)
+        print('\nchild.items\n---')
+        print(i.items)
+        print('\nchild.keys\n---')
+        print(i.keys)
+        print('\nchild.set\n---')
+        print(i.set)
+        print('\nchild.tail\n---')
+        print(i.tail)
+        print('\n\n')
 
-    summary_statistics['file'] = sample_status_path
-    summary_statistics['root'] = root
-    summary_statistics['# of child nodes'] = first_child_node_count
-
-
-    print('\n', '- ' * 10, 'dict', '- ' * 10)
-    for i, j in summary_statistics.items():
-        print(i, ' : ', j)
-
-    # for child in root.iter():
-    #     print('child:')
-    #     print(child)
-    #     print('child.attribute:')
-    #     print(child.attrib)
-    #     # try:
-    #     #     for i, j in child.attrib.items():
-    #     #         print('   -   ')
-    #     #         print(i, ' : ', j)
-    #     # except:
-    #     #     pass
-    #     print('child.tag:')
+    # print('\n\nroot.childs expanded')
+    # print('_ ' * 20)
+    # root_child_node_count = 0
+    # for child in root:
     #     print(child.tag)
+    #     print(child.attrib)
     #     print(' ')
+    #     root_child_node_count += 1
+    # print(root_child_node_count)
+
+    # print('\n\ntree.iter() ')
+    # print('_ ' * 20)
+    # tree_iter_count = 0
+    # for elem in status_schema_tree.iter():
+    #     print('does it have children?')
+    #
+    #     print('ELEM')
+    #     print(elem)
+    #     print(str(elem))
+    #     print(len(elem))
+    #
+    #     print('ELEM.TAG')
+    #     print(elem.tag)
+    #     # print(type(ET.dump(elem)))
+    #     # print(ET.dump(elem))
+    #     print('ELEM.ATTRIB')
+    #     print(elem.attrib)
+    #     print('ELEM.items() --> attributes as a list of (name, value) pairs')
+    #     print(elem.items())
+    #     print('ELEM.TEXT')
+    #     print(elem.text)
+    #     print('________________________________')
+    #     print(' \n\n')
+    #     tree_iter_count += 1
+    # print(tree_iter_count)
+
+    # for i in status_schema_tree.iter():
+    #     check_child = len(i)
+    #     if check_child >= 1:
+    #         print(" *", str(i),str(check_child))
+    #     else:
+    #         print("  ", str(i))
+
+    import re
+    print('\n\nCHILDREN? TRUNCATE ELEMENT.TAG')
+    print('_ ' * 20)
+    cnt = 0
+    tag_list = []
+    tag_dict = {}
+    for i in status_schema_tree.iter():
+        print(i)
+        # print(i.tag)  # string
+        x = i.tag.split("}")
+        x = i.tag.split("}")[1]
+        print(i.attrib)
+        print(x)
+        if x not in tag_list:
+            tag_list.append(x)
+        if x not in tag_dict.keys():
+            tag_dict[x] = 1
+        else:
+            tag_dict[x] += 1
+        cnt += 1
+        print(' ')
+    print('~ '*45)
+    print('number of element: ', cnt)
+    print('number of unique elements: ', len(tag_dict))
+
+    # for i in tag_list:
+    #     print(i)
+    for i,j in tag_dict.items():
+        print(i,' : ', j)
+
+    # for elem in root.findall('./'):
+    #     x = elem.find('.')
+    #     if not x:
+    #         print('\nNO CHILDREN:')
+    #         print(elem)
+    #         print('LENGTH:', len(elem))
+    #     else:
+    #         print('\nCHILDREN:')
+    #         print(elem)
+    #         print('LENGTH:', len(elem))
+    #         print('~~~~~')
+    #         for i in elem:
+    #             print('     ', i)
+
+    '''
+    # summary_statistics['file'] = status_schema_path
+    # summary_statistics['root'] = root
+    # summary_statistics['# of child nodes'] = root_child_node_count
+    # print('\n', '- ' * 10, 'dict', '- ' * 10)
+    # for i, j in summary_statistics.items():
+    #     print(i, ' : ', j)
+    '''
 
 
 if __name__ == '__main__':
@@ -1187,3 +1306,5 @@ if __name__ == '__main__':
     # demo()
     # csv2json()
     # xlxs2csv()
+    # print('\nbye')
+    # exit()

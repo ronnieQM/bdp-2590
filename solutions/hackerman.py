@@ -93,3 +93,6 @@ def breakpoint():
 def clearit():
     os.system('cls' if os.name == 'nt' else 'clear')
 
+def breakout():
+    exit()
+    print('\nbye\n')
