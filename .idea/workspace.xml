@@ -20,22 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1f17cf4-e375-4241-8208-812f5043e1bb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/data/status/00734R8.363.1.20200623144508.XML" beforeDir="false" afterPath="$PROJECT_DIR$/data/status/00734R8.363.1.20200623144508.XML" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/2001.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/ActivityDiaryDataDictionary.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/CustomDocDataDictionary.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/NoteExportDataDictionary.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/StandardCarrierDataDictionary.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/StandardStatusExportDataDictionary.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/csv_md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/data_dictionary_parser.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/hello" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/params1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/params2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/reading.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/standard_status_data_dict.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/temp.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/test.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/xlm2rdbs.py" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/xlm2rdbs.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
