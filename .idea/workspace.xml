@@ -20,22 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1f17cf4-e375-4241-8208-812f5043e1bb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/data/status/00734R8.363.1.20200623144508.XML" beforeDir="false" afterPath="$PROJECT_DIR$/data/status/00734R8.363.1.20200623144508.XML" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/2001.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/ActivityDiaryDataDictionary.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/CustomDocDataDictionary.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/NoteExportDataDictionary.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/StandardCarrierDataDictionary.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/StandardStatusExportDataDictionary.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/csv_md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/data_dictionary_parser.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/hello" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/params1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/params2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/reading.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/standard_status_data_dict.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/temp.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/test.csv" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/solutions/csv_metadata.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solutions/pretty_print.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solutions/quick_tools.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solutions/xlm2rdbs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solutions/z.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/2001.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/cannary" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/csv_md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/data_dictionary_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/data_dictionary_parser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/example0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/exploring_xsd.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/params1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/params2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/treespike.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/xsd_treespike.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +64,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
-    <property name="settings.editor.selected.configurable" value="preferences.general" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -99,17 +98,19 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="4419" y="1650" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603912787612">
-      <screen x="3841" y="0" width="2160" height="3840" />
+    <state x="1028" y="1554" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604453217624">
+      <screen x="0" y="626" width="3840" height="2160" />
     </state>
+    <state x="1028" y="1554" key="#com.intellij.fileTypes.FileTypeChooser/0.626.3840.2160/3841.0.2160.3840@0.626.3840.2160" timestamp="1604453217624" />
     <state x="4419" y="1650" key="#com.intellij.fileTypes.FileTypeChooser/0.626.3840.2160/3841.0.2160.3840@3841.0.2160.3840" timestamp="1603912787612" />
     <state x="4541" y="1467" key="FileChooserDialogImpl" timestamp="1603913066824">
       <screen x="3841" y="0" width="2160" height="3840" />
     </state>
     <state x="4541" y="1467" key="FileChooserDialogImpl/0.626.3840.2160/3841.0.2160.3840@3841.0.2160.3840" timestamp="1603913066824" />
-    <state x="4033" y="1281" key="SettingsEditor" timestamp="1604378158992">
-      <screen x="3841" y="0" width="2160" height="3840" />
+    <state x="341" y="1347" key="SettingsEditor" timestamp="1604453292999">
+      <screen x="0" y="626" width="3840" height="2160" />
     </state>
+    <state x="341" y="1347" key="SettingsEditor/0.626.3840.2160/3841.0.2160.3840@0.626.3840.2160" timestamp="1604453292999" />
     <state x="4033" y="1281" key="SettingsEditor/0.626.3840.2160/3841.0.2160.3840@3841.0.2160.3840" timestamp="1604378158992" />
     <state x="1445" y="580" width="945" height="917" key="StructurePopup" timestamp="1604218433823">
       <screen x="0" y="0" width="3840" height="2092" />
@@ -119,14 +120,32 @@
       <screen x="0" y="626" width="3840" height="2160" />
     </state>
     <state x="1720" y="626" width="2136" height="2310" maximized="true" key="dock-window-1/0.626.3840.2160/3841.0.2160.3840@3841.0.2160.3840" timestamp="1604370470201" />
-    <state x="1920" y="626" width="1928" height="2100" maximized="true" key="dock-window-2" timestamp="1604377801548">
+    <state x="627" y="336" width="1841" height="1756" key="dock-window-2" timestamp="1604440385569">
       <screen x="0" y="626" width="3840" height="2160" />
     </state>
-    <state x="1920" y="626" width="1928" height="2100" maximized="true" key="dock-window-2/0.626.3840.2160/3841.0.2160.3840@3841.0.2160.3840" timestamp="1604377801548" />
-    <state x="1331" y="112" width="1177" height="1976" key="search.everywhere.popup" timestamp="1604304845248">
+    <state x="627" y="336" width="1841" height="1756" key="dock-window-2/0.626.3840.2160/3841.0.2160.3840@0.626.3840.2160" timestamp="1604440385569" />
+    <state x="627" y="709" width="1841" height="1756" key="dock-window-2/0.626.3840.2160/3841.0.2160.3840@3841.0.2160.3840" timestamp="1604427831139" />
+    <state x="441" y="843" width="1872" height="2013" key="dock-window-3" timestamp="1604445599228">
+      <screen x="0" y="626" width="3840" height="2160" />
+    </state>
+    <state x="441" y="843" width="1872" height="2013" key="dock-window-3/0.626.3840.2160/3841.0.2160.3840@0.626.3840.2160" timestamp="1604445599228" />
+    <state x="1181" y="753" width="1872" height="2013" key="dock-window-4" timestamp="1604445599228">
+      <screen x="0" y="626" width="3840" height="2160" />
+    </state>
+    <state x="1181" y="753" width="1872" height="2013" key="dock-window-4/0.626.3840.2160/3841.0.2160.3840@0.626.3840.2160" timestamp="1604445599228" />
+    <state x="720" y="808" width="1872" height="2013" key="dock-window-5" timestamp="1604445599228">
+      <screen x="0" y="626" width="3840" height="2160" />
+    </state>
+    <state x="720" y="808" width="1872" height="2013" key="dock-window-5/0.626.3840.2160/3841.0.2160.3840@0.626.3840.2160" timestamp="1604445599228" />
+    <state x="3825" y="0" width="2176" height="2021" maximized="true" key="dock-window-6" timestamp="1604453727542">
+      <screen x="3841" y="0" width="2160" height="3840" />
+    </state>
+    <state x="3825" y="0" width="2176" height="2021" maximized="true" key="dock-window-6/0.626.3840.2160/3841.0.2160.3840@0.626.3840.2160" timestamp="1604453727542" />
+    <state x="1331" y="112" width="1177" height="1976" key="search.everywhere.popup" timestamp="1604516609235">
       <screen x="0" y="626" width="3840" height="2160" />
     </state>
     <state x="365" y="114" key="search.everywhere.popup/0.0.3840.2092@0.0.3840.2092" timestamp="1604219555269" />
-    <state x="1331" y="112" width="1177" height="1976" key="search.everywhere.popup/0.626.3840.2160/3841.0.2160.3840@3841.0.2160.3840" timestamp="1604304845248" />
+    <state x="1331" y="112" width="1177" height="1976" key="search.everywhere.popup/0.626.3840.2160/3841.0.2160.3840@0.626.3840.2160" timestamp="1604516609235" />
+    <state x="1331" y="626" width="1177" height="1976" key="search.everywhere.popup/0.626.3840.2160/3841.0.2160.3840@3841.0.2160.3840" timestamp="1604402746519" />
   </component>
 </project>
