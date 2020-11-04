@@ -1144,18 +1144,103 @@ def main():
     print('_ ' * 20)
     print(root)
 
+    # print('\n\nroot.childs')
+    # print('_ ' * 20)
+    # root_child_node_count = 0
+    # for child in root:
+    #     print(child)
+    #     root_child_node_count += 1
+    # print(root_child_node_count)
+    #
+    # print('\n\nroot.child.tags')
+    # print('_ ' * 20)
+    # root_child_node_count = 0
+    # for child in root:
+    #     print(child.tag)
+    #     root_child_node_count += 1
+    # print(root_child_node_count)
+    #
+    # print('\n\nroot.child.attrs')
+    # print('_ ' * 20)
+    # root_child_node_count = 0
+    # for child in root:
+    #     print(child.attrib)
+    #     root_child_node_count += 1
+    # print(root_child_node_count)
+
+    # print('\n\nroot.findall(".")')
+    # print('_ ' * 20)
+    # t = root.findall("./")
+    # c = 0
+    # for i in t: # prints out 17 elements [12 possible values, 3 global types, and root]
+    #     # print('-'*15)
+    #     # print('child: ', i)
+    #     # print(i)
+    #     x = i.tag.split("}")
+    #     x = i.tag.split("}")[1]
+    #     print(x)
+    #     # print('child count-  ')
+    #     # print(len(i))
+    #     # print('child.tag')
+    #     # print(i.tag)
+    #     # print('child.attrib')
+    #     # print(i.attrib)
+    #     # print('child.text')
+    #     # print(i.text)
+    #     # print(type(i.text))
+    #     # print('child.items')
+    #     # print(i.items)
+    #     # print('child.keys')
+    #     # print(i.keys)
+    #     # print('child.set')
+    #     # print(i.set)
+    #     # # print('child.tail')
+    #     # # print(i.tail)
+    #     # print('-'*15)
+    #     # print('')
+    #     c+=1
+    # print(c)
+
+
+    # print('\n\ntree.iter() ')
+    # print('_ ' * 20)
+    tree_iter_count = 0
+    # for elem in status_schema_tree.iter(): # prints 62 elements for
+        # print('does it have children?')
+        # print(elem)
+
+        # print('ELEM')
+        # print(elem)
+        # print(str(elem))
+        # print(len(elem))
+        #
+        # print('ELEM.TAG')
+        # print(elem.tag)
+        # # print(type(ET.dump(elem)))
+        # # print(ET.dump(elem))
+        # print('ELEM.ATTRIB')
+        # print(elem.attrib)
+        # print('ELEM.items() --> attributes as a list of (name, value) pairs')
+        # print(elem.items())
+        # print('ELEM.TEXT')
+        # print(elem.text)
+        # print('________________________________')
+        # print(' \n')
+        # tree_iter_count += 1
+
+    # print(tree_iter_count)
+
+    # for i in status_schema_tree.iter():
+    #     check_child = len(i)
+    #     if check_child >= 1:
+    #         print(" *", str(i),str(check_child))
+    #     else:
+    #         print("  ", str(i))
+
     import re
     print('\n\nCHILDREN? TRUNCATE ELEMENT.TAG')
     print('_ ' * 20)
     cnt = 0
-    tables = []
-    row1 = []
-    row2 = []
-    row3 = []
-    row4 = []
-    row5 = []
-    
-    ###########################################
     tag_list = []
     tag_dict = {}
     attr_list = []
@@ -1207,37 +1292,37 @@ def main():
     for i in status_schema_tree.iter():
         print(i.attrib)
 
-    # print('~ '*45)
-    # print('number of element: ', cnt)
-    # print('number of unique elements: ', len(tag_dict))
+    print('~ '*45)
+    print('number of element: ', cnt)
+    print('number of unique elements: ', len(tag_dict))
 
     # for i in tag_list:
     #     print(i)
     print('unique elements COUNT: ')
-    for i, j in tag_dict.items():
-        print(i, ' : ', j)
+    for i,j in tag_dict.items():
+        print(i,' : ', j)
+
 
     print('list of attrs:')
     print('~~~~~~~~~~~~~~~~~~~~~~~~')
-    # for i in attr_list:
-    #     print(i)
+    for i in attr_list:
+        print(i)
 
     print('list of TYPES')
     print('~~~~~~~~~~~~~~~~~~~~~~~~')
-    # for i in types_list:
-    #     print(i)
+    for i in types_list:
+        print(i)
 
     print('unique types COUNT: ')
     print('~~~~~~~~~~~~~~~~~~~~~~~~')
     print(len(type_dict))
-    # for i,j in type_dict.items():
-    #     print(i,' : ', j)
+    for i,j in type_dict.items():
+        print(i,' : ', j)
 
     cnt = 0
     for child in status_schema_tree.iter():
         cnt += 1
 
-    print(cnt)
 
     # for elem in root.findall('./'):
     #     x = elem.find('.')
