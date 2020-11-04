@@ -7,7 +7,14 @@ import json
 import xml.etree.ElementTree as ET
 
 import pandas as pd
-from quick_tools import breakout
+from quick_tools import breakout,clearit
+
+this_table = 'test table'
+these_columns = [
+    'DOB DATETIME',
+    'tile VARCHAR(225)',
+    'due_data DATE', 'description TEXT'
+]
 
 ###############################
 #    define directories
@@ -66,6 +73,12 @@ column2 = []
 column3 = []
 column4 = []
 
+
+convert_data_dict ={
+"xs:string": "VARCHAR(255)",
+"xs:dateTime": "DATETIME",
+"xs:decimal":   "FLOAT"
+}
 
 def snips():
     pass
@@ -210,6 +223,22 @@ def snips():
     # print('EMPTY ELEMS: ', empty_elem)
 
 
+def create_table(list_of_columns, table_name):
+    table_name = table_name.replace(" ", "_")
+    l = len(list_of_columns) - 1
+    s = ""
+    for i in list_of_columns:
+        if list_of_columns.index(i) != l:
+            s += i + ', \n'
+        else:
+            s += i
+
+    x = 'CREATE TABLE ' + table_name + ' ('
+    y = x + s + ');'
+    print(y)
+    return
+
+
 def main():
     print('--inside main--')
     #############################
@@ -217,16 +246,16 @@ def main():
     #############################
     path, dirs, files = next(os.walk(xsds_dir))
 
-    status_schema = files[0]
-    status_schema_path = os.path.join(path, status_schema)
-    status_schema_tree = ET.parse(status_schema_path, parser=None)
-    root = status_schema_tree.getroot()
+    # status_schema = files[0]
+    # status_schema_path = os.path.join(path, status_schema)
+    # status_schema_tree = ET.parse(status_schema_path, parser=None)
+    # root = status_schema_tree.getroot()
 
-    status_schema = files[0]
-    # generic_rough_draft_schema= files[4]
-    # generic_rough_draft_path = os.path.join(path, generic_rough_draft_schema)
-    # rough_draft_tree = ET.parse(generic_rough_draft_path, parser=None)
-    # root = rough_draft_tree.getroot()
+    generic_rough_draft_schema= files[4]
+    generic_rough_draft_path = os.path.join(path, generic_rough_draft_schema)
+    rough_draft_tree = ET.parse(generic_rough_draft_path, parser=None)
+    status_schema_tree = rough_draft_tree
+    root = rough_draft_tree.getroot()
 
     # # sample_status = files[5]
     # sample_status_path = os.path.join(path, sample_status)
@@ -243,8 +272,6 @@ def main():
     #   61 elements in tree - total
     #   7 elements in root - first lever
     #######################################
-
-
 
     # ---------> get list of all types
     list_of_all_types = []
@@ -265,19 +292,22 @@ def main():
 
         ################################# THESE ARE ALL TYPES
         if 'type' in attr.keys():
+
+            elems_with_type.append(child)
+
             attr_name = attr['name']
             attr_type = attr['type']
-            print(ET.tostring(child))
-            print(child.tag)
-            print(attr)
-            print('TYPE OF ELEMENT: ', type_of_element)
-            print('THIS IS THE DATA TYPE: ', attr_type)
-            print('- ')
+            # print(ET.tostring(child))
+            # print(child.tag)
+            # print(attr)
+            # print('TYPE OF ELEMENT: ', type_of_element)
+            # print('THIS IS THE DATA TYPE: ', attr_type)
+            # print('- ')
 
-            all_attrs_w_type.append(attr)
 
             # get repeating list of types
-            r = attr_name
+            r = attr_type
+            all_attrs_w_type.append(attr)
             if r not in list_of_all_types:
                 list_of_all_types.append(r)
             # create UNIQUE list of built in data types & global types
@@ -293,24 +323,25 @@ def main():
                 type_count[r] += 0
 
             # ***********
-            elems_with_type.append(child)
 
-        # this DOESN'T have a TYPE but it DOES have a NAME
+        ################################# THESE ARE ALL TYPES
         if 'type' not in attr.keys():
             if 'name' in attr.keys():
+
+                elems_no_type_with_name.append(child)
+
                 attr_name = attr['name']
-                print(ET.tostring(child))
-                print(child.tag)
-                print(attr)
-                print('TYPE OF ELEMENT: ', type_of_element)
-                print('THIS IS THE ELEMENT NAME: ', attr_name)
-                print('- ')
+                # print(ET.tostring(child))
+                # print(child.tag)
+                # print(attr)
+                # print('TYPE OF ELEMENT: ', type_of_element)
+                # print('THIS IS THE ELEMENT NAME: ', attr_name)
+                # print('- ')
                 # create list of elements that DON'T have type
                 if type_of_element not in element_no_type_with_name:
                     element_no_type_with_name.append(child.tag)
 
-            # ***********
-                elems_no_type_with_name.append(child)
+                # ***********
 
             # NO type NO name | indicators
             if 'name' not in attr.keys():
@@ -318,18 +349,57 @@ def main():
                     indicator_list.append(type_of_element)
                 elems_no_type_no_name.append(child)
 
-        # INDICATOR ELEMENTS
-        # for i in indicator_list:
-        #     print(i)
-        # ELEMENTS WITH NO TYPE
-        for i in elems_no_type_no_name:
-            print(i)
 
-    z,y,x = len(elems_with_type),len(element_no_type_with_name),len(elems_no_type_no_name)
-    print('elems: ', str(x+y+z))
+    for i in built_in_types:
+        print(i)
+        # try:
+        #     x = convert_data_dict[i]
+        #     print(i,  "  ---->  ", x)
+        # except:
+        #     pass
+
+    header_list = []
+    test_table = 'status export'
+    for child in elems_with_type:
+        if child.attrib['type'].startswith('xs:'):
+            attr = child.attrib
+            attr_name = attr['name']
+            type_of_element = child.tag.split('}')[1]
+            print(ET.tostring(child))
+            print(child.tag)
+            print(attr)
+            print('TYPE OF ELEMENT: ', type_of_element)
+            print('THIS IS THE DATA TYPE: ', attr_type)
+            print('ATTR NAME NAME: ', attr_name )
+            print('- ')
+            #################### LOGIC ###########################3
+
+            # * grab all attr['names']
+            # * grab XML datatype & convert to mySQL
+            if attr_type in convert_data_dict.keys():
+                sql_data_type = convert_data_dict[attr_type]
+            temp = attr_name + ' ' + sql_data_type
+            header_list.append(temp)
+    clearit()
+    create_table(header_list, test_table)
+
+
+
+    dummy = []
+    # for i in elems_no_type_no_name:
+    #     type_of_element = i.tag.split('}')[1]
+    #     if type_of_element not in dummy:
+    #         print(type)
+    #         print(ET.tostring(i))
+    #         dummy.append(type_of_element)
+    #         print(' ')
+
+    # z, y, x = len(elems_with_type), len(element_no_type_with_name), len(elems_no_type_no_name)
+    # print('elems: ', str(x + y + z))
 
     # 61 elements in this particular XSD (status)
 
 
 if __name__ == '__main__':
     main()
+    # create_table(these_columns, this_table)
