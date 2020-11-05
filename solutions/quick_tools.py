@@ -27,6 +27,7 @@ def clearit():
 
 
 def breakout():
+    time.sleep(1.5)
     print('\nbye\n')
     time.sleep(1)
     exit()

@@ -3,13 +3,12 @@ import sys
 import csv
 import time
 import json
-# import xml.dom.minidom
-from xml.dom import minidom
+import xml.dom.minidom
+
 import xml.etree.ElementTree as ET
 
 import pandas as pd
 from quick_tools import breakout, clearit
-
 
 this_table = 'test table'
 these_columns = [
@@ -128,9 +127,6 @@ def firstpass():
     #       how to get all values & attributes / header
     #
     ##############################################################
-    parentX = ''
-    parent_child = {}
-    elems_with_bi_types_parents = []
     for node in tree.iter():
         tag = node.tag
         tag = tag.split('}')[1]  # type: str
@@ -138,26 +134,17 @@ def firstpass():
         if 'type' in node.attrib.keys():
             if node.attrib['type'].startswith('xs:'):
                 elems_with_bi_types.append(node)
-                parent_child[node]=parentX
-                elems_with_bi_types_parents.append(parent_child)
+                print(node)
+                print(ET.tostring(node))
             else:
                 # elems w/ global types
                 elems_with_global_types.append(node)
         # elems simple
-        parentX = node
         if tag == 'simpleType':
             elems_simple.append(node)
         # elems w/ base / restriction
         if 'base' in node.attrib.keys():
             elems_with_base.append(node)
-    # for i in elems_with_bi_types:
-    #     print(ET.tostring(i))
-
-    for i in elems_with_bi_types_parents:
-        for x,y in i.items():
-            x = ET.tostring(x)
-            y = ET.tostring(y)
-            print(x,' : ', y)
     temp_list = elems_with_bi_types + elems_with_global_types + elems_simple + elems_with_base
 
     # for elem in elems_with_global_types:
@@ -254,7 +241,43 @@ def main():
     elems_no_type_no_name = []
 
     c = 0
+    print(' ')
+    print('elements with built-in data type')
+    for child in status_schema_tree.iter():
+        attr = child.attrib
+        tag_type = child.tag.split('}')[1]
+        if 'type' in child.attrib.keys():
+            if attr['type'].startswith('xs:'):
+                c += 1
+                print(ET.tostring(child))
 
+    print(' ')
+    print('elements with built global type')
+    for child in status_schema_tree.iter():
+        attr = child.attrib
+        tag_type = child.tag.split('}')[1]
+        if 'type' in child.attrib.keys():
+            if not attr['type'].startswith('xs:'):
+                c += 1
+                print(ET.tostring(child))
+
+    print(' ')
+    print('elements with base restriction')
+    for child in status_schema_tree.iter():
+        attr = child.attrib
+        tag_type = child.tag.split('}')[1]
+        if 'base' in child.attrib.keys():
+            print(ET.tostring(child))
+            c += 1
+
+    print(' ')
+    print('elements that are simpleType')
+    for child in status_schema_tree.iter():
+        attr = child.attrib
+        tag_type = child.tag.split('}')[1]
+        if tag_type == 'simpleType':
+            print(ET.tostring(child))
+            c += 1
 
     print(c)
     # 61 elements total
@@ -349,6 +372,9 @@ def main():
             # print('ATTR NAME NAME: ', attr_name )
             # print('- ')
             #################### LOGIC ###########################3
+
+            # * grab all attr['names']
+            # * grab XML datatype & convert to mySQL
             if attr_type in convert_data_dict.keys():
                 sql_data_type = convert_data_dict[attr_type]
             temp = attr_name + ' ' + sql_data_type
@@ -370,6 +396,19 @@ def main():
         #     # table, column, value, xmlDataType, sqlDataType
 
     create_table(header_list, test_table)
+
+    dummy = []
+    # for i in elems_no_type_no_name:
+    #     type_of_element = i.tag.split('}')[1]
+    #     if type_of_element not in dummy:
+    #         print(type)
+    #         print(ET.tostring(i))
+    #         dummy.append(type_of_element)
+    #         print(' ')
+
+    # z, y, x = len(elems_with_type), len(element_no_type_with_name), len(elems_no_type_no_name)
+    # print('elems: ', str(x + y + z))
+
 
 if __name__ == '__main__':
     main()
