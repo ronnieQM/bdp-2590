@@ -390,3 +390,16 @@ def somethingelse():
     #     print(i.attrib)
     #     # print(len(i))
 # figure out what needs to be a header and what needs to be value
+
+
+
+
+print('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11')
+asdfasdfasdf = DoublyLinkedList()
+asdfasdfasdf.push('abc')
+asdfasdfasdf.push('helllo')
+asdfasdfasdf.push('god help me')
+asdfasdfasdf.push('oooop')
+asdfasdfasdf.push('324')
+asdfasdfasdf.listprint(asdfasdfasdf.head)
+print('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11')

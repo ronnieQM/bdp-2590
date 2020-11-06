@@ -62,13 +62,6 @@ convert_data_dict = {
 }
 
 
-type_elems = []
-another_list = []
-xcount = 0
-
-rcount = 0
-allelems = []
-
 class GenericDataDictionaryClass:
     """This is a representations of a generic class file"""
 
@@ -86,6 +79,44 @@ class GenericDataDictionaryClass:
             description: {}
             """.format(self.element, self.attribute, self.value, self.description)
 
+
+# class Node:
+#     def __int__(self, data):
+#         self.item=data
+#         self.head=None
+#         self.pref=None
+
+# class DoublyLinkedList:
+#     def __init__(self):
+#         self.start_node = None
+
+
+# class Node:
+# def __init__(self, data):
+#     # left child
+#     # self.left = None
+#     # self.right = None
+#     self.parent = None
+#     self.children = [] # type: Node
+#     self.data= data
+#
+#     self.count = 0
+#
+# def add_child(self, obj):
+#     self.children.append(obj)
+#
+# def print_tree(self):
+#     print(self.data)
+# def printall(self):
+#     print(data)
+#     if children != 0:
+#         children.printall
+
+
+# def insert(self, data):
+rcount = 0
+allelems = []
+
 class Node:
     def __init__(self, data):
         """Initialize this node with the given dataa"""
@@ -97,15 +128,14 @@ class Node:
         """"Return a string representation of this node"""
         return 'Node {}'.format(self.data)
 
+
 class DoublyLinkedList:
     def __init__(self):
         self.head = None
-        self.length = 0
 
     def push(self, value):
         new_node = Node(value)
         new_node.next = self.head
-        self.length += 1
         if self.head is not None:
             self.head.prev = new_node
         self.head=new_node
@@ -115,9 +145,6 @@ class DoublyLinkedList:
             print(node.data)
             last = node
             node = node.next
-
-    def getlen(self,node):
-        print(self.length)
 
 def another_one(node, level=0):
     """takes in element xml.etree.ElementTree.Element | ET.parse(XML_file).getroot()"""
@@ -134,31 +161,47 @@ def another_one(node, level=0):
             another_one(subnode, level)
     return rcount, allelems
 
+
+
+print('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11')
+asdfasdfasdf = DoublyLinkedList()
+asdfasdfasdf.push('abc')
+asdfasdfasdf.push('helllo')
+asdfasdfasdf.push('god help me')
+asdfasdfasdf.push('oooop')
+asdfasdfasdf.push('324')
+asdfasdfasdf.listprint(asdfasdfasdf.head)
+print('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11')
+
+
+type_elems = []
+xcount = 0
 def get_parent_of_type(node, level=0):
     """takes in element xml.etree.ElementTree.Element | ET.parse(XML_file).getroot()"""
     global xcount
     global type_elems
-    global another_list
+
     level += 1
+
     for subnode in node:
-        newnode = DoublyLinkedList()
-        newnode.push(node)
         if 'type' in subnode.attrib.keys():
             xcount += 1
             type_elems.append(subnode)
-            newnode.push(subnode)
-            another_list.append(newnode)
+            print(subnode.attrib)
         if len(subnode) != 0:
             get_parent_of_type(subnode)
-    return xcount, type_elems, another_list
+    return xcount, type_elems
 
 
 def firstpass():
     print('--inside firstpass--')
+
+    #
     #############################
     #         sample files      #
     #############################
     path, dirs, files = next(os.walk(xsds_dir))
+
     status_schema = files[0]
     status_schema_path = os.path.join(path, status_schema)
     tree = ET.parse(status_schema_path, parser=None)
@@ -168,17 +211,20 @@ def firstpass():
     elems_with_global_types = []
     elems_simple = []
     elems_with_base = []
-    typescount, y,z = get_parent_of_type(root)
-    print(len(z))
-    for i in z:
-        # i.listprint(i.head)
-        etree_element = i.head.data
-        parent_element = i.head.next.data
-        print('parent element', ET.tostring(parent_element))
-        print(parent_element)
-        print(t, 'type element', ET.tostring(etree_element))
-        print(t, etree_element)
-        print(' ')
+    ##############################################################
+    #
+    #       how to get all values & attributes / header
+    #
+    ##############################################################
+    parentX = ''
+    runner = ''
+    parent_child = {}
+    elems_with_bi_types_parents = []
+    ###################################################################################################################
+    x, y = get_parent_of_type(root)
+    print(x)
+    print(y)
+
     quit()
     for node in tree.iter():
         for subnode in node:
