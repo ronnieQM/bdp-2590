@@ -134,13 +134,11 @@ def another_one(node, level=0):
             another_one(subnode, level)
     return rcount, allelems
 
-
 def get_parent_of_type(node, level=0):
     """takes in element xml.etree.ElementTree.Element | ET.parse(XML_file).getroot()"""
     global xcount
     global type_elems
     global another_list
-
     level += 1
     for subnode in node:
         newnode = DoublyLinkedList()
@@ -157,13 +155,10 @@ def get_parent_of_type(node, level=0):
 
 def firstpass():
     print('--inside firstpass--')
-
-    #
     #############################
     #         sample files      #
     #############################
     path, dirs, files = next(os.walk(xsds_dir))
-
     status_schema = files[0]
     status_schema_path = os.path.join(path, status_schema)
     tree = ET.parse(status_schema_path, parser=None)
@@ -173,21 +168,16 @@ def firstpass():
     elems_with_global_types = []
     elems_simple = []
     elems_with_base = []
-    ##############################################################
-    #
-    #       how to get all values & attributes / header
-    #
-    ##############################################################
-    parentX = ''
-    runner = ''
-    parent_child = {}
-    elems_with_bi_types_parents = []
-    ###################################################################################################################
     typescount, y,z = get_parent_of_type(root)
-    # print(y)
     print(len(z))
     for i in z:
-        i.listprint(i.head)
+        # i.listprint(i.head)
+        etree_element = i.head.data
+        parent_element = i.head.next.data
+        print('parent element', ET.tostring(parent_element))
+        print(parent_element)
+        print(t, 'type element', ET.tostring(etree_element))
+        print(t, etree_element)
         print(' ')
     quit()
     for node in tree.iter():
