@@ -12,12 +12,6 @@ from quick_tools import breakout, clearit, breakpoint
 
 t = '\t'
 n = '\n'
-this_table = 'test table'
-these_columns = [
-    'DOB DATETIME',
-    'tile VARCHAR(225)',
-    'due_data DATE', 'description TEXT'
-]
 
 ###############################
 #    define directories
@@ -39,25 +33,6 @@ customDoc_dir = os.path.join(data_dir, 'customDoc')
 xsds_dir = os.path.join(project_dir, 'xsds')
 data_dict_dir = os.path.join(project_dir, 'data_dicts')
 status_xsd = os.path.join(xsds_dir, 'StandardStatusExport.xsd')
-
-
-class GenericDataDictionaryClass:
-    """This is a representations of a generic class file"""
-
-    def __init__(self, elem, attr, val, desc):
-        self.element = elem
-        self.attribute = attr
-        self.value = val
-        self.description = desc
-
-    def __str__(self):
-        return """
-            element: {}
-            attribute: {}
-            value: {}
-            description: {}
-            """.format(self.element, self.attribute, self.value, self.description)
-
 
 schema_dictionary = {
     "name": None,
@@ -87,6 +62,241 @@ convert_data_dict = {
 }
 
 
+class GenericDataDictionaryClass:
+    """This is a representations of a generic class file"""
+
+    def __init__(self, elem, attr, val, desc):
+        self.element = elem
+        self.attribute = attr
+        self.value = val
+        self.description = desc
+
+    def __str__(self):
+        return """
+            element: {}
+            attribute: {}
+            value: {}
+            description: {}
+            """.format(self.element, self.attribute, self.value, self.description)
+
+
+# class Node:
+#     def __int__(self, data):
+#         self.item=data
+#         self.head=None
+#         self.pref=None
+
+# class DoublyLinkedList:
+#     def __init__(self):
+#         self.start_node = None
+
+
+# class Node:
+# def __init__(self, data):
+#     # left child
+#     # self.left = None
+#     # self.right = None
+#     self.parent = None
+#     self.children = [] # type: Node
+#     self.data= data
+#
+#     self.count = 0
+#
+# def add_child(self, obj):
+#     self.children.append(obj)
+#
+# def print_tree(self):
+#     print(self.data)
+# def printall(self):
+#     print(data)
+#     if children != 0:
+#         children.printall
+
+
+# def insert(self, data):
+rcount = 0
+allelems = []
+
+class Node:
+    def __init__(self, data):
+        """Initialize this node with the given dataa"""
+        self.data = data
+        self.next = None
+        self.prev = None
+
+    def __repr__(self):
+        """"Return a string representation of this node"""
+        return 'Node {}'.format(self.data)
+
+
+class DoublyLinkedList:
+    def __init__(self):
+        self.head = None
+
+    def push(self, value):
+        new_node = Node(value)
+        new_node.next = self.head
+        if self.head is not None:
+            self.head.prev = new_node
+        self.head=new_node
+
+    def listprint(self, node):
+        while node is not None:
+            print(node.data)
+            last = node
+            node = node.next
+
+def another_one(node, level=0):
+    """takes in element xml.etree.ElementTree.Element | ET.parse(XML_file).getroot()"""
+    global rcount
+    global allelems
+    level += 1
+
+    for subnode in node:
+        print('count: ', rcount)
+        # print('level: ', level)
+        rcount += 1
+        allelems.append(subnode)
+        if len(subnode) != 0:
+            another_one(subnode, level)
+    return rcount, allelems
+
+
+
+print('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11')
+asdfasdfasdf = DoublyLinkedList()
+asdfasdfasdf.push('abc')
+asdfasdfasdf.push('helllo')
+asdfasdfasdf.push('god help me')
+asdfasdfasdf.push('oooop')
+asdfasdfasdf.push('324')
+asdfasdfasdf.listprint(asdfasdfasdf.head)
+print('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11')
+
+
+type_elems = []
+xcount = 0
+def get_parent_of_type(node, level=0):
+    """takes in element xml.etree.ElementTree.Element | ET.parse(XML_file).getroot()"""
+    global xcount
+    global type_elems
+
+    level += 1
+
+    for subnode in node:
+        if 'type' in subnode.attrib.keys():
+            xcount += 1
+            type_elems.append(subnode)
+            print(subnode.attrib)
+        if len(subnode) != 0:
+            get_parent_of_type(subnode)
+    return xcount, type_elems
+
+
+def firstpass():
+    print('--inside firstpass--')
+
+    #
+    #############################
+    #         sample files      #
+    #############################
+    path, dirs, files = next(os.walk(xsds_dir))
+
+    status_schema = files[0]
+    status_schema_path = os.path.join(path, status_schema)
+    tree = ET.parse(status_schema_path, parser=None)
+    root = tree.getroot()
+
+    elems_with_bi_types = []
+    elems_with_global_types = []
+    elems_simple = []
+    elems_with_base = []
+    ##############################################################
+    #
+    #       how to get all values & attributes / header
+    #
+    ##############################################################
+    parentX = ''
+    runner = ''
+    parent_child = {}
+    elems_with_bi_types_parents = []
+    ###################################################################################################################
+    x, y = get_parent_of_type(root)
+    print(x)
+    print(y)
+
+    quit()
+    for node in tree.iter():
+        for subnode in node:
+            if 'type' in subnode.attrib.keys():
+                print('~ ' * 15)
+                print('parent node:')
+                print(node)
+                try:
+                    print(node.attrib['name'])
+                except:
+                    print('NO NAME')
+
+                print(node.attrib)
+                print('node that has a type:')
+                print(subnode)
+                print(subnode.attrib)
+                print(' ')
+                c += 1
+
+        # for subnode in node:
+        #     if 'type' in subnode.attrib.keys():
+
+    # print(node.attrib)
+    # print('# of nodes: ', len(node))
+    # print('node:')
+    # print(node)
+    # if runner != 0:
+    #     if node in runner:
+    #         print(t, '--- runner:')
+    #         print(t, runner)
+    #         print(t, 'bing!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
+    #         print(t, i.tag.split('}')[1])
+    # counter = 0
+    #
+    # runner = node
+    # c += 1
+    # if c == 14:
+    #     quit()
+    #
+    # tag = node.tag.split('}')[1]  # type: str
+    # # elems w/ built-in types
+    # if 'type' in node.attrib.keys():
+    #     if node.attrib['type'].startswith('xs:'):
+    #         elems_with_bi_types.append(node)
+    #         parent_child[node] = parentX
+    #         elems_with_bi_types_parents.append(parent_child)
+    #         print(node.attrib)
+    #         print('parent: ', node.tag.split('}')[1])
+    #         print('parent: ', parentX.attrib['name'])
+    #         print(' ')
+    #     else:
+    #         # elems w/ global types
+    #         elems_with_global_types.append(node)
+    # # elems simple
+    # if tag == 'simpleType':
+    #     elems_simple.append(node)
+    # # elems w/ base / restriction
+    # if 'base' in node.attrib.keys():
+    #     elems_with_base.append(node)
+    # runner = node
+    # parentX = node
+    #
+    # for i in elems_with_bi_types:
+    #     print(ET.tostring(i))
+    #
+    # for i in elems_with_bi_types_parents:
+    #     for x, y in i.items():
+    #         x = ET.tostring(x)
+    #         y = ET.tostring(y)
+    # temp_list = elems_with_bi_types + elems_with_global_types + elems_simple + elems_with_base
+
+
 def create_table(list_of_columns, table_name):
     table_name = table_name.replace(" ", "_")
     l = len(list_of_columns) - 1
@@ -101,6 +311,7 @@ def create_table(list_of_columns, table_name):
     y = x + s + ');'
     print(y)
     return
+
 
 def demo():
     path, dirs, files = next(os.walk(status_dir))
@@ -122,7 +333,6 @@ def data2db(xml_file: str):
     tree = ET.parse(xml_file, parser=None)
     root = tree.getroot()
     dummy_list = ['name', 'stamp', 'claimNumber', 'recipientsXM8UserId', 'recipientsXNAddress', 'origTransactionId']
-    dummy_list = []
     x = 'TYPESOFLOSS'
     y = 'PHONE'
     for node in root.iter(x):
@@ -135,78 +345,10 @@ def data2db(xml_file: str):
     return 'something'
 
 
-def firstpass():
-    print('--inside firstpass--')
-    #############################
-    #         sample files      #
-    #############################
-    path, dirs, files = next(os.walk(xsds_dir))
-
-    # status_schema = files[0]
-    status_schema = files[0]
-    status_schema_path = os.path.join(path, status_schema)
-    tree = ET.parse(status_schema_path, parser=None)
-    root = tree.getroot()
-
-    c1 = []
-    c2 = []
-    c3 = []
-
-    elems_with_bi_types = []
-    elems_with_global_types = []
-    elems_simple = []
-    elems_with_base = []
-    ##############################################################
-    #
-    #       how to get all values & attributes / header
-    #
-    ##############################################################
-    parentX = ''
-    runner = ''
-    parent_child = {}
-    elems_with_bi_types_parents = []
-    for node in tree.iter():
-        print(node.attrib)
-        time.sleep(5)
-
-
-        tag = node.tag
-        tag = tag.split('}')[1]  # type: str
-        # elems w/ built-in types
-        if 'type' in node.attrib.keys():
-            if node.attrib['type'].startswith('xs:'):
-                elems_with_bi_types.append(node)
-                parent_child[node] = parentX
-                elems_with_bi_types_parents.append(parent_child)
-                print(node.attrib1)
-                print('parent: ', node.tag.split('}')[1])
-                print('parent: ', parentX.attrib['name'])
-                print(' ')
-            else:
-                # elems w/ global types
-                elems_with_global_types.append(node)
-        # elems simple
-        if tag == 'simpleType':
-            elems_simple.append(node)
-        # elems w/ base / restriction
-        if 'base' in node.attrib.keys():
-            elems_with_base.append(node)
-        runner = node
-        parentX = node
-    # for i in elems_with_bi_types:
-    #     print(ET.tostring(i))
-
-    for i in elems_with_bi_types_parents:
-        for x, y in i.items():
-            x = ET.tostring(x)
-            y = ET.tostring(y)
-    temp_list = elems_with_bi_types + elems_with_global_types + elems_simple + elems_with_base
-
-
-
-tracking_list = []
-d_list = []  # duplicates
 def get_tid(file_name):
+    tracking_list = []
+    d_list = []  # duplicates
+
     tid = file_name
     tid = '.'.join(tid.split('.', 2)[:2])
 
@@ -242,7 +384,7 @@ def main():
     print('-----------------------------------')
     print(t, 'XSD files (xml schemas):')
     for i in files:
-        print(t,t, i)
+        print(t, t, i)
     print(' ')
     print(t, 'Current file: ', xml_schema)
     print(t, xml_schema_path)
@@ -263,7 +405,6 @@ def main():
     list_of_built_in_data_types = []
     list_of_global_types = []
     type_count = {}
-
 
     # parse through tree and gather elements for later
     for child in tree.iter():
@@ -348,7 +489,7 @@ def main():
         #     # table, column, value, xmlDataType, sqlDataType
 
     # create_table(header_list, test_table)
-    field_list=header_list
+    field_list = header_list
 
     print('\nall elements with type')
     for i in elems_with_type:
@@ -367,21 +508,21 @@ def main():
     time.sleep(.005)
 
     print('\ntype count:')
-    for i,j in type_count.items():
-        print(i,' : ',j)
+    for i, j in type_count.items():
+        print(i, ' : ', j)
 
     breakpoint()
     clearit()
     time.sleep(.005)
 
-    print('~ '*70)
+    print('~ ' * 70)
     print('this function returns this: \n')
-    with open('sql_create_table statement.txt','w')as f:
+    with open('sql_create_table statement.txt', 'w')as f:
         for i in field_list:
-            f.write('%s\n'%i)
+            f.write('%s\n' % i)
     for i in header_list:
         print(i)
-    print('~ '*70)
+    print('~ ' * 70)
     return header_list
 
 

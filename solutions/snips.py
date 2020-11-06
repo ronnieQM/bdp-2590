@@ -1,6 +1,36 @@
 # TODO
 # make rdbs schema out of py
 
+g = list(tree.iter())
+
+from xml.dom import minidom
+
+root = minidom.parse(status_schema_path).documentElement
+print(root)
+print(root.childNodes)
+print(type)
+a = root.childNodes
+print(a)
+
+c = 1
+for i in a:
+    c += 1
+    print(type(i))
+    print(i)
+    print('~')
+    try:
+        print(i.getAttribute)
+    except:
+        pass
+    print('~')
+    try:
+        print(i.items())
+    except:
+        pass
+print(c)
+
+quit()
+
 # generic_rough_draft_schema= files[4]
 # generic_rough_draft_path = os.path.join(path, generic_rough_draft_schema)
 # rough_draft_tree = ET.parse(generic_rough_draft_path, parser=None)
@@ -64,6 +94,12 @@
 #             print(ET.tostring(node))
 #             print(' ')
 
+this_table = 'test table'
+these_columns = [
+    'DOB DATETIME',
+    'tile VARCHAR(225)',
+    'due_data DATE', 'description TEXT'
+]
 
 def snips():
     pass

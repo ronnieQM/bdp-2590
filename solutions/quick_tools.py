@@ -31,3 +31,7 @@ def breakout():
     print('\nbye\n')
     time.sleep(1)
     exit()
+
+def yellll():
+    print('$%*#!!!!  '*10)
+    print('LOOK HERE:')
