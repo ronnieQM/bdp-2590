@@ -1,6 +1,70 @@
 # TODO
 # make rdbs schema out of py
 
+# generic_rough_draft_schema= files[4]
+# generic_rough_draft_path = os.path.join(path, generic_rough_draft_schema)
+# rough_draft_tree = ET.parse(generic_rough_draft_path, parser=None)
+# status_schema_tree = rough_draft_tree
+# root = rough_draft_tree.getroot()
+
+# # sample_status = files[5]
+# sample_status_path = os.path.join(path, sample_status)
+# sample_status_tree = ET.parse(sample_status_path, parser=None)
+# root = sample_status_tree.getroot()
+
+#######################################
+#   manually iterate through entire tree
+#   61 elements in tree - total
+#   7 elements in root - first lever
+# 61 elements total
+# 23 elements with TYPE
+# 8 elements with built in type
+# 15 global type
+#######################################
+
+# print(ET.tostring(child))
+# print(child.tag)
+# print(attr)
+# print('TYPE OF ELEMENT: ', type_of_element)
+# print('THIS IS THE DATA TYPE: ', attr_type)
+# print('- ')
+# print(ET.tostring(child))
+# print(child.tag)
+# print(attr)
+# print('TYPE OF ELEMENT: ', type_of_element)
+# print('THIS IS THE DATA TYPE: ', attr_type)
+# print('ATTR NAME NAME: ', attr_name )
+# print('- ')
+####################
+
+# for elem in elems_with_global_types:
+#     global_type = elem.attrib['type']
+#     print('------->', global_type)
+#     for i in tree.iter():
+#         tag_type = i.tag.split('}')[1]
+#         if 'TYPESOFLOSS' in i.attrib.values(): #and 'type' not in i.attrib.values():
+#             if tag_type== 'complexType' or tag_type == 'simpleType':
+#                 print(i.tag.split('}')[1])
+#                 print('number of children: ', len(i))
+#                 print(i.attrib)
+#                 print(ET.tostring(i))
+#                 print(' ')
+
+# for elem in elems_with_global_types:
+#     global_type= elem.attrib['type']
+#     print('--------------> type: ', elem.attrib['type'])
+#     for node in tree.iter():
+#         tag_type = node.tag.split('}')[1]
+#         if global_type in node.attrib.values():
+#             # if tag_type == 'complexType' or tag_type == 'simpleType':
+#             print(tag_type)
+#             print('number of children: ', len(node))
+#             print(node.attrib)
+#             print(node.tag)
+#             print(ET.tostring(node))
+#             print(' ')
+
+
 def snips():
     pass
     # manual iter()
