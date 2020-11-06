@@ -459,7 +459,7 @@ def main():
 
 def data2db(xml_file: str):
     # print(xml_file)
-    tree = ET.parse(xml_file, parser=None)t
+    tree = ET.parse(xml_file, parser=None)
     root = tree.getroot()
     dummy_list = ['name', 'stamp', 'claimNumber', 'recipientsXM8UserId', 'recipientsXNAddress', 'origTransactionId']
     dummy_list = ["CONTACT'CONTACT'", "CONTACT'CONTACT'", "CONTROL_POINT'CONTROL_POINT'",
@@ -470,12 +470,18 @@ def data2db(xml_file: str):
     x = dummy_list[5]
     x = 'XACTNET_INFO'
     for node in root.iter(x):
-        print('bing')
-        print(node)
         print('looking for {}'.format(x))
-        print('found: ')
+        time.sleep(1)
+        print('FOUND IT: ')
         print(node)
+        print(node.attrib)
         print(ET.tostring(node))
+        print(node.attrib)
+
+    query = """INSERT INTO 'someting''
+    {},
+    """
+    print(query)
 
     return 'something'
 
@@ -492,6 +498,7 @@ def demo():
         print('files remaining: ', mc)
         mc-=1
         c += 1
+    print('TOTAL FILES PROCESSED')
     print(c)
 
 
