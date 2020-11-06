@@ -8,9 +8,10 @@ from xml.dom import minidom
 import xml.etree.ElementTree as ET
 
 import pandas as pd
-from quick_tools import breakout, clearit
+from quick_tools import breakout, clearit, breakpoint
 
-
+t = '\t'
+n = '\n'
 this_table = 'test table'
 these_columns = [
     'DOB DATETIME',
@@ -101,6 +102,38 @@ def create_table(list_of_columns, table_name):
     print(y)
     return
 
+def demo():
+    path, dirs, files = next(os.walk(status_dir))
+    c = 0
+    mc = len(files)
+    for file in files:
+        file = os.path.join(path, file)
+        print(file)
+        print('\n~~~~~~~~~~~~~~~~')
+        data2db(file)
+        time.sleep(.5)
+        mc -= 1
+        print('files remaining: ', mc)
+        c += 1
+    print(c)
+
+
+def data2db(xml_file: str):
+    tree = ET.parse(xml_file, parser=None)
+    root = tree.getroot()
+    dummy_list = ['name', 'stamp', 'claimNumber', 'recipientsXM8UserId', 'recipientsXNAddress', 'origTransactionId']
+    dummy_list = []
+    x = 'TYPESOFLOSS'
+    y = 'PHONE'
+    for node in root.iter(x):
+        print(node)
+        print('@#$($%#$%^')
+        print('looking for {}'.format(x))
+        print(ET.tostring(node))
+        time.sleep(5)
+
+    return 'something'
+
 
 def firstpass():
     print('--inside firstpass--')
@@ -129,63 +162,46 @@ def firstpass():
     #
     ##############################################################
     parentX = ''
+    runner = ''
     parent_child = {}
     elems_with_bi_types_parents = []
     for node in tree.iter():
+        print(node.attrib)
+        time.sleep(5)
+
+
         tag = node.tag
         tag = tag.split('}')[1]  # type: str
         # elems w/ built-in types
         if 'type' in node.attrib.keys():
             if node.attrib['type'].startswith('xs:'):
                 elems_with_bi_types.append(node)
-                parent_child[node]=parentX
+                parent_child[node] = parentX
                 elems_with_bi_types_parents.append(parent_child)
+                print(node.attrib1)
+                print('parent: ', node.tag.split('}')[1])
+                print('parent: ', parentX.attrib['name'])
+                print(' ')
             else:
                 # elems w/ global types
                 elems_with_global_types.append(node)
         # elems simple
-        parentX = node
         if tag == 'simpleType':
             elems_simple.append(node)
         # elems w/ base / restriction
         if 'base' in node.attrib.keys():
             elems_with_base.append(node)
+        runner = node
+        parentX = node
     # for i in elems_with_bi_types:
     #     print(ET.tostring(i))
 
     for i in elems_with_bi_types_parents:
-        for x,y in i.items():
+        for x, y in i.items():
             x = ET.tostring(x)
             y = ET.tostring(y)
-            print(x,' : ', y)
     temp_list = elems_with_bi_types + elems_with_global_types + elems_simple + elems_with_base
 
-    # for elem in elems_with_global_types:
-    #     global_type = elem.attrib['type']
-    #     print('------->', global_type)
-    #     for i in tree.iter():
-    #         tag_type = i.tag.split('}')[1]
-    #         if 'TYPESOFLOSS' in i.attrib.values(): #and 'type' not in i.attrib.values():
-    #             if tag_type== 'complexType' or tag_type == 'simpleType':
-    #                 print(i.tag.split('}')[1])
-    #                 print('number of children: ', len(i))
-    #                 print(i.attrib)
-    #                 print(ET.tostring(i))
-    #                 print(' ')
-
-    # for elem in elems_with_global_types:
-    #     global_type= elem.attrib['type']
-    #     print('--------------> type: ', elem.attrib['type'])
-    #     for node in tree.iter():
-    #         tag_type = node.tag.split('}')[1]
-    #         if global_type in node.attrib.values():
-    #             # if tag_type == 'complexType' or tag_type == 'simpleType':
-    #             print(tag_type)
-    #             print('number of children: ', len(node))
-    #             print(node.attrib)
-    #             print(node.tag)
-    #             print(ET.tostring(node))
-    #             print(' ')
 
 
 tracking_list = []
@@ -200,69 +216,57 @@ def get_tid(file_name):
         print('!!!!!!!!!!!1')
         if tid not in d_list:
             d_list.append(tid)
-    return tid              # type: str
+    return tid  # type: str
+
 
 def main():
     print('--inside main--')
-    #############################
-    #         sample files      #
-    #############################
+    header_list = ['ID int']
+    temp_dictionary = {
+        "table": None,
+        "column": None,
+        "value": None,
+        "xmlDataType": None,
+        "sqlDataType": None,
+    }
+
     path, dirs, files = next(os.walk(xsds_dir))
-
-    status_schema = files[0]
-    status_schema_path = os.path.join(path, status_schema)
-    status_schema_tree = ET.parse(status_schema_path, parser=None)
-    root = status_schema_tree.getroot()
-
-    print(status_schema_path)
-    print(status_schema_tree)
-    print(status_schema)
-    print('-------------')
+    xml_schema = files[0]
+    xml_schema_path = os.path.join(path, xml_schema)
+    tree = ET.parse(xml_schema_path, parser=None)
+    root = tree.getroot()
 
     v = 0
-    for i in status_schema_tree.iter():
+    for i in tree.iter():
         v += 1
-    print(v)
+    print('-----------------------------------')
+    print(t, 'XSD files (xml schemas):')
+    for i in files:
+        print(t,t, i)
+    print(' ')
+    print(t, 'Current file: ', xml_schema)
+    print(t, xml_schema_path)
+    print(t, tree)
+    print(t, 'node count:', v)
+    print('-----------------------------------')
 
-    # generic_rough_draft_schema= files[4]
-    # generic_rough_draft_path = os.path.join(path, generic_rough_draft_schema)
-    # rough_draft_tree = ET.parse(generic_rough_draft_path, parser=None)
-    # status_schema_tree = rough_draft_tree
-    # root = rough_draft_tree.getroot()
+    breakpoint()
+    clearit()
+    time.sleep(.0005)
 
-    # # sample_status = files[5]
-    # sample_status_path = os.path.join(path, sample_status)
-    # sample_status_tree = ET.parse(sample_status_path, parser=None)
-    # root = sample_status_tree.getroot()
+    all_attrs_w_type = []  # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-    #######################################
-    #   manually iterate through entire tree
-    #   61 elements in tree - total
-    #   7 elements in root - first lever
-    #######################################
-
-    # ---------> get list of all types
     list_of_all_data_types = []
+    elems_with_type = []
+    elems_no_type_with_name = []
+    elems_no_type_no_name = []
     list_of_built_in_data_types = []
     list_of_global_types = []
     type_count = {}
 
-    all_attrs_w_type = []  # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-    elems_with_type = []
-    elems_no_type_with_name = []
-    elems_no_type_no_name = []
-
-    c = 0
-
-
-    print(c)
-    # 61 elements total
-    # 23 elements with TYPE
-    # 8 elements with built in type
-    # 15 global type
-
-    for child in status_schema_tree.iter():
+    # parse through tree and gather elements for later
+    for child in tree.iter():
         attr = child.attrib
         type_of_element = child.tag.split('}')[1]
 
@@ -273,12 +277,6 @@ def main():
 
             attr_name = attr['name']
             attr_type = attr['type']
-            # print(ET.tostring(child))
-            # print(child.tag)
-            # print(attr)
-            # print('TYPE OF ELEMENT: ', type_of_element)
-            # print('THIS IS THE DATA TYPE: ', attr_type)
-            # print('- ')
 
             # get repeating list of types
             r = attr_type
@@ -293,11 +291,9 @@ def main():
             else:
                 list_of_global_types.append(r)
             if r not in type_count.keys():
-                type_count[r] = 0
+                type_count[r] = 1
             else:
-                type_count[r] += 0
-
-            # ***********
+                type_count[r] += 1
 
         ################################# THESE ARE ALL TYPES
         if 'type' not in attr.keys():
@@ -324,30 +320,12 @@ def main():
                     indicator_list.append(type_of_element)
                 elems_no_type_no_name.append(child)
 
-    header_list = []
-    test_table = 'status export'
-    temp_dictionary = {
-        "table": None,
-        "column": None,
-        "value": None,
-        "xmlDataType": None,
-        "sqlDataType": None,
-
-    }
-    temp_list = []
     for child in elems_with_type:
         if child.attrib['type'].startswith('xs:'):
             attr = child.attrib
             attr_name = attr['name']
             attr_type = attr['type']
             type_of_element = child.tag.split('}')[1]
-            # print(ET.tostring(child))
-            # print(child.tag)
-            # print(attr)
-            # print('TYPE OF ELEMENT: ', type_of_element)
-            # print('THIS IS THE DATA TYPE: ', attr_type)
-            # print('ATTR NAME NAME: ', attr_name )
-            # print('- ')
             #################### LOGIC ###########################3
             if attr_type in convert_data_dict.keys():
                 sql_data_type = convert_data_dict[attr_type]
@@ -369,10 +347,47 @@ def main():
         #     ########################### More Logic
         #     # table, column, value, xmlDataType, sqlDataType
 
-    create_table(header_list, test_table)
+    # create_table(header_list, test_table)
+    field_list=header_list
+
+    print('\nall elements with type')
+    for i in elems_with_type:
+        print(i)
+
+    print('\nlist of data types uses in this schema')
+    for i in list_of_all_data_types:
+        print(i)
+
+    print('\nlist of global data types')
+    for i in list_of_global_types:
+        print(i)
+
+    breakpoint()
+    clearit()
+    time.sleep(.005)
+
+    print('\ntype count:')
+    for i,j in type_count.items():
+        print(i,' : ',j)
+
+    breakpoint()
+    clearit()
+    time.sleep(.005)
+
+    print('~ '*70)
+    print('this function returns this: \n')
+    with open('sql_create_table statement.txt','w')as f:
+        for i in field_list:
+            f.write('%s\n'%i)
+    for i in header_list:
+        print(i)
+    print('~ '*70)
+    return header_list
+
 
 if __name__ == '__main__':
-    main()
+    # main()
     firstpass()
+    # demo()
 
     # create_table(these_columns, this_table)

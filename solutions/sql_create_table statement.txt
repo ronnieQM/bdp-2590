@@ -1,0 +1,9 @@
+ID int
+name VARCHAR(255)
+stamp DATETIME
+type VARCHAR(255)
+claimNumber VARCHAR(255)
+recipientsXNAddress VARCHAR(255)
+recipientsXM8UserId VARCHAR(255)
+transactionId VARCHAR(255)
+origTransactionId VARCHAR(255)
