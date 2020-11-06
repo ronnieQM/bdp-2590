@@ -182,14 +182,24 @@ def firstpass():
         # print('parent element', ET.tostring(parent_element))
         try:
             x = parent_element.attrib['name']
-            x += "'" + x + "'"
+            print(x)
             slist.append(x)
         except:
             print('!')
     print(slist)
+
+    print('!')
+    print('!')
+    print('!')
+    print('!')
+    print('!')
+    print('!')
+    print('!')
+    print('!')
+    print('!')
     # print(t, 'type element', ET.tostring(etree_element))
     # print(t, etree_element)
-    quit()
+    return None
     for node in tree.iter():
         for subnode in node:
             if 'type' in subnode.attrib.keys():
@@ -458,29 +468,45 @@ def main():
     return header_list
 
 def data2db(xml_file: str):
+    xf = os.path.basename(xml_file)
+    pk = get_tid(xf)
     # print(xml_file)
-    tree = ET.parse(xml_file, parser=None)t
+    tree = ET.parse(xml_file, parser=None)
     root = tree.getroot()
     dummy_list = ['name', 'stamp', 'claimNumber', 'recipientsXM8UserId', 'recipientsXNAddress', 'origTransactionId']
-    dummy_list = ["CONTACT'CONTACT'", "CONTACT'CONTACT'", "CONTROL_POINT'CONTROL_POINT'",
-                  "CONTROL_POINT'CONTROL_POINT'", "PHONE'", "PHONE'PHONE'", "PHONE'PHONE'",
-                  "TYPEOFLOSS'TYPEOFLOSS'", "XACTNET_INFO'XACTNET_INFO'", "XACTNET_INFO'XACTNET_INFO'",
-                  "XACTNET_INFO'XACTNET_INFO'", "XACTNET_INFO'XACTNET_INFO'"]
+    dummy_list =['CONTACT', 'CONTACT', 'CONTROL_POINT', 'CONTROL_POINT', 'PHONE', 'PHONE', 'PHONE', 'TYPEOFLOSS', 'XACTNET_INFO', 'XACTNET_INFO', 'XACTNET_INFO', 'XACTNET_INFO']
+
 
     x = dummy_list[5]
-    x = 'XACTNET_INFO'
-    for node in root.iter(x):
-        print('bing')
-        print(node)
-        print('looking for {}'.format(x))
-        print('found: ')
-        print(node)
-        print(ET.tostring(node))
+    # x = 'XACTNET_INFO'
+    headers = ['ID']
+    values = []
+    for x in dummy_list:
+        templist= [pk]
+        print('     -----------------> looking for {} <-------------------'.format(x))
+        for node in root.iter(x):
+            time.sleep(1)
+            print(node)
+            print(node.attrib)
+            print(ET.tostring(node))
+            for i, j in node.attrib.items():
+                print(i,len(i),' : ',j,len(j))
+                if i not in headers:
+                    headers.append(i)
+                templist.append(j)
+                values.append(templist)
+        print(headers)
+        print(values)
+
+
+
+    time.sleep(3)
 
     return 'something'
 
 
 def demo():
+    print(')98(((((((((((((((((((((((((')
     path, dirs, files = next(os.walk(status_dir))
     c = 0
     mc = len(files) -1
@@ -489,15 +515,16 @@ def demo():
         print('\n~~~~~~~~~~~~~~~~')
         # print(file)
         data2db(file)
-        print('files remaining: ', mc)
+        print('~~~~~~ files remaining: ', mc,'~~~~~~~~')
         mc-=1
         c += 1
+    print('TOTAL FILES PROCESSED')
     print(c)
 
 
 if __name__ == '__main__':
     # main()
-    demo()
     firstpass()
+    demo()
 
     # create_table(these_columns, this_table)
