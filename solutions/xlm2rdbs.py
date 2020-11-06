@@ -61,13 +61,13 @@ convert_data_dict = {
     # xs:time
 }
 
-
 type_elems = []
 another_list = []
 xcount = 0
 
 rcount = 0
 allelems = []
+
 
 class GenericDataDictionaryClass:
     """This is a representations of a generic class file"""
@@ -86,6 +86,7 @@ class GenericDataDictionaryClass:
             description: {}
             """.format(self.element, self.attribute, self.value, self.description)
 
+
 class Node:
     def __init__(self, data):
         """Initialize this node with the given dataa"""
@@ -96,6 +97,7 @@ class Node:
     def __repr__(self):
         """"Return a string representation of this node"""
         return 'Node {}'.format(self.data)
+
 
 class DoublyLinkedList:
     def __init__(self):
@@ -108,7 +110,7 @@ class DoublyLinkedList:
         self.length += 1
         if self.head is not None:
             self.head.prev = new_node
-        self.head=new_node
+        self.head = new_node
 
     def listprint(self, node):
         while node is not None:
@@ -116,8 +118,9 @@ class DoublyLinkedList:
             last = node
             node = node.next
 
-    def getlen(self,node):
+    def getlen(self, node):
         print(self.length)
+
 
 def another_one(node, level=0):
     """takes in element xml.etree.ElementTree.Element | ET.parse(XML_file).getroot()"""
@@ -133,6 +136,7 @@ def another_one(node, level=0):
         if len(subnode) != 0:
             another_one(subnode, level)
     return rcount, allelems
+
 
 def get_parent_of_type(node, level=0):
     """takes in element xml.etree.ElementTree.Element | ET.parse(XML_file).getroot()"""
@@ -168,17 +172,23 @@ def firstpass():
     elems_with_global_types = []
     elems_simple = []
     elems_with_base = []
-    typescount, y,z = get_parent_of_type(root)
+    typescount, y, z = get_parent_of_type(root)
     print(len(z))
+    slist = []
     for i in z:
         # i.listprint(i.head)
         etree_element = i.head.data
         parent_element = i.head.next.data
-        print('parent element', ET.tostring(parent_element))
-        print(parent_element)
-        print(t, 'type element', ET.tostring(etree_element))
-        print(t, etree_element)
-        print(' ')
+        # print('parent element', ET.tostring(parent_element))
+        try:
+            x = parent_element.attrib['name']
+            x += "'" + x + "'"
+            slist.append(x)
+        except:
+            print('!')
+    print(slist)
+    # print(t, 'type element', ET.tostring(etree_element))
+    # print(t, etree_element)
     quit()
     for node in tree.iter():
         for subnode in node:
@@ -200,11 +210,11 @@ def firstpass():
         # for subnode in node:
         #     if 'type' in subnode.attrib.keys():
 
-    # print(node.attrib)
+    # print(attrib)
     # print('# of nodes: ', len(node))
     # print('node:')
     # print(node)
-    # if runner != 0:
+    # if runner node.!= 0:
     #     if node in runner:
     #         print(t, '--- runner:')
     #         print(t, runner)
@@ -265,37 +275,6 @@ def create_table(list_of_columns, table_name):
     print(y)
     return
 
-
-def demo():
-    path, dirs, files = next(os.walk(status_dir))
-    c = 0
-    mc = len(files)
-    for file in files:
-        file = os.path.join(path, file)
-        print(file)
-        print('\n~~~~~~~~~~~~~~~~')
-        data2db(file)
-        time.sleep(.5)
-        mc -= 1
-        print('files remaining: ', mc)
-        c += 1
-    print(c)
-
-
-def data2db(xml_file: str):
-    tree = ET.parse(xml_file, parser=None)
-    root = tree.getroot()
-    dummy_list = ['name', 'stamp', 'claimNumber', 'recipientsXM8UserId', 'recipientsXNAddress', 'origTransactionId']
-    x = 'TYPESOFLOSS'
-    y = 'PHONE'
-    for node in root.iter(x):
-        print(node)
-        print('@#$($%#$%^')
-        print('looking for {}'.format(x))
-        print(ET.tostring(node))
-        time.sleep(5)
-
-    return 'something'
 
 
 def get_tid(file_name):
@@ -478,10 +457,47 @@ def main():
     print('~ ' * 70)
     return header_list
 
+def data2db(xml_file: str):
+    # print(xml_file)
+    tree = ET.parse(xml_file, parser=None)t
+    root = tree.getroot()
+    dummy_list = ['name', 'stamp', 'claimNumber', 'recipientsXM8UserId', 'recipientsXNAddress', 'origTransactionId']
+    dummy_list = ["CONTACT'CONTACT'", "CONTACT'CONTACT'", "CONTROL_POINT'CONTROL_POINT'",
+                  "CONTROL_POINT'CONTROL_POINT'", "PHONE'", "PHONE'PHONE'", "PHONE'PHONE'",
+                  "TYPEOFLOSS'TYPEOFLOSS'", "XACTNET_INFO'XACTNET_INFO'", "XACTNET_INFO'XACTNET_INFO'",
+                  "XACTNET_INFO'XACTNET_INFO'", "XACTNET_INFO'XACTNET_INFO'"]
+
+    x = dummy_list[5]
+    x = 'XACTNET_INFO'
+    for node in root.iter(x):
+        print('bing')
+        print(node)
+        print('looking for {}'.format(x))
+        print('found: ')
+        print(node)
+        print(ET.tostring(node))
+
+    return 'something'
+
+
+def demo():
+    path, dirs, files = next(os.walk(status_dir))
+    c = 0
+    mc = len(files) -1
+    for file in files:
+        file = os.path.join(path, file)
+        print('\n~~~~~~~~~~~~~~~~')
+        # print(file)
+        data2db(file)
+        print('files remaining: ', mc)
+        mc-=1
+        c += 1
+    print(c)
+
 
 if __name__ == '__main__':
     # main()
+    demo()
     firstpass()
-    # demo()
 
     # create_table(these_columns, this_table)
