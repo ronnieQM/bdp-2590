@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+  <XACTDOC>
+    <XACTNET_INFO
+      transactionId = "0078292"
+      recipientsXNAddress = "ACSC.TEST.STAFF"
+      recipientsXM8UserId = ""
+    >
+      <CONTROL_POINTS>
+        <CONTROL_POINT
+          stamp = "2020-09-04T15:39:52"
+          type = "Notification Pending"
+        />
+      </CONTROL_POINTS>
+    </XACTNET_INFO>
+    <CONTACTS>
+      <CONTACT
+        type = "ClaimRep"
+        name = "Randy Dangerfield"
+      >
+        <CONTACTMETHODS>
+          <PHONE
+            type = "Office"
+            number = "949-970-3058"
+            extension = ""
+          />
+          <PHONE
+                  type = "Home"
+                  number = "859-421-6893"
+                  extension = ""
+          />
+          <PHONE
+                  type = "Cell"
+                  number = "714-933-3058"
+                  extension = ""
+          />
+          <PHONE
+                  type = "Work"
+                  number = "141-533-3058"
+                  extension = ""
+          />
+        </CONTACTMETHODS>
+      </CONTACT>
+    </CONTACTS>
+    <ADM>
+      <TYPESOFLOSS>
+        <TYPEOFLOSS
+          claimNumber = "003120649-8-W"
+        />
+      </TYPESOFLOSS>
+    </ADM>
+  </XACTDOC>

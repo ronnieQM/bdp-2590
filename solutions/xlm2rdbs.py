@@ -497,6 +497,21 @@ def data2db(xml_file: str):
     headers = ['ID']
     list_of_headers = []
     values = []
+    for x in dummy_list:
+        templist= [pk]
+        print('     -----------------> looking for {} <-------------------'.format(x))
+        for node in root.iter(x):
+            print(node)
+            print(node.attrib)
+            print(ET.tostring(node))
+            for i, j in node.attrib.items():
+                print(i,len(i),' : ',j,len(j))
+                if i not in headers:
+                    headers.append(i)
+                templist.append(j)
+                values.append(templist)
+        print(headers)
+        print(values)
 
     print('----------------------------------------------------THIS IS A NEW FILE---------------------------------------------')
     print('filename: ', xf, 'pk: ', pk)
@@ -545,6 +560,7 @@ def data2db(xml_file: str):
 
     rows = reallist
     return headers, rows, value_dict
+    return 'something'
 
 
 def demo():
