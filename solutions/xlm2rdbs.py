@@ -515,7 +515,6 @@ def data2db(xml_file: str):
 
     print('----------------------------------------------------THIS IS A NEW FILE---------------------------------------------')
     print('filename: ', xf, 'pk: ', pk)
-    time.sleep(.05)
     temp_count = 0
     reallist = [pk]
     for node in root.iter():
