@@ -8,6 +8,8 @@ from xml.dom import minidom
 import xml.etree.ElementTree as ET
 
 import pandas as pd
+from prettytable import PrettyTable
+
 from quick_tools import breakout, clearit, breakpoint
 
 t = '\t'
@@ -25,6 +27,7 @@ data_dir = os.path.join(project_dir, 'data')  # define data/
 
 # data subdirectories
 status_dir = os.path.join(data_dir, 'status')
+status_dir = os.path.join(data_dir, 'status_test')
 note_dir = os.path.join(data_dir, 'note')
 estimate_dir = os.path.join(data_dir, 'estimate')
 customDoc_dir = os.path.join(data_dir, 'customDoc')
@@ -145,13 +148,13 @@ def get_parent_of_type(node, level=0):
     global another_list
     level += 1
     for subnode in node:
-        newnode = DoublyLinkedList()
-        newnode.push(node)
+        dll = DoublyLinkedList()
+        dll.push(node)
         if 'type' in subnode.attrib.keys():
             xcount += 1
             type_elems.append(subnode)
-            newnode.push(subnode)
-            another_list.append(newnode)
+            dll.push(subnode)
+            another_list.append(dll)
         if len(subnode) != 0:
             get_parent_of_type(subnode)
     return xcount, type_elems, another_list
@@ -182,21 +185,13 @@ def firstpass():
         # print('parent element', ET.tostring(parent_element))
         try:
             x = parent_element.attrib['name']
-            print(x)
+            # print(x)
             slist.append(x)
         except:
-            print('!')
+            pass
+            # print('!')
     print(slist)
 
-    print('!')
-    print('!')
-    print('!')
-    print('!')
-    print('!')
-    print('!')
-    print('!')
-    print('!')
-    print('!')
     # print(t, 'type element', ET.tostring(etree_element))
     # print(t, etree_element)
     return None
@@ -284,7 +279,6 @@ def create_table(list_of_columns, table_name):
     y = x + s + ');'
     print(y)
     return
-
 
 
 def get_tid(file_name):
@@ -467,64 +461,130 @@ def main():
     print('~ ' * 70)
     return header_list
 
+
+
+
 def data2db(xml_file: str):
+    print('--inside data2db --')
     xf = os.path.basename(xml_file)
     pk = get_tid(xf)
     # print(xml_file)
     tree = ET.parse(xml_file, parser=None)
     root = tree.getroot()
-    dummy_list = ['name', 'stamp', 'claimNumber', 'recipientsXM8UserId', 'recipientsXNAddress', 'origTransactionId']
-    dummy_list =['CONTACT', 'CONTACT', 'CONTROL_POINT', 'CONTROL_POINT', 'PHONE', 'PHONE', 'PHONE', 'TYPEOFLOSS', 'XACTNET_INFO', 'XACTNET_INFO', 'XACTNET_INFO', 'XACTNET_INFO']
 
-
-    x = dummy_list[5]
-    # x = 'XACTNET_INFO'
+    # print('--------------------------------------------------------------------------------------------------------')
+    nothing = ['name', 'stamp', 'claimNumber', 'recipientsXM8UserId', 'recipientsXNAddress', 'origTransactionId']
+    some_list = ['CONTACT', 'CONTACT', 'CONTROL_POINT', 'CONTROL_POINT', 'PHONE', 'PHONE', 'PHONE', 'TYPEOFLOSS',
+                 'XACTNET_INFO', 'XACTNET_INFO', 'XACTNET_INFO', 'XACTNET_INFO']
+    dummy_list = ['CONTACT', 'CONTROL_POINT', 'PHONE', 'TYPEOFLOSS', 'XACTNET_INFO']
+    value_dict = {
+        'pk': None,
+        'transactionId': None,
+        'recipientsXNAddress': None,
+        'recipientsXM8UserId': None,
+        'stamp': None,
+        'CONTROL_POINT_type': None,
+        'CONTACT_type': None,
+        'contact_name': None,
+        'PHONE_type': None,
+        'number': None,
+        'extension': None,
+        'claimNumber': None,
+        'origTransactionId': None,
+    }
+    list_of_format_dict = []
+    print(dummy_list)
     headers = ['ID']
+    list_of_headers = []
     values = []
-    for x in dummy_list:
-        templist= [pk]
-        print('     -----------------> looking for {} <-------------------'.format(x))
-        for node in root.iter(x):
-            time.sleep(1)
-            print(node)
-            print(node.attrib)
-            print(ET.tostring(node))
-            for i, j in node.attrib.items():
-                print(i,len(i),' : ',j,len(j))
-                if i not in headers:
-                    headers.append(i)
-                templist.append(j)
+
+    print('----------------------------------------------------THIS IS A NEW FILE---------------------------------------------')
+    print('filename: ', xf, 'pk: ', pk)
+    time.sleep(.05)
+    temp_count = 0
+    reallist = [pk]
+    for node in root.iter():
+        temp_count += 1
+        templist = [pk]
+        tag = node.tag
+        for i in dummy_list:
+            print('going to look for ', i, 'in node #', temp_count)
+            time.sleep(.05)
+            if i == tag:
+                print(t, ET.tostring(node))
+                for key, value in node.attrib.items():
+                    if key == 'type':
+                        key = tag + '_' + key
+                    if key not in headers:
+                        headers.append(key)
+                    print(t, key, ' : ', value)
+                    templist.append(value)
+                    reallist.append(value)
+                    print(t, 'headers', headers)
+                    print(t, 'values', reallist)
+
+                    print(key, value)
+                    if key in value_dict.keys():
+                        value_dict['pk'] = pk
+                        value_dict[key] = value
+
                 values.append(templist)
-        print(headers)
-        print(values)
 
+    print(' ')
+    print(' ')
+    print(' ')
+    # print(headers)
+    # print(reallist)
+    # print(len(headers))
+    # print(len(reallist))
+    #
+    # prettyprint = PrettyTable(headers)
+    # prettyprint.add_row(reallist)
+    # print(prettyprint)
+    # print('-----------------------------------------------^^^^^----------------------------------------------')
 
-
-    time.sleep(3)
-
-    return 'something'
+    rows = reallist
+    return headers, rows, value_dict
 
 
 def demo():
-    print(')98(((((((((((((((((((((((((')
+    print('--inside demo--')
     path, dirs, files = next(os.walk(status_dir))
+    mc = len(files) - 1
+    rows = []
+
     c = 0
-    mc = len(files) -1
+    headers = []
+    list_of_all_possible_headers = []
+    list_of_value_dicts = []
     for file in files:
         file = os.path.join(path, file)
-        print('\n~~~~~~~~~~~~~~~~')
         # print(file)
-        data2db(file)
-        print('~~~~~~ files remaining: ', mc,'~~~~~~~~')
-        mc-=1
+        headers, row, value_dict = data2db(file)
+        rows.append(row)
+        list_of_value_dicts.append(value_dict)
+        print('~~~~~~ files remaining: ', mc, '~~~~~~~~')
+        mc -= 1
         c += 1
-    print('TOTAL FILES PROCESSED')
+
     print(c)
+    headers = list(list_of_value_dicts[0].keys())
+    prettyprint = PrettyTable(headers)
+    c = 0
+    for i in list_of_value_dicts:
+        row = list(i.values())
+        prettyprint.add_row(row)
+        c += 1
+        if c == 15:
+            break
+    print(prettyprint)
+    print('TOTAL FILES PROCESSED')
+    print('Lenght of list: ', len(list_of_value_dicts))
 
 
 if __name__ == '__main__':
     # main()
-    firstpass()
     demo()
+    firstpass()
 
     # create_table(these_columns, this_table)

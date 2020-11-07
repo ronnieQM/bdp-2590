@@ -1,0 +1,626 @@
+--inside firstpass--
+23
+['CONTACT', 'CONTACT', 'CONTROL_POINT', 'CONTROL_POINT', 'PHONE', 'PHONE', 'PHONE', 'TYPEOFLOSS', 'XACTNET_INFO', 'XACTNET_INFO', 'XACTNET_INFO', 'XACTNET_INFO']
+--inside demo--
+--inside data2db --
+['CONTACT', 'CONTROL_POINT', 'PHONE', 'TYPEOFLOSS', 'XACTNET_INFO']
+----------------------------------------------------THIS IS A NEW FILE---------------------------------------------
+filename:  007CBRP.120.2.20201015144152.XML pk:  007CBRP.120
+going to look for  CONTACT in node # 1
+going to look for  CONTROL_POINT in node # 1
+going to look for  PHONE in node # 1
+going to look for  TYPEOFLOSS in node # 1
+going to look for  XACTNET_INFO in node # 1
+going to look for  CONTACT in node # 2
+going to look for  CONTROL_POINT in node # 2
+going to look for  PHONE in node # 2
+going to look for  TYPEOFLOSS in node # 2
+going to look for  XACTNET_INFO in node # 2
+	 b'<XACTNET_INFO transactionId="007CBRP" recipientsXNAddress="ACSC.TEST.STAFF" recipientsXM8UserId="">\n      <CONTROL_POINTS>\n        <CONTROL_POINT stamp="2020-10-15T14:41:35" type="Notification Pending" />\n      </CONTROL_POINTS>\n    </XACTNET_INFO>\n    '
+	 transactionId  :  007CBRP
+	 headers ['ID', 'transactionId']
+	 values ['007CBRP.120', '007CBRP']
+	 recipientsXNAddress  :  ACSC.TEST.STAFF
+	 headers ['ID', 'transactionId', 'recipientsXNAddress']
+	 values ['007CBRP.120', '007CBRP', 'ACSC.TEST.STAFF']
+	 recipientsXM8UserId  :  
+	 headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId']
+	 values ['007CBRP.120', '007CBRP', 'ACSC.TEST.STAFF', '']
+h-len: 4 reallist,len: 4
+headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId']
+values ['007CBRP.120', '007CBRP', 'ACSC.TEST.STAFF', '']
+going to look for  CONTACT in node # 3
+going to look for  CONTROL_POINT in node # 3
+going to look for  PHONE in node # 3
+going to look for  TYPEOFLOSS in node # 3
+going to look for  XACTNET_INFO in node # 3
+going to look for  CONTACT in node # 4
+going to look for  CONTROL_POINT in node # 4
+	 b'<CONTROL_POINT stamp="2020-10-15T14:41:35" type="Notification Pending" />\n      '
+	 stamp  :  2020-10-15T14:41:35
+	 headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp']
+	 values ['007CBRP.120', '007CBRP', 'ACSC.TEST.STAFF', '', '2020-10-15T14:41:35']
+	 CONTROL_POINTtype  :  Notification Pending
+	 headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype']
+	 values ['007CBRP.120', '007CBRP', 'ACSC.TEST.STAFF', '', '2020-10-15T14:41:35', 'Notification Pending']
+h-len: 6 reallist,len: 6
+headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype']
+values ['007CBRP.120', '007CBRP', 'ACSC.TEST.STAFF', '', '2020-10-15T14:41:35', 'Notification Pending']
+going to look for  PHONE in node # 4
+going to look for  TYPEOFLOSS in node # 4
+going to look for  XACTNET_INFO in node # 4
+going to look for  CONTACT in node # 5
+going to look for  CONTROL_POINT in node # 5
+going to look for  PHONE in node # 5
+going to look for  TYPEOFLOSS in node # 5
+going to look for  XACTNET_INFO in node # 5
+going to look for  CONTACT in node # 6
+	 b'<CONTACT type="ClaimRep" name="Paola Torres">\n        <CONTACTMETHODS>\n          <PHONE type="Office" number="949-933-3058" extension="" />\n        </CONTACTMETHODS>\n      </CONTACT>\n    '
+	 CONTACTtype  :  ClaimRep
+	 headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype', 'CONTACTtype']
+	 values ['007CBRP.120', '007CBRP', 'ACSC.TEST.STAFF', '', '2020-10-15T14:41:35', 'Notification Pending', 'ClaimRep']
+	 name  :  Paola Torres
+	 headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype', 'CONTACTtype', 'name']
+	 values ['007CBRP.120', '007CBRP', 'ACSC.TEST.STAFF', '', '2020-10-15T14:41:35', 'Notification Pending', 'ClaimRep', 'Paola Torres']
+h-len: 8 reallist,len: 8
+headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype', 'CONTACTtype', 'name']
+values ['007CBRP.120', '007CBRP', 'ACSC.TEST.STAFF', '', '2020-10-15T14:41:35', 'Notification Pending', 'ClaimRep', 'Paola Torres']
+going to look for  CONTROL_POINT in node # 6
+going to look for  PHONE in node # 6
+going to look for  TYPEOFLOSS in node # 6
+going to look for  XACTNET_INFO in node # 6
+going to look for  CONTACT in node # 7
+going to look for  CONTROL_POINT in node # 7
+going to look for  PHONE in node # 7
+going to look for  TYPEOFLOSS in node # 7
+going to look for  XACTNET_INFO in node # 7
+going to look for  CONTACT in node # 8
+going to look for  CONTROL_POINT in node # 8
+going to look for  PHONE in node # 8
+	 b'<PHONE type="Office" number="949-933-3058" extension="" />\n        '
+	 PHONEtype  :  Office
+	 headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype', 'CONTACTtype', 'name', 'PHONEtype']
+	 values ['007CBRP.120', '007CBRP', 'ACSC.TEST.STAFF', '', '2020-10-15T14:41:35', 'Notification Pending', 'ClaimRep', 'Paola Torres', 'Office']
+	 number  :  949-933-3058
+	 headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype', 'CONTACTtype', 'name', 'PHONEtype', 'number']
+	 values ['007CBRP.120', '007CBRP', 'ACSC.TEST.STAFF', '', '2020-10-15T14:41:35', 'Notification Pending', 'ClaimRep', 'Paola Torres', 'Office', '949-933-3058']
+	 extension  :  
+	 headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype', 'CONTACTtype', 'name', 'PHONEtype', 'number', 'extension']
+	 values ['007CBRP.120', '007CBRP', 'ACSC.TEST.STAFF', '', '2020-10-15T14:41:35', 'Notification Pending', 'ClaimRep', 'Paola Torres', 'Office', '949-933-3058', '']
+h-len: 11 reallist,len: 11
+headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype', 'CONTACTtype', 'name', 'PHONEtype', 'number', 'extension']
+values ['007CBRP.120', '007CBRP', 'ACSC.TEST.STAFF', '', '2020-10-15T14:41:35', 'Notification Pending', 'ClaimRep', 'Paola Torres', 'Office', '949-933-3058', '']
+going to look for  TYPEOFLOSS in node # 8
+going to look for  XACTNET_INFO in node # 8
+going to look for  CONTACT in node # 9
+going to look for  CONTROL_POINT in node # 9
+going to look for  PHONE in node # 9
+going to look for  TYPEOFLOSS in node # 9
+going to look for  XACTNET_INFO in node # 9
+going to look for  CONTACT in node # 10
+going to look for  CONTROL_POINT in node # 10
+going to look for  PHONE in node # 10
+going to look for  TYPEOFLOSS in node # 10
+going to look for  XACTNET_INFO in node # 10
+going to look for  CONTACT in node # 11
+going to look for  CONTROL_POINT in node # 11
+going to look for  PHONE in node # 11
+going to look for  TYPEOFLOSS in node # 11
+	 b'<TYPEOFLOSS claimNumber="003123414-8-W" />\n      '
+	 claimNumber  :  003123414-8-W
+	 headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype', 'CONTACTtype', 'name', 'PHONEtype', 'number', 'extension', 'claimNumber']
+	 values ['007CBRP.120', '007CBRP', 'ACSC.TEST.STAFF', '', '2020-10-15T14:41:35', 'Notification Pending', 'ClaimRep', 'Paola Torres', 'Office', '949-933-3058', '', '003123414-8-W']
+h-len: 12 reallist,len: 12
+headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype', 'CONTACTtype', 'name', 'PHONEtype', 'number', 'extension', 'claimNumber']
+values ['007CBRP.120', '007CBRP', 'ACSC.TEST.STAFF', '', '2020-10-15T14:41:35', 'Notification Pending', 'ClaimRep', 'Paola Torres', 'Office', '949-933-3058', '', '003123414-8-W']
+going to look for  XACTNET_INFO in node # 11
+ 
+['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype', 'CONTACTtype', 'name', 'PHONEtype', 'number', 'extension', 'claimNumber']
+['007CBRP.120', '007CBRP', 'ACSC.TEST.STAFF', '', '2020-10-15T14:41:35', 'Notification Pending', 'ClaimRep', 'Paola Torres', 'Office', '949-933-3058', '', '003123414-8-W']
+12
+12
+-----------------------------------------------^^^^^----------------------------------------------
++-------------+---------------+---------------------+---------------------+---------------------+----------------------+-------------+--------------+-----------+--------------+-----------+---------------+
+|      ID     | transactionId | recipientsXNAddress | recipientsXM8UserId |        stamp        |  CONTROL_POINTtype   | CONTACTtype |     name     | PHONEtype |    number    | extension |  claimNumber  |
++-------------+---------------+---------------------+---------------------+---------------------+----------------------+-------------+--------------+-----------+--------------+-----------+---------------+
+| 007CBRP.120 |    007CBRP    |   ACSC.TEST.STAFF   |                     | 2020-10-15T14:41:35 | Notification Pending |   ClaimRep  | Paola Torres |   Office  | 949-933-3058 |           | 003123414-8-W |
++-------------+---------------+---------------------+---------------------+---------------------+----------------------+-------------+--------------+-----------+--------------+-----------+---------------+
+~~~~~~ files remaining:  2275 ~~~~~~~~
+--inside data2db --
+['CONTACT', 'CONTROL_POINT', 'PHONE', 'TYPEOFLOSS', 'XACTNET_INFO']
+----------------------------------------------------THIS IS A NEW FILE---------------------------------------------
+filename:  006XBDJ.121.2.20200414104406.XML pk:  006XBDJ.121
+going to look for  CONTACT in node # 1
+going to look for  CONTROL_POINT in node # 1
+going to look for  PHONE in node # 1
+going to look for  TYPEOFLOSS in node # 1
+going to look for  XACTNET_INFO in node # 1
+going to look for  CONTACT in node # 2
+going to look for  CONTROL_POINT in node # 2
+going to look for  PHONE in node # 2
+going to look for  TYPEOFLOSS in node # 2
+going to look for  XACTNET_INFO in node # 2
+	 b'<XACTNET_INFO transactionId="006XBDJ" recipientsXNAddress="ACSC.TEST.STAFF" recipientsXM8UserId="">\n      <CONTROL_POINTS>\n        <CONTROL_POINT stamp="2020-04-14T10:43:18" type="Notification Pending" />\n      </CONTROL_POINTS>\n    </XACTNET_INFO>\n    '
+	 transactionId  :  006XBDJ
+	 headers ['ID', 'transactionId']
+	 values ['006XBDJ.121', '006XBDJ']
+	 recipientsXNAddress  :  ACSC.TEST.STAFF
+	 headers ['ID', 'transactionId', 'recipientsXNAddress']
+	 values ['006XBDJ.121', '006XBDJ', 'ACSC.TEST.STAFF']
+	 recipientsXM8UserId  :  
+	 headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId']
+	 values ['006XBDJ.121', '006XBDJ', 'ACSC.TEST.STAFF', '']
+h-len: 4 reallist,len: 4
+headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId']
+values ['006XBDJ.121', '006XBDJ', 'ACSC.TEST.STAFF', '']
+going to look for  CONTACT in node # 3
+going to look for  CONTROL_POINT in node # 3
+going to look for  PHONE in node # 3
+going to look for  TYPEOFLOSS in node # 3
+going to look for  XACTNET_INFO in node # 3
+going to look for  CONTACT in node # 4
+going to look for  CONTROL_POINT in node # 4
+	 b'<CONTROL_POINT stamp="2020-04-14T10:43:18" type="Notification Pending" />\n      '
+	 stamp  :  2020-04-14T10:43:18
+	 headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp']
+	 values ['006XBDJ.121', '006XBDJ', 'ACSC.TEST.STAFF', '', '2020-04-14T10:43:18']
+	 CONTROL_POINTtype  :  Notification Pending
+	 headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype']
+	 values ['006XBDJ.121', '006XBDJ', 'ACSC.TEST.STAFF', '', '2020-04-14T10:43:18', 'Notification Pending']
+h-len: 6 reallist,len: 6
+headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype']
+values ['006XBDJ.121', '006XBDJ', 'ACSC.TEST.STAFF', '', '2020-04-14T10:43:18', 'Notification Pending']
+going to look for  PHONE in node # 4
+going to look for  TYPEOFLOSS in node # 4
+going to look for  XACTNET_INFO in node # 4
+going to look for  CONTACT in node # 5
+going to look for  CONTROL_POINT in node # 5
+going to look for  PHONE in node # 5
+going to look for  TYPEOFLOSS in node # 5
+going to look for  XACTNET_INFO in node # 5
+going to look for  CONTACT in node # 6
+	 b'<CONTACT type="ClaimRep" name="Paola Torres">\n        <CONTACTMETHODS>\n          <PHONE type="Office" number="949-933-3058" extension="" />\n        </CONTACTMETHODS>\n      </CONTACT>\n    '
+	 CONTACTtype  :  ClaimRep
+	 headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype', 'CONTACTtype']
+	 values ['006XBDJ.121', '006XBDJ', 'ACSC.TEST.STAFF', '', '2020-04-14T10:43:18', 'Notification Pending', 'ClaimRep']
+	 name  :  Paola Torres
+	 headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype', 'CONTACTtype', 'name']
+	 values ['006XBDJ.121', '006XBDJ', 'ACSC.TEST.STAFF', '', '2020-04-14T10:43:18', 'Notification Pending', 'ClaimRep', 'Paola Torres']
+h-len: 8 reallist,len: 8
+headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype', 'CONTACTtype', 'name']
+values ['006XBDJ.121', '006XBDJ', 'ACSC.TEST.STAFF', '', '2020-04-14T10:43:18', 'Notification Pending', 'ClaimRep', 'Paola Torres']
+going to look for  CONTROL_POINT in node # 6
+going to look for  PHONE in node # 6
+going to look for  TYPEOFLOSS in node # 6
+going to look for  XACTNET_INFO in node # 6
+going to look for  CONTACT in node # 7
+going to look for  CONTROL_POINT in node # 7
+going to look for  PHONE in node # 7
+going to look for  TYPEOFLOSS in node # 7
+going to look for  XACTNET_INFO in node # 7
+going to look for  CONTACT in node # 8
+going to look for  CONTROL_POINT in node # 8
+going to look for  PHONE in node # 8
+	 b'<PHONE type="Office" number="949-933-3058" extension="" />\n        '
+	 PHONEtype  :  Office
+	 headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype', 'CONTACTtype', 'name', 'PHONEtype']
+	 values ['006XBDJ.121', '006XBDJ', 'ACSC.TEST.STAFF', '', '2020-04-14T10:43:18', 'Notification Pending', 'ClaimRep', 'Paola Torres', 'Office']
+	 number  :  949-933-3058
+	 headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype', 'CONTACTtype', 'name', 'PHONEtype', 'number']
+	 values ['006XBDJ.121', '006XBDJ', 'ACSC.TEST.STAFF', '', '2020-04-14T10:43:18', 'Notification Pending', 'ClaimRep', 'Paola Torres', 'Office', '949-933-3058']
+	 extension  :  
+	 headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype', 'CONTACTtype', 'name', 'PHONEtype', 'number', 'extension']
+	 values ['006XBDJ.121', '006XBDJ', 'ACSC.TEST.STAFF', '', '2020-04-14T10:43:18', 'Notification Pending', 'ClaimRep', 'Paola Torres', 'Office', '949-933-3058', '']
+h-len: 11 reallist,len: 11
+headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype', 'CONTACTtype', 'name', 'PHONEtype', 'number', 'extension']
+values ['006XBDJ.121', '006XBDJ', 'ACSC.TEST.STAFF', '', '2020-04-14T10:43:18', 'Notification Pending', 'ClaimRep', 'Paola Torres', 'Office', '949-933-3058', '']
+going to look for  TYPEOFLOSS in node # 8
+going to look for  XACTNET_INFO in node # 8
+going to look for  CONTACT in node # 9
+going to look for  CONTROL_POINT in node # 9
+going to look for  PHONE in node # 9
+going to look for  TYPEOFLOSS in node # 9
+going to look for  XACTNET_INFO in node # 9
+going to look for  CONTACT in node # 10
+going to look for  CONTROL_POINT in node # 10
+going to look for  PHONE in node # 10
+going to look for  TYPEOFLOSS in node # 10
+going to look for  XACTNET_INFO in node # 10
+going to look for  CONTACT in node # 11
+going to look for  CONTROL_POINT in node # 11
+going to look for  PHONE in node # 11
+going to look for  TYPEOFLOSS in node # 11
+	 b'<TYPEOFLOSS claimNumber="003102330-8-W" />\n      '
+	 claimNumber  :  003102330-8-W
+	 headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype', 'CONTACTtype', 'name', 'PHONEtype', 'number', 'extension', 'claimNumber']
+	 values ['006XBDJ.121', '006XBDJ', 'ACSC.TEST.STAFF', '', '2020-04-14T10:43:18', 'Notification Pending', 'ClaimRep', 'Paola Torres', 'Office', '949-933-3058', '', '003102330-8-W']
+h-len: 12 reallist,len: 12
+headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype', 'CONTACTtype', 'name', 'PHONEtype', 'number', 'extension', 'claimNumber']
+values ['006XBDJ.121', '006XBDJ', 'ACSC.TEST.STAFF', '', '2020-04-14T10:43:18', 'Notification Pending', 'ClaimRep', 'Paola Torres', 'Office', '949-933-3058', '', '003102330-8-W']
+going to look for  XACTNET_INFO in node # 11
+ 
+['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype', 'CONTACTtype', 'name', 'PHONEtype', 'number', 'extension', 'claimNumber']
+['006XBDJ.121', '006XBDJ', 'ACSC.TEST.STAFF', '', '2020-04-14T10:43:18', 'Notification Pending', 'ClaimRep', 'Paola Torres', 'Office', '949-933-3058', '', '003102330-8-W']
+12
+12
+-----------------------------------------------^^^^^----------------------------------------------
++-------------+---------------+---------------------+---------------------+---------------------+----------------------+-------------+--------------+-----------+--------------+-----------+---------------+
+|      ID     | transactionId | recipientsXNAddress | recipientsXM8UserId |        stamp        |  CONTROL_POINTtype   | CONTACTtype |     name     | PHONEtype |    number    | extension |  claimNumber  |
++-------------+---------------+---------------------+---------------------+---------------------+----------------------+-------------+--------------+-----------+--------------+-----------+---------------+
+| 006XBDJ.121 |    006XBDJ    |   ACSC.TEST.STAFF   |                     | 2020-04-14T10:43:18 | Notification Pending |   ClaimRep  | Paola Torres |   Office  | 949-933-3058 |           | 003102330-8-W |
++-------------+---------------+---------------------+---------------------+---------------------+----------------------+-------------+--------------+-----------+--------------+-----------+---------------+
+~~~~~~ files remaining:  2274 ~~~~~~~~
+--inside data2db --
+['CONTACT', 'CONTROL_POINT', 'PHONE', 'TYPEOFLOSS', 'XACTNET_INFO']
+----------------------------------------------------THIS IS A NEW FILE---------------------------------------------
+filename:  0072NTQ.752.4.20200929153214.XML pk:  0072NTQ.752
+going to look for  CONTACT in node # 1
+going to look for  CONTROL_POINT in node # 1
+going to look for  PHONE in node # 1
+going to look for  TYPEOFLOSS in node # 1
+going to look for  XACTNET_INFO in node # 1
+going to look for  CONTACT in node # 2
+going to look for  CONTROL_POINT in node # 2
+going to look for  PHONE in node # 2
+going to look for  TYPEOFLOSS in node # 2
+going to look for  XACTNET_INFO in node # 2
+	 b'<XACTNET_INFO transactionId="0072NTQ" recipientsXNAddress="ACSC.TEST.STAFF" recipientsXM8UserId="">\n      <CONTROL_POINTS>\n        <CONTROL_POINT stamp="2020-09-29T15:31:40" type="Delivered" />\n      </CONTROL_POINTS>\n    </XACTNET_INFO>\n    '
+	 transactionId  :  0072NTQ
+	 headers ['ID', 'transactionId']
+	 values ['0072NTQ.752', '0072NTQ']
+	 recipientsXNAddress  :  ACSC.TEST.STAFF
+	 headers ['ID', 'transactionId', 'recipientsXNAddress']
+	 values ['0072NTQ.752', '0072NTQ', 'ACSC.TEST.STAFF']
+	 recipientsXM8UserId  :  
+	 headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId']
+	 values ['0072NTQ.752', '0072NTQ', 'ACSC.TEST.STAFF', '']
+h-len: 4 reallist,len: 4
+headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId']
+values ['0072NTQ.752', '0072NTQ', 'ACSC.TEST.STAFF', '']
+going to look for  CONTACT in node # 3
+going to look for  CONTROL_POINT in node # 3
+going to look for  PHONE in node # 3
+going to look for  TYPEOFLOSS in node # 3
+going to look for  XACTNET_INFO in node # 3
+going to look for  CONTACT in node # 4
+going to look for  CONTROL_POINT in node # 4
+	 b'<CONTROL_POINT stamp="2020-09-29T15:31:40" type="Delivered" />\n      '
+	 stamp  :  2020-09-29T15:31:40
+	 headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp']
+	 values ['0072NTQ.752', '0072NTQ', 'ACSC.TEST.STAFF', '', '2020-09-29T15:31:40']
+	 CONTROL_POINTtype  :  Delivered
+	 headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype']
+	 values ['0072NTQ.752', '0072NTQ', 'ACSC.TEST.STAFF', '', '2020-09-29T15:31:40', 'Delivered']
+h-len: 6 reallist,len: 6
+headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype']
+values ['0072NTQ.752', '0072NTQ', 'ACSC.TEST.STAFF', '', '2020-09-29T15:31:40', 'Delivered']
+going to look for  PHONE in node # 4
+going to look for  TYPEOFLOSS in node # 4
+going to look for  XACTNET_INFO in node # 4
+going to look for  CONTACT in node # 5
+going to look for  CONTROL_POINT in node # 5
+going to look for  PHONE in node # 5
+going to look for  TYPEOFLOSS in node # 5
+going to look for  XACTNET_INFO in node # 5
+going to look for  CONTACT in node # 6
+	 b'<CONTACT type="ClaimRep" name="Paola Torres">\n        <CONTACTMETHODS>\n          <PHONE type="Office" number="949-933-3058" extension="" />\n        </CONTACTMETHODS>\n      </CONTACT>\n    '
+	 CONTACTtype  :  ClaimRep
+	 headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype', 'CONTACTtype']
+	 values ['0072NTQ.752', '0072NTQ', 'ACSC.TEST.STAFF', '', '2020-09-29T15:31:40', 'Delivered', 'ClaimRep']
+	 name  :  Paola Torres
+	 headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype', 'CONTACTtype', 'name']
+	 values ['0072NTQ.752', '0072NTQ', 'ACSC.TEST.STAFF', '', '2020-09-29T15:31:40', 'Delivered', 'ClaimRep', 'Paola Torres']
+h-len: 8 reallist,len: 8
+headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype', 'CONTACTtype', 'name']
+values ['0072NTQ.752', '0072NTQ', 'ACSC.TEST.STAFF', '', '2020-09-29T15:31:40', 'Delivered', 'ClaimRep', 'Paola Torres']
+going to look for  CONTROL_POINT in node # 6
+going to look for  PHONE in node # 6
+going to look for  TYPEOFLOSS in node # 6
+going to look for  XACTNET_INFO in node # 6
+going to look for  CONTACT in node # 7
+going to look for  CONTROL_POINT in node # 7
+going to look for  PHONE in node # 7
+going to look for  TYPEOFLOSS in node # 7
+going to look for  XACTNET_INFO in node # 7
+going to look for  CONTACT in node # 8
+going to look for  CONTROL_POINT in node # 8
+going to look for  PHONE in node # 8
+	 b'<PHONE type="Office" number="949-933-3058" extension="" />\n        '
+	 PHONEtype  :  Office
+	 headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype', 'CONTACTtype', 'name', 'PHONEtype']
+	 values ['0072NTQ.752', '0072NTQ', 'ACSC.TEST.STAFF', '', '2020-09-29T15:31:40', 'Delivered', 'ClaimRep', 'Paola Torres', 'Office']
+	 number  :  949-933-3058
+	 headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype', 'CONTACTtype', 'name', 'PHONEtype', 'number']
+	 values ['0072NTQ.752', '0072NTQ', 'ACSC.TEST.STAFF', '', '2020-09-29T15:31:40', 'Delivered', 'ClaimRep', 'Paola Torres', 'Office', '949-933-3058']
+	 extension  :  
+	 headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype', 'CONTACTtype', 'name', 'PHONEtype', 'number', 'extension']
+	 values ['0072NTQ.752', '0072NTQ', 'ACSC.TEST.STAFF', '', '2020-09-29T15:31:40', 'Delivered', 'ClaimRep', 'Paola Torres', 'Office', '949-933-3058', '']
+h-len: 11 reallist,len: 11
+headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype', 'CONTACTtype', 'name', 'PHONEtype', 'number', 'extension']
+values ['0072NTQ.752', '0072NTQ', 'ACSC.TEST.STAFF', '', '2020-09-29T15:31:40', 'Delivered', 'ClaimRep', 'Paola Torres', 'Office', '949-933-3058', '']
+going to look for  TYPEOFLOSS in node # 8
+going to look for  XACTNET_INFO in node # 8
+going to look for  CONTACT in node # 9
+going to look for  CONTROL_POINT in node # 9
+going to look for  PHONE in node # 9
+going to look for  TYPEOFLOSS in node # 9
+going to look for  XACTNET_INFO in node # 9
+going to look for  CONTACT in node # 10
+going to look for  CONTROL_POINT in node # 10
+going to look for  PHONE in node # 10
+going to look for  TYPEOFLOSS in node # 10
+going to look for  XACTNET_INFO in node # 10
+going to look for  CONTACT in node # 11
+going to look for  CONTROL_POINT in node # 11
+going to look for  PHONE in node # 11
+going to look for  TYPEOFLOSS in node # 11
+	 b'<TYPEOFLOSS claimNumber="003110723-8-W" />\n      '
+	 claimNumber  :  003110723-8-W
+	 headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype', 'CONTACTtype', 'name', 'PHONEtype', 'number', 'extension', 'claimNumber']
+	 values ['0072NTQ.752', '0072NTQ', 'ACSC.TEST.STAFF', '', '2020-09-29T15:31:40', 'Delivered', 'ClaimRep', 'Paola Torres', 'Office', '949-933-3058', '', '003110723-8-W']
+h-len: 12 reallist,len: 12
+headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype', 'CONTACTtype', 'name', 'PHONEtype', 'number', 'extension', 'claimNumber']
+values ['0072NTQ.752', '0072NTQ', 'ACSC.TEST.STAFF', '', '2020-09-29T15:31:40', 'Delivered', 'ClaimRep', 'Paola Torres', 'Office', '949-933-3058', '', '003110723-8-W']
+going to look for  XACTNET_INFO in node # 11
+ 
+['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype', 'CONTACTtype', 'name', 'PHONEtype', 'number', 'extension', 'claimNumber']
+['0072NTQ.752', '0072NTQ', 'ACSC.TEST.STAFF', '', '2020-09-29T15:31:40', 'Delivered', 'ClaimRep', 'Paola Torres', 'Office', '949-933-3058', '', '003110723-8-W']
+12
+12
+-----------------------------------------------^^^^^----------------------------------------------
++-------------+---------------+---------------------+---------------------+---------------------+-------------------+-------------+--------------+-----------+--------------+-----------+---------------+
+|      ID     | transactionId | recipientsXNAddress | recipientsXM8UserId |        stamp        | CONTROL_POINTtype | CONTACTtype |     name     | PHONEtype |    number    | extension |  claimNumber  |
++-------------+---------------+---------------------+---------------------+---------------------+-------------------+-------------+--------------+-----------+--------------+-----------+---------------+
+| 0072NTQ.752 |    0072NTQ    |   ACSC.TEST.STAFF   |                     | 2020-09-29T15:31:40 |     Delivered     |   ClaimRep  | Paola Torres |   Office  | 949-933-3058 |           | 003110723-8-W |
++-------------+---------------+---------------------+---------------------+---------------------+-------------------+-------------+--------------+-----------+--------------+-----------+---------------+
+~~~~~~ files remaining:  2273 ~~~~~~~~
+--inside data2db --
+['CONTACT', 'CONTROL_POINT', 'PHONE', 'TYPEOFLOSS', 'XACTNET_INFO']
+----------------------------------------------------THIS IS A NEW FILE---------------------------------------------
+filename:  0073B93.142.2.20200626151036.XML pk:  0073B93.142
+going to look for  CONTACT in node # 1
+going to look for  CONTROL_POINT in node # 1
+going to look for  PHONE in node # 1
+going to look for  TYPEOFLOSS in node # 1
+going to look for  XACTNET_INFO in node # 1
+going to look for  CONTACT in node # 2
+going to look for  CONTROL_POINT in node # 2
+going to look for  PHONE in node # 2
+going to look for  TYPEOFLOSS in node # 2
+going to look for  XACTNET_INFO in node # 2
+	 b'<XACTNET_INFO transactionId="0073B93" recipientsXNAddress="ACSC.TEST.STAFF" recipientsXM8UserId="">\n      <CONTROL_POINTS>\n        <CONTROL_POINT stamp="2020-06-26T15:10:22" type="Notification Pending" />\n      </CONTROL_POINTS>\n    </XACTNET_INFO>\n    '
+	 transactionId  :  0073B93
+	 headers ['ID', 'transactionId']
+	 values ['0073B93.142', '0073B93']
+	 recipientsXNAddress  :  ACSC.TEST.STAFF
+	 headers ['ID', 'transactionId', 'recipientsXNAddress']
+	 values ['0073B93.142', '0073B93', 'ACSC.TEST.STAFF']
+	 recipientsXM8UserId  :  
+	 headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId']
+	 values ['0073B93.142', '0073B93', 'ACSC.TEST.STAFF', '']
+h-len: 4 reallist,len: 4
+headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId']
+values ['0073B93.142', '0073B93', 'ACSC.TEST.STAFF', '']
+going to look for  CONTACT in node # 3
+going to look for  CONTROL_POINT in node # 3
+going to look for  PHONE in node # 3
+going to look for  TYPEOFLOSS in node # 3
+going to look for  XACTNET_INFO in node # 3
+going to look for  CONTACT in node # 4
+going to look for  CONTROL_POINT in node # 4
+	 b'<CONTROL_POINT stamp="2020-06-26T15:10:22" type="Notification Pending" />\n      '
+	 stamp  :  2020-06-26T15:10:22
+	 headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp']
+	 values ['0073B93.142', '0073B93', 'ACSC.TEST.STAFF', '', '2020-06-26T15:10:22']
+	 CONTROL_POINTtype  :  Notification Pending
+	 headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype']
+	 values ['0073B93.142', '0073B93', 'ACSC.TEST.STAFF', '', '2020-06-26T15:10:22', 'Notification Pending']
+h-len: 6 reallist,len: 6
+headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype']
+values ['0073B93.142', '0073B93', 'ACSC.TEST.STAFF', '', '2020-06-26T15:10:22', 'Notification Pending']
+going to look for  PHONE in node # 4
+going to look for  TYPEOFLOSS in node # 4
+going to look for  XACTNET_INFO in node # 4
+going to look for  CONTACT in node # 5
+going to look for  CONTROL_POINT in node # 5
+going to look for  PHONE in node # 5
+going to look for  TYPEOFLOSS in node # 5
+going to look for  XACTNET_INFO in node # 5
+going to look for  CONTACT in node # 6
+	 b'<CONTACT type="ClaimRep" name="Paola Torres">\n        <CONTACTMETHODS>\n          <PHONE type="Office" number="949-933-3058" extension="" />\n        </CONTACTMETHODS>\n      </CONTACT>\n    '
+	 CONTACTtype  :  ClaimRep
+	 headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype', 'CONTACTtype']
+	 values ['0073B93.142', '0073B93', 'ACSC.TEST.STAFF', '', '2020-06-26T15:10:22', 'Notification Pending', 'ClaimRep']
+	 name  :  Paola Torres
+	 headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype', 'CONTACTtype', 'name']
+	 values ['0073B93.142', '0073B93', 'ACSC.TEST.STAFF', '', '2020-06-26T15:10:22', 'Notification Pending', 'ClaimRep', 'Paola Torres']
+h-len: 8 reallist,len: 8
+headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype', 'CONTACTtype', 'name']
+values ['0073B93.142', '0073B93', 'ACSC.TEST.STAFF', '', '2020-06-26T15:10:22', 'Notification Pending', 'ClaimRep', 'Paola Torres']
+going to look for  CONTROL_POINT in node # 6
+going to look for  PHONE in node # 6
+going to look for  TYPEOFLOSS in node # 6
+going to look for  XACTNET_INFO in node # 6
+going to look for  CONTACT in node # 7
+going to look for  CONTROL_POINT in node # 7
+going to look for  PHONE in node # 7
+going to look for  TYPEOFLOSS in node # 7
+going to look for  XACTNET_INFO in node # 7
+going to look for  CONTACT in node # 8
+going to look for  CONTROL_POINT in node # 8
+going to look for  PHONE in node # 8
+	 b'<PHONE type="Office" number="949-933-3058" extension="" />\n        '
+	 PHONEtype  :  Office
+	 headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype', 'CONTACTtype', 'name', 'PHONEtype']
+	 values ['0073B93.142', '0073B93', 'ACSC.TEST.STAFF', '', '2020-06-26T15:10:22', 'Notification Pending', 'ClaimRep', 'Paola Torres', 'Office']
+	 number  :  949-933-3058
+	 headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype', 'CONTACTtype', 'name', 'PHONEtype', 'number']
+	 values ['0073B93.142', '0073B93', 'ACSC.TEST.STAFF', '', '2020-06-26T15:10:22', 'Notification Pending', 'ClaimRep', 'Paola Torres', 'Office', '949-933-3058']
+	 extension  :  
+	 headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype', 'CONTACTtype', 'name', 'PHONEtype', 'number', 'extension']
+	 values ['0073B93.142', '0073B93', 'ACSC.TEST.STAFF', '', '2020-06-26T15:10:22', 'Notification Pending', 'ClaimRep', 'Paola Torres', 'Office', '949-933-3058', '']
+h-len: 11 reallist,len: 11
+headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype', 'CONTACTtype', 'name', 'PHONEtype', 'number', 'extension']
+values ['0073B93.142', '0073B93', 'ACSC.TEST.STAFF', '', '2020-06-26T15:10:22', 'Notification Pending', 'ClaimRep', 'Paola Torres', 'Office', '949-933-3058', '']
+going to look for  TYPEOFLOSS in node # 8
+going to look for  XACTNET_INFO in node # 8
+going to look for  CONTACT in node # 9
+going to look for  CONTROL_POINT in node # 9
+going to look for  PHONE in node # 9
+going to look for  TYPEOFLOSS in node # 9
+going to look for  XACTNET_INFO in node # 9
+going to look for  CONTACT in node # 10
+going to look for  CONTROL_POINT in node # 10
+going to look for  PHONE in node # 10
+going to look for  TYPEOFLOSS in node # 10
+going to look for  XACTNET_INFO in node # 10
+going to look for  CONTACT in node # 11
+going to look for  CONTROL_POINT in node # 11
+going to look for  PHONE in node # 11
+going to look for  TYPEOFLOSS in node # 11
+	 b'<TYPEOFLOSS claimNumber="003113296-8-W" />\n      '
+	 claimNumber  :  003113296-8-W
+	 headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype', 'CONTACTtype', 'name', 'PHONEtype', 'number', 'extension', 'claimNumber']
+	 values ['0073B93.142', '0073B93', 'ACSC.TEST.STAFF', '', '2020-06-26T15:10:22', 'Notification Pending', 'ClaimRep', 'Paola Torres', 'Office', '949-933-3058', '', '003113296-8-W']
+h-len: 12 reallist,len: 12
+headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype', 'CONTACTtype', 'name', 'PHONEtype', 'number', 'extension', 'claimNumber']
+values ['0073B93.142', '0073B93', 'ACSC.TEST.STAFF', '', '2020-06-26T15:10:22', 'Notification Pending', 'ClaimRep', 'Paola Torres', 'Office', '949-933-3058', '', '003113296-8-W']
+going to look for  XACTNET_INFO in node # 11
+ 
+['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype', 'CONTACTtype', 'name', 'PHONEtype', 'number', 'extension', 'claimNumber']
+['0073B93.142', '0073B93', 'ACSC.TEST.STAFF', '', '2020-06-26T15:10:22', 'Notification Pending', 'ClaimRep', 'Paola Torres', 'Office', '949-933-3058', '', '003113296-8-W']
+12
+12
+-----------------------------------------------^^^^^----------------------------------------------
++-------------+---------------+---------------------+---------------------+---------------------+----------------------+-------------+--------------+-----------+--------------+-----------+---------------+
+|      ID     | transactionId | recipientsXNAddress | recipientsXM8UserId |        stamp        |  CONTROL_POINTtype   | CONTACTtype |     name     | PHONEtype |    number    | extension |  claimNumber  |
++-------------+---------------+---------------------+---------------------+---------------------+----------------------+-------------+--------------+-----------+--------------+-----------+---------------+
+| 0073B93.142 |    0073B93    |   ACSC.TEST.STAFF   |                     | 2020-06-26T15:10:22 | Notification Pending |   ClaimRep  | Paola Torres |   Office  | 949-933-3058 |           | 003113296-8-W |
++-------------+---------------+---------------------+---------------------+---------------------+----------------------+-------------+--------------+-----------+--------------+-----------+---------------+
+~~~~~~ files remaining:  2272 ~~~~~~~~
+--inside data2db --
+['CONTACT', 'CONTROL_POINT', 'PHONE', 'TYPEOFLOSS', 'XACTNET_INFO']
+----------------------------------------------------THIS IS A NEW FILE---------------------------------------------
+filename:  007CGPB.917.2.20201020153221.XML pk:  007CGPB.917
+going to look for  CONTACT in node # 1
+going to look for  CONTROL_POINT in node # 1
+going to look for  PHONE in node # 1
+going to look for  TYPEOFLOSS in node # 1
+going to look for  XACTNET_INFO in node # 1
+going to look for  CONTACT in node # 2
+going to look for  CONTROL_POINT in node # 2
+going to look for  PHONE in node # 2
+going to look for  TYPEOFLOSS in node # 2
+going to look for  XACTNET_INFO in node # 2
+	 b'<XACTNET_INFO transactionId="007CGPB" recipientsXNAddress="ACSC.TEST.STAFF" recipientsXM8UserId="">\n      <CONTROL_POINTS>\n        <CONTROL_POINT stamp="2020-10-20T15:32:00" type="Notification Pending" />\n      </CONTROL_POINTS>\n    </XACTNET_INFO>\n    '
+	 transactionId  :  007CGPB
+	 headers ['ID', 'transactionId']
+	 values ['007CGPB.917', '007CGPB']
+	 recipientsXNAddress  :  ACSC.TEST.STAFF
+	 headers ['ID', 'transactionId', 'recipientsXNAddress']
+	 values ['007CGPB.917', '007CGPB', 'ACSC.TEST.STAFF']
+	 recipientsXM8UserId  :  
+	 headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId']
+	 values ['007CGPB.917', '007CGPB', 'ACSC.TEST.STAFF', '']
+h-len: 4 reallist,len: 4
+headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId']
+values ['007CGPB.917', '007CGPB', 'ACSC.TEST.STAFF', '']
+going to look for  CONTACT in node # 3
+going to look for  CONTROL_POINT in node # 3
+going to look for  PHONE in node # 3
+going to look for  TYPEOFLOSS in node # 3
+going to look for  XACTNET_INFO in node # 3
+going to look for  CONTACT in node # 4
+going to look for  CONTROL_POINT in node # 4
+	 b'<CONTROL_POINT stamp="2020-10-20T15:32:00" type="Notification Pending" />\n      '
+	 stamp  :  2020-10-20T15:32:00
+	 headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp']
+	 values ['007CGPB.917', '007CGPB', 'ACSC.TEST.STAFF', '', '2020-10-20T15:32:00']
+	 CONTROL_POINTtype  :  Notification Pending
+	 headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype']
+	 values ['007CGPB.917', '007CGPB', 'ACSC.TEST.STAFF', '', '2020-10-20T15:32:00', 'Notification Pending']
+h-len: 6 reallist,len: 6
+headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype']
+values ['007CGPB.917', '007CGPB', 'ACSC.TEST.STAFF', '', '2020-10-20T15:32:00', 'Notification Pending']
+going to look for  PHONE in node # 4
+going to look for  TYPEOFLOSS in node # 4
+going to look for  XACTNET_INFO in node # 4
+going to look for  CONTACT in node # 5
+going to look for  CONTROL_POINT in node # 5
+going to look for  PHONE in node # 5
+going to look for  TYPEOFLOSS in node # 5
+going to look for  XACTNET_INFO in node # 5
+going to look for  CONTACT in node # 6
+	 b'<CONTACT type="ClaimRep" name="Paola Torres">\n        <CONTACTMETHODS>\n          <PHONE type="Office" number="949-933-3058" extension="" />\n        </CONTACTMETHODS>\n      </CONTACT>\n    '
+	 CONTACTtype  :  ClaimRep
+	 headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype', 'CONTACTtype']
+	 values ['007CGPB.917', '007CGPB', 'ACSC.TEST.STAFF', '', '2020-10-20T15:32:00', 'Notification Pending', 'ClaimRep']
+	 name  :  Paola Torres
+	 headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype', 'CONTACTtype', 'name']
+	 values ['007CGPB.917', '007CGPB', 'ACSC.TEST.STAFF', '', '2020-10-20T15:32:00', 'Notification Pending', 'ClaimRep', 'Paola Torres']
+h-len: 8 reallist,len: 8
+headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype', 'CONTACTtype', 'name']
+values ['007CGPB.917', '007CGPB', 'ACSC.TEST.STAFF', '', '2020-10-20T15:32:00', 'Notification Pending', 'ClaimRep', 'Paola Torres']
+going to look for  CONTROL_POINT in node # 6
+going to look for  PHONE in node # 6
+going to look for  TYPEOFLOSS in node # 6
+going to look for  XACTNET_INFO in node # 6
+going to look for  CONTACT in node # 7
+going to look for  CONTROL_POINT in node # 7
+going to look for  PHONE in node # 7
+going to look for  TYPEOFLOSS in node # 7
+going to look for  XACTNET_INFO in node # 7
+going to look for  CONTACT in node # 8
+going to look for  CONTROL_POINT in node # 8
+going to look for  PHONE in node # 8
+	 b'<PHONE type="Office" number="949-933-3058" extension="" />\n        '
+	 PHONEtype  :  Office
+	 headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype', 'CONTACTtype', 'name', 'PHONEtype']
+	 values ['007CGPB.917', '007CGPB', 'ACSC.TEST.STAFF', '', '2020-10-20T15:32:00', 'Notification Pending', 'ClaimRep', 'Paola Torres', 'Office']
+	 number  :  949-933-3058
+	 headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype', 'CONTACTtype', 'name', 'PHONEtype', 'number']
+	 values ['007CGPB.917', '007CGPB', 'ACSC.TEST.STAFF', '', '2020-10-20T15:32:00', 'Notification Pending', 'ClaimRep', 'Paola Torres', 'Office', '949-933-3058']
+	 extension  :  
+	 headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype', 'CONTACTtype', 'name', 'PHONEtype', 'number', 'extension']
+	 values ['007CGPB.917', '007CGPB', 'ACSC.TEST.STAFF', '', '2020-10-20T15:32:00', 'Notification Pending', 'ClaimRep', 'Paola Torres', 'Office', '949-933-3058', '']
+h-len: 11 reallist,len: 11
+headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype', 'CONTACTtype', 'name', 'PHONEtype', 'number', 'extension']
+values ['007CGPB.917', '007CGPB', 'ACSC.TEST.STAFF', '', '2020-10-20T15:32:00', 'Notification Pending', 'ClaimRep', 'Paola Torres', 'Office', '949-933-3058', '']
+going to look for  TYPEOFLOSS in node # 8
+going to look for  XACTNET_INFO in node # 8
+going to look for  CONTACT in node # 9
+going to look for  CONTROL_POINT in node # 9
+going to look for  PHONE in node # 9
+going to look for  TYPEOFLOSS in node # 9
+going to look for  XACTNET_INFO in node # 9
+going to look for  CONTACT in node # 10
+going to look for  CONTROL_POINT in node # 10
+going to look for  PHONE in node # 10
+going to look for  TYPEOFLOSS in node # 10
+going to look for  XACTNET_INFO in node # 10
+going to look for  CONTACT in node # 11
+going to look for  CONTROL_POINT in node # 11
+going to look for  PHONE in node # 11
+going to look for  TYPEOFLOSS in node # 11
+	 b'<TYPEOFLOSS claimNumber="003123860-8-W" />\n      '
+	 claimNumber  :  003123860-8-W
+	 headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype', 'CONTACTtype', 'name', 'PHONEtype', 'number', 'extension', 'claimNumber']
+	 values ['007CGPB.917', '007CGPB', 'ACSC.TEST.STAFF', '', '2020-10-20T15:32:00', 'Notification Pending', 'ClaimRep', 'Paola Torres', 'Office', '949-933-3058', '', '003123860-8-W']
+h-len: 12 reallist,len: 12
+headers ['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype', 'CONTACTtype', 'name', 'PHONEtype', 'number', 'extension', 'claimNumber']
+values ['007CGPB.917', '007CGPB', 'ACSC.TEST.STAFF', '', '2020-10-20T15:32:00', 'Notification Pending', 'ClaimRep', 'Paola Torres', 'Office', '949-933-3058', '', '003123860-8-W']
+going to look for  XACTNET_INFO in node # 11
+ 
+['ID', 'transactionId', 'recipientsXNAddress', 'recipientsXM8UserId', 'stamp', 'CONTROL_POINTtype', 'CONTACTtype', 'name', 'PHONEtype', 'number', 'extension', 'claimNumber']
+['007CGPB.917', '007CGPB', 'ACSC.TEST.STAFF', '', '2020-10-20T15:32:00', 'Notification Pending', 'ClaimRep', 'Paola Torres', 'Office', '949-933-3058', '', '003123860-8-W']
+12
+12
+-----------------------------------------------^^^^^----------------------------------------------
++-------------+---------------+---------------------+---------------------+---------------------+----------------------+-------------+--------------+-----------+--------------+-----------+---------------+
+|      ID     | transactionId | recipientsXNAddress | recipientsXM8UserId |        stamp        |  CONTROL_POINTtype   | CONTACTtype |     name     | PHONEtype |    number    | extension |  claimNumber  |
++-------------+---------------+---------------------+---------------------+---------------------+----------------------+-------------+--------------+-----------+--------------+-----------+---------------+
+| 007CGPB.917 |    007CGPB    |   ACSC.TEST.STAFF   |                     | 2020-10-20T15:32:00 | Notification Pending |   ClaimRep  | Paola Torres |   Office  | 949-933-3058 |           | 003123860-8-W |
++-------------+---------------+---------------------+---------------------+---------------------+----------------------+-------------+--------------+-----------+--------------+-----------+---------------+
+~~~~~~ files remaining:  2271 ~~~~~~~~
+TOTAL FILES PROCESSED
+5
