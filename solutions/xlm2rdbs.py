@@ -25,6 +25,7 @@ data_dir = os.path.join(project_dir, 'data')  # define data/
 
 # data subdirectories
 status_dir = os.path.join(data_dir, 'status')
+status_dir = os.path.join(data_dir, 'status_test')
 note_dir = os.path.join(data_dir, 'note')
 estimate_dir = os.path.join(data_dir, 'estimate')
 customDoc_dir = os.path.join(data_dir, 'customDoc')
@@ -485,7 +486,6 @@ def data2db(xml_file: str):
         templist= [pk]
         print('     -----------------> looking for {} <-------------------'.format(x))
         for node in root.iter(x):
-            time.sleep(1)
             print(node)
             print(node.attrib)
             print(ET.tostring(node))
@@ -499,8 +499,6 @@ def data2db(xml_file: str):
         print(values)
 
 
-
-    time.sleep(3)
 
     return 'something'
 
