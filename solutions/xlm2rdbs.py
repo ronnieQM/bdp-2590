@@ -176,7 +176,6 @@ def get_parent_of_type(etree_elem, level=0, dll=None):
 
     return xcount, type_elems, dll_list
 
-
 def create_table(list_of_columns, table_name):
     table_name = table_name.replace(" ", "_")
     l = len(list_of_columns) - 1
@@ -192,7 +191,6 @@ def create_table(list_of_columns, table_name):
     print(y)
     return
 
-
 def get_tid(file_name):
     tracking_list = []
     d_list = []  # duplicates
@@ -207,7 +205,6 @@ def get_tid(file_name):
         if tid not in d_list:
             d_list.append(tid)
     return tid  # type: str
-
 
 def data2db(xml_file: str):
     print('--inside data2db --')
@@ -307,60 +304,8 @@ def data2db(xml_file: str):
     return headers, rows, value_dict
     return 'something'
 
-
-def firstpass():
-    print('--inside firstpass--')
-    #############################
-    #         sample files      #
-    #############################
-    status_schema = status_xsd
-    tree = ET.parse(status_schema_path, parser=None)
-    root = tree.getroot()
-
-    typescount, y, z = get_parent_of_type(root)
-    print(len(z))
-    slist = []
-    for i in z:
-        etree_element = i.head.data
-        parent_element = i.head.next.data
-        try:
-            x = parent_element.attrib['name']
-            slist.append(x)
-        except:
-            pass
-    print(slist)
-
-    return None
-
-
 def demo2():
-    path, dirs, files = next(os.walk(xsds_dir))
-    status_schema = files[0]
-    status_schema_path = os.path.join(path, status_schema)
-    tree = ET.parse(status_schema_path, parser=None)
-    root = tree.getroot()
-
-    xcount, type_elems, dll_list = get_parent_of_type(root)
-
-    print('this is how many things there are in list_of_dlls')
-    print(len(dll_list))
-    print(' ')
-
-    for i in dll_list:
-        print('- ' * 45)
-        dll_node = i.head
-        while dll_node is not None:
-            etree_elem = dll_node.data
-            print(etree_elem.tag.split('}')[1], ' | ', etree_elem.attrib)
-            dll_node = dll_node.next
-        print(' ')
-
-    for i in dll_list.__iter__():
-        print('- ' * 45)
-        print(i.head.data.tag.split('}')[1], ' | ', i.head.data.attrib)
-
-
-def demo():
+    """ XML DATA --> DATABASE """
     print('--inside demo--')
     path, dirs, files = next(os.walk(status_dir))
     mc = len(files) - 1
@@ -394,10 +339,32 @@ def demo():
     print('TOTAL FILES PROCESSED')
     print('Lenght of list: ', len(list_of_value_dicts))
 
+def demo1():
+    print('--- inside demo3 ---')
+    tree = ET.parse(status_schema_path, parser=None)
+    root = tree.getroot()
+
+    xcount, type_elems, dll_list = get_parent_of_type(root)
+
+    print('this is how many things there are in list_of_dlls')
+    print(len(dll_list))
+    print(' ')
+
+    for i in dll_list:
+        print('- ' * 45)
+        dll_node = i.head
+        while dll_node is not None:
+            etree_elem = dll_node.data
+            print(etree_elem.tag.split('}')[1], ' | ', etree_elem.attrib)
+            dll_node = dll_node.next
+        print(' ')
+
+    for i in dll_list.__iter__():
+        print('- ' * 45)
+        print(i.head.data.tag.split('}')[1], ' | ', i.head.data.attrib)
 
 if __name__ == '__main__':
     # main()
-    # demo()
+    demo1()
     # demo2s()
-    firstpass()
     # create_table(these_columns, this_table)
