@@ -73,7 +73,7 @@ elems_with_global_types = []
 elems_simple = []
 elems_with_base = []
 
-xcount = 1
+iter_count = 1
 rcount = 0
 
 class Node:
@@ -148,11 +148,11 @@ def recursive_iterate(node, level=0):
 
 def get_parent_of_type(etree_elem, level=0, dll=None):
     """takes in element xml.etree.ElementTree.Element | ET.parse(XML_file).getroot()"""
-    global xcount
+    global iter_count
     global type_elems
     global dll_list
     level += 1
-    print(xcount)
+    print(iter_count)
     # print("-----------------inside of 'get_parent_of_type, level: {}--------------".format(level))
     if dll is None:
         dll = DLL()
@@ -160,7 +160,7 @@ def get_parent_of_type(etree_elem, level=0, dll=None):
     else:
         dll = dll
     for subnode in etree_elem:
-        xcount += 1
+        iter_count += 1
         new_dll = copy.deepcopy(dll)
         new_dll.push(subnode)
         if 'type' in subnode.attrib.keys():
@@ -170,7 +170,7 @@ def get_parent_of_type(etree_elem, level=0, dll=None):
             if len(subnode) >= 1:
                 get_parent_of_type(subnode, level, new_dll)
 
-    return xcount, type_elems, dll_list
+    return iter_count, type_elems, dll_list
 
 def create_table(list_of_columns, table_name):
     table_name = table_name.replace(" ", "_")
@@ -337,7 +337,7 @@ def demo2():
 
 def demo1():
     print('--- inside demo3 ---')
-    tree = ET.parse(status_schema_path, parser=None)
+    tree = ET.parse(activity_diary_xsd, parser=None)
     root = tree.getroot()
 
     xcount, type_elems, dll_list = get_parent_of_type(root)
