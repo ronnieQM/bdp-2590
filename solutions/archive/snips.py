@@ -1,4 +1,99 @@
 # TODO
+class GeneralTree:
+    """Generic tree node."""
+    def __init__(self, data, children=None):
+        self.data = data
+        self.children=[]
+        if children is not None:
+            for child in children:
+                self.add_child(child)
+
+    def add_child(self, node):
+        assert isinstance(node, GeneralTree)
+        self.children.append(node)
+
+    def __repr__(self):
+        return self.data
+
+    def prettyprint(self, count=0):
+        space = '    '
+        space = space * count
+        if count==0:
+            print(self.data)
+        else:
+            print(space, self.data)
+        count+=1
+        for i in self.children:
+            i.prettyprint(count)
+
+
+    def search(self, query):
+        if query == self.data:
+            print(self.data)
+            return
+        else:
+            for i in self.children:
+                i.search(query)
+
+    def search_with_structure(self, query,node=None):
+        if node is None:
+            newnode = GeneralTree(self.data)
+        else:
+            newnode=node
+        if query == self.data:
+            newnode.prettyprint()
+            print('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
+            return 'what!'
+        else:
+            for i in self.children:
+                x =copy.deepcopy(newnode)
+                x.add_child(GeneralTree(i.data))
+                i.search_with_structure(query, x)
+
+
+
+def playing2():
+    root = 'the roots'
+    subnode1 = 'ATCQ'
+    subnode3 = 'Jay Rock'
+    asdfasdf = DLL()
+    asdfasdf.push('shit!!!')
+    test_tree = GeneralTree(root,
+                            [GeneralTree(subnode3),
+                             GeneralTree(subnode1,[GeneralTree('People Under the Stairs'), GeneralTree('Atmosphere'),GeneralTree('Slum Village')]),
+                             GeneralTree('Travis Scott', [GeneralTree('Mos Def')]),
+                             GeneralTree('Wu Tang', [GeneralTree('Cappadonna')])
+                             ])
+    # print(test_tree)
+    test_tree.prettyprint()
+    print('~ '*20)
+    test_tree.search_with_structure('Cappadonna')
+
+
+
+def playing(etree_root):
+    """takes in element xml.etree.ElementTree.Element | ET.parse(XML_file).getroot()"""
+    # global type_elems
+    # global dll_list
+    level += 1
+    print("-----------------inside of 'playing', level: {}--------------".format(level))
+    x = ET.tostring(etree_root)
+    y = Node(x)
+    for subnode in etree_elem:
+        # iter_count += 1
+        new_dll = copy.deepcopy(dll)
+        new_dll.push(subnode)
+        if 'type' in subnode.attrib.keys():
+            type_elems.append(subnode)  # list of elements with 'type' in it
+            dll_list.append(new_dll)  # list of DLLs
+        else:
+            if len(subnode) >= 1:
+                # iter_count += 1
+                get_parent_of_type(subnode, level, new_dll)
+
+    return iter_count, type_elems, dll_list
+
+
 # make rdbs schema out of py
 
 

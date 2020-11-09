@@ -32,6 +32,17 @@ def breakout():
     time.sleep(1)
     exit()
 
+
 def yellll():
-    print('$%*#!!!!  '*10)
+    print('$%*#!!!!  ' * 10)
     print('LOOK HERE:')
+
+
+def tbd():
+    tabs = '  '
+    count = 0
+    for i in range(0, 4):
+        print(i)
+        ntabs = tabs * count
+        count += 1
+        print(ntabs, '└', i)
