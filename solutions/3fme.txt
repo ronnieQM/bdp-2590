@@ -1,0 +1,1911 @@
+None
+-----------------inside of 'get_parent_of_type, level: 1--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}element' at 0x7fdb569d3db0>
+{'name': 'XACTDOC', 'type': 'XACTDOC'}
+ YES!!!!
+So, we'll save the DLL to a list
+ 
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}complexType' at 0x7fdb569d3e50>
+{'name': 'ADM'}
+NO!!!!
+So we'll check the child of that node
+ 
+<__main__.DLL object at 0x7fdb56c8ce80>
+-----------------inside of 'get_parent_of_type, level: 2--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}all' at 0x7fdb569d3ef0>
+{}
+NO!!!!
+So we'll check the child of that node
+ 
+<__main__.DLL object at 0x7fdb56c8ce80>
+-----------------inside of 'get_parent_of_type, level: 3--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}element' at 0x7fdb569d3f40>
+{'name': 'TYPESOFLOSS', 'type': 'TYPESOFLOSS'}
+ YES!!!!
+So, we'll save the DLL to a list
+ 
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}complexType' at 0x7fdb569d3f90>
+{'name': 'CONTACT'}
+NO!!!!
+So we'll check the child of that node
+ 
+<__main__.DLL object at 0x7fdb56c8ce80>
+-----------------inside of 'get_parent_of_type, level: 2--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}all' at 0x7fdb569da040>
+{}
+NO!!!!
+So we'll check the child of that node
+ 
+<__main__.DLL object at 0x7fdb56c8ce80>
+-----------------inside of 'get_parent_of_type, level: 3--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}element' at 0x7fdb569da090>
+{'name': 'CONTACTMETHODS', 'type': 'CONTACTMETHODS'}
+ YES!!!!
+So, we'll save the DLL to a list
+ 
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}attribute' at 0x7fdb569da130>
+{'name': 'name', 'type': 'xs:string'}
+ YES!!!!
+So, we'll save the DLL to a list
+ 
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}attribute' at 0x7fdb569da180>
+{'name': 'type', 'type': 'contactType'}
+ YES!!!!
+So, we'll save the DLL to a list
+ 
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}complexType' at 0x7fdb569da1d0>
+{'name': 'CONTACTMETHODS'}
+NO!!!!
+So we'll check the child of that node
+ 
+<__main__.DLL object at 0x7fdb56c8ce80>
+-----------------inside of 'get_parent_of_type, level: 2--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}choice' at 0x7fdb569da270>
+{'maxOccurs': 'unbounded'}
+NO!!!!
+So we'll check the child of that node
+ 
+<__main__.DLL object at 0x7fdb56c8ce80>
+-----------------inside of 'get_parent_of_type, level: 3--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}element' at 0x7fdb569da2c0>
+{'name': 'PHONE', 'type': 'PHONE', 'minOccurs': '0', 'maxOccurs': 'unbounded'}
+ YES!!!!
+So, we'll save the DLL to a list
+ 
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}complexType' at 0x7fdb569da310>
+{'name': 'CONTACTS'}
+NO!!!!
+So we'll check the child of that node
+ 
+<__main__.DLL object at 0x7fdb56c8ce80>
+-----------------inside of 'get_parent_of_type, level: 2--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}all' at 0x7fdb569da360>
+{}
+NO!!!!
+So we'll check the child of that node
+ 
+<__main__.DLL object at 0x7fdb56c8ce80>
+-----------------inside of 'get_parent_of_type, level: 3--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}element' at 0x7fdb569da3b0>
+{'name': 'CONTACT', 'type': 'CONTACT'}
+ YES!!!!
+So, we'll save the DLL to a list
+ 
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}complexType' at 0x7fdb569da400>
+{'name': 'CONTROL_POINT'}
+NO!!!!
+So we'll check the child of that node
+ 
+<__main__.DLL object at 0x7fdb56c8ce80>
+-----------------inside of 'get_parent_of_type, level: 2--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}attribute' at 0x7fdb569da450>
+{'name': 'stamp', 'type': 'xs:dateTime'}
+ YES!!!!
+So, we'll save the DLL to a list
+ 
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}attribute' at 0x7fdb569da4a0>
+{'name': 'type', 'type': 'xs:string'}
+ YES!!!!
+So, we'll save the DLL to a list
+ 
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}complexType' at 0x7fdb569da4f0>
+{'name': 'CONTROL_POINTS'}
+NO!!!!
+So we'll check the child of that node
+ 
+<__main__.DLL object at 0x7fdb56c8ce80>
+-----------------inside of 'get_parent_of_type, level: 2--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}all' at 0x7fdb569da540>
+{}
+NO!!!!
+So we'll check the child of that node
+ 
+<__main__.DLL object at 0x7fdb56c8ce80>
+-----------------inside of 'get_parent_of_type, level: 3--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}element' at 0x7fdb569da590>
+{'name': 'CONTROL_POINT', 'type': 'CONTROL_POINT'}
+ YES!!!!
+So, we'll save the DLL to a list
+ 
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}complexType' at 0x7fdb569da5e0>
+{'name': 'PHONE'}
+NO!!!!
+So we'll check the child of that node
+ 
+<__main__.DLL object at 0x7fdb56c8ce80>
+-----------------inside of 'get_parent_of_type, level: 2--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}attribute' at 0x7fdb569da630>
+{'name': 'extension', 'type': 'phoneExt20'}
+ YES!!!!
+So, we'll save the DLL to a list
+ 
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}attribute' at 0x7fdb569da680>
+{'name': 'number', 'type': 'phoneNumber'}
+ YES!!!!
+So, we'll save the DLL to a list
+ 
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}attribute' at 0x7fdb569da6d0>
+{'name': 'type', 'type': 'phoneType'}
+ YES!!!!
+So, we'll save the DLL to a list
+ 
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}complexType' at 0x7fdb569da720>
+{'name': 'TYPEOFLOSS'}
+NO!!!!
+So we'll check the child of that node
+ 
+<__main__.DLL object at 0x7fdb56c8ce80>
+-----------------inside of 'get_parent_of_type, level: 2--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}attribute' at 0x7fdb569da770>
+{'name': 'claimNumber', 'type': 'xs:string'}
+ YES!!!!
+So, we'll save the DLL to a list
+ 
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}complexType' at 0x7fdb569da7c0>
+{'name': 'TYPESOFLOSS'}
+NO!!!!
+So we'll check the child of that node
+ 
+<__main__.DLL object at 0x7fdb56c8ce80>
+-----------------inside of 'get_parent_of_type, level: 2--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}all' at 0x7fdb569da810>
+{}
+NO!!!!
+So we'll check the child of that node
+ 
+<__main__.DLL object at 0x7fdb56c8ce80>
+-----------------inside of 'get_parent_of_type, level: 3--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}element' at 0x7fdb569da860>
+{'name': 'TYPEOFLOSS', 'type': 'TYPEOFLOSS'}
+ YES!!!!
+So, we'll save the DLL to a list
+ 
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}complexType' at 0x7fdb569da8b0>
+{'name': 'XACTDOC'}
+NO!!!!
+So we'll check the child of that node
+ 
+<__main__.DLL object at 0x7fdb56c8ce80>
+-----------------inside of 'get_parent_of_type, level: 2--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}all' at 0x7fdb569da900>
+{}
+NO!!!!
+So we'll check the child of that node
+ 
+<__main__.DLL object at 0x7fdb56c8ce80>
+-----------------inside of 'get_parent_of_type, level: 3--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}element' at 0x7fdb569da950>
+{'name': 'XACTNET_INFO', 'type': 'XACTNET_INFO'}
+ YES!!!!
+So, we'll save the DLL to a list
+ 
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}element' at 0x7fdb569da9a0>
+{'name': 'CONTACTS', 'type': 'CONTACTS'}
+ YES!!!!
+So, we'll save the DLL to a list
+ 
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}element' at 0x7fdb569da9f0>
+{'name': 'ADM', 'type': 'ADM'}
+ YES!!!!
+So, we'll save the DLL to a list
+ 
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}complexType' at 0x7fdb569daa40>
+{'name': 'XACTNET_INFO'}
+NO!!!!
+So we'll check the child of that node
+ 
+<__main__.DLL object at 0x7fdb56c8ce80>
+-----------------inside of 'get_parent_of_type, level: 2--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}all' at 0x7fdb569daa90>
+{}
+NO!!!!
+So we'll check the child of that node
+ 
+<__main__.DLL object at 0x7fdb56c8ce80>
+-----------------inside of 'get_parent_of_type, level: 3--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}element' at 0x7fdb569daae0>
+{'name': 'CONTROL_POINTS', 'type': 'CONTROL_POINTS'}
+ YES!!!!
+So, we'll save the DLL to a list
+ 
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}attribute' at 0x7fdb569dab80>
+{'name': 'recipientsXNAddress', 'type': 'xs:string'}
+ YES!!!!
+So, we'll save the DLL to a list
+ 
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}attribute' at 0x7fdb569dac20>
+{'name': 'recipientsXM8UserId', 'type': 'xs:string'}
+ YES!!!!
+So, we'll save the DLL to a list
+ 
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}attribute' at 0x7fdb569dac70>
+{'name': 'transactionId', 'type': 'xs:string'}
+ YES!!!!
+So, we'll save the DLL to a list
+ 
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}attribute' at 0x7fdb569dad10>
+{'name': 'origTransactionId', 'type': 'xs:string'}
+ YES!!!!
+So, we'll save the DLL to a list
+ 
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}simpleType' at 0x7fdb569dadb0>
+{'name': 'bool'}
+NO!!!!
+So we'll check the child of that node
+ 
+<__main__.DLL object at 0x7fdb56c8ce80>
+-----------------inside of 'get_parent_of_type, level: 2--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}restriction' at 0x7fdb569dae50>
+{'base': 'xs:string'}
+NO!!!!
+So we'll check the child of that node
+ 
+<__main__.DLL object at 0x7fdb56c8ce80>
+-----------------inside of 'get_parent_of_type, level: 3--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}enumeration' at 0x7fdb569daef0>
+{'value': '0'}
+NO!!!!
+So we'll check the child of that node
+ 
+<__main__.DLL object at 0x7fdb56c8ce80>
+-----------------inside of 'get_parent_of_type, level: 4--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}enumeration' at 0x7fdb569daf40>
+{'value': '1'}
+NO!!!!
+So we'll check the child of that node
+ 
+<__main__.DLL object at 0x7fdb56c8ce80>
+-----------------inside of 'get_parent_of_type, level: 4--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}simpleType' at 0x7fdb569daf90>
+{'name': 'contactType'}
+NO!!!!
+So we'll check the child of that node
+ 
+<__main__.DLL object at 0x7fdb56c8ce80>
+-----------------inside of 'get_parent_of_type, level: 2--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}restriction' at 0x7fdb569e0040>
+{'base': 'xs:string'}
+NO!!!!
+So we'll check the child of that node
+ 
+<__main__.DLL object at 0x7fdb56c8ce80>
+-----------------inside of 'get_parent_of_type, level: 3--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}enumeration' at 0x7fdb569e0090>
+{'value': 'ClaimRep'}
+NO!!!!
+So we'll check the child of that node
+ 
+<__main__.DLL object at 0x7fdb56c8ce80>
+-----------------inside of 'get_parent_of_type, level: 4--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}simpleType' at 0x7fdb569e00e0>
+{'name': 'phoneType'}
+NO!!!!
+So we'll check the child of that node
+ 
+<__main__.DLL object at 0x7fdb56c8ce80>
+-----------------inside of 'get_parent_of_type, level: 2--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}restriction' at 0x7fdb569e0130>
+{'base': 'xs:string'}
+NO!!!!
+So we'll check the child of that node
+ 
+<__main__.DLL object at 0x7fdb56c8ce80>
+-----------------inside of 'get_parent_of_type, level: 3--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}enumeration' at 0x7fdb569e0180>
+{'value': 'Office'}
+NO!!!!
+So we'll check the child of that node
+ 
+<__main__.DLL object at 0x7fdb56c8ce80>
+-----------------inside of 'get_parent_of_type, level: 4--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}simpleType' at 0x7fdb569e01d0>
+{'name': 'phoneNumber'}
+NO!!!!
+So we'll check the child of that node
+ 
+<__main__.DLL object at 0x7fdb56c8ce80>
+-----------------inside of 'get_parent_of_type, level: 2--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}restriction' at 0x7fdb569e0220>
+{'base': 'xs:string'}
+NO!!!!
+So we'll check the child of that node
+ 
+<__main__.DLL object at 0x7fdb56c8ce80>
+-----------------inside of 'get_parent_of_type, level: 3--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}maxLength' at 0x7fdb569e02c0>
+{'value': '12'}
+NO!!!!
+So we'll check the child of that node
+ 
+<__main__.DLL object at 0x7fdb56c8ce80>
+-----------------inside of 'get_parent_of_type, level: 4--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}pattern' at 0x7fdb569e0360>
+{'value': '[0-9]{3,4}\\-[0-9]{3}\\-[0-9]{4}|[0-9]*'}
+NO!!!!
+So we'll check the child of that node
+ 
+<__main__.DLL object at 0x7fdb56c8ce80>
+-----------------inside of 'get_parent_of_type, level: 4--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}simpleType' at 0x7fdb569e03b0>
+{'name': 'phoneExt20'}
+NO!!!!
+So we'll check the child of that node
+ 
+<__main__.DLL object at 0x7fdb56c8ce80>
+-----------------inside of 'get_parent_of_type, level: 2--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}restriction' at 0x7fdb569e0400>
+{'base': 'xs:string'}
+NO!!!!
+So we'll check the child of that node
+ 
+<__main__.DLL object at 0x7fdb56c8ce80>
+-----------------inside of 'get_parent_of_type, level: 3--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}maxLength' at 0x7fdb569e0450>
+{'value': '20'}
+NO!!!!
+So we'll check the child of that node
+ 
+<__main__.DLL object at 0x7fdb56c8ce80>
+-----------------inside of 'get_parent_of_type, level: 4--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}pattern' at 0x7fdb569e04a0>
+{'value': '[0-9]*'}
+NO!!!!
+So we'll check the child of that node
+ 
+<__main__.DLL object at 0x7fdb56c8ce80>
+-----------------inside of 'get_parent_of_type, level: 4--------------
+this is how many things there are in list_of_dlls
+23
+ 
+61
+61
+61
+61
+61
+61
+61
+61
+61
+61
+61
+61
+61
+61
+61
+61
+61
+61
+61
+61
+61
+61
+61
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+{'value': '[0-9]*'}
+{'value': '20'}
+{'base': 'xs:string'}
+{'name': 'phoneExt20'}
+{'value': '[0-9]{3,4}\\-[0-9]{3}\\-[0-9]{4}|[0-9]*'}
+{'value': '12'}
+{'base': 'xs:string'}
+{'name': 'phoneNumber'}
+{'value': 'Office'}
+{'base': 'xs:string'}
+{'name': 'phoneType'}
+{'value': 'ClaimRep'}
+{'base': 'xs:string'}
+{'name': 'contactType'}
+{'value': '1'}
+{'value': '0'}
+{'base': 'xs:string'}
+{'name': 'bool'}
+{'name': 'origTransactionId', 'type': 'xs:string'}
+{'name': 'transactionId', 'type': 'xs:string'}
+{'name': 'recipientsXM8UserId', 'type': 'xs:string'}
+{'name': 'recipientsXNAddress', 'type': 'xs:string'}
+{'name': 'CONTROL_POINTS', 'type': 'CONTROL_POINTS'}
+{}
+{'name': 'XACTNET_INFO'}
+{'name': 'ADM', 'type': 'ADM'}
+{'name': 'CONTACTS', 'type': 'CONTACTS'}
+{'name': 'XACTNET_INFO', 'type': 'XACTNET_INFO'}
+{}
+{'name': 'XACTDOC'}
+{'name': 'TYPEOFLOSS', 'type': 'TYPEOFLOSS'}
+{}
+{'name': 'TYPESOFLOSS'}
+{'name': 'claimNumber', 'type': 'xs:string'}
+{'name': 'TYPEOFLOSS'}
+{'name': 'type', 'type': 'phoneType'}
+{'name': 'number', 'type': 'phoneNumber'}
+{'name': 'extension', 'type': 'phoneExt20'}
+{'name': 'PHONE'}
+{'name': 'CONTROL_POINT', 'type': 'CONTROL_POINT'}
+{}
+{'name': 'CONTROL_POINTS'}
+{'name': 'type', 'type': 'xs:string'}
+{'name': 'stamp', 'type': 'xs:dateTime'}
+{'name': 'CONTROL_POINT'}
+{'name': 'CONTACT', 'type': 'CONTACT'}
+{}
+{'name': 'CONTACTS'}
+{'name': 'PHONE', 'type': 'PHONE', 'minOccurs': '0', 'maxOccurs': 'unbounded'}
+{'maxOccurs': 'unbounded'}
+{'name': 'CONTACTMETHODS'}
+{'name': 'type', 'type': 'contactType'}
+{'name': 'name', 'type': 'xs:string'}
+{'name': 'CONTACTMETHODS', 'type': 'CONTACTMETHODS'}
+{}
+{'name': 'CONTACT'}
+{'name': 'TYPESOFLOSS', 'type': 'TYPESOFLOSS'}
+{}
+{'name': 'ADM'}
+{'name': 'XACTDOC', 'type': 'XACTDOC'}
+{'elementFormDefault': 'qualified', 'attributeFormDefault': 'unqualified'}
+ 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+{'value': '[0-9]*'}
+{'value': '20'}
+{'base': 'xs:string'}
+{'name': 'phoneExt20'}
+{'value': '[0-9]{3,4}\\-[0-9]{3}\\-[0-9]{4}|[0-9]*'}
+{'value': '12'}
+{'base': 'xs:string'}
+{'name': 'phoneNumber'}
+{'value': 'Office'}
+{'base': 'xs:string'}
+{'name': 'phoneType'}
+{'value': 'ClaimRep'}
+{'base': 'xs:string'}
+{'name': 'contactType'}
+{'value': '1'}
+{'value': '0'}
+{'base': 'xs:string'}
+{'name': 'bool'}
+{'name': 'origTransactionId', 'type': 'xs:string'}
+{'name': 'transactionId', 'type': 'xs:string'}
+{'name': 'recipientsXM8UserId', 'type': 'xs:string'}
+{'name': 'recipientsXNAddress', 'type': 'xs:string'}
+{'name': 'CONTROL_POINTS', 'type': 'CONTROL_POINTS'}
+{}
+{'name': 'XACTNET_INFO'}
+{'name': 'ADM', 'type': 'ADM'}
+{'name': 'CONTACTS', 'type': 'CONTACTS'}
+{'name': 'XACTNET_INFO', 'type': 'XACTNET_INFO'}
+{}
+{'name': 'XACTDOC'}
+{'name': 'TYPEOFLOSS', 'type': 'TYPEOFLOSS'}
+{}
+{'name': 'TYPESOFLOSS'}
+{'name': 'claimNumber', 'type': 'xs:string'}
+{'name': 'TYPEOFLOSS'}
+{'name': 'type', 'type': 'phoneType'}
+{'name': 'number', 'type': 'phoneNumber'}
+{'name': 'extension', 'type': 'phoneExt20'}
+{'name': 'PHONE'}
+{'name': 'CONTROL_POINT', 'type': 'CONTROL_POINT'}
+{}
+{'name': 'CONTROL_POINTS'}
+{'name': 'type', 'type': 'xs:string'}
+{'name': 'stamp', 'type': 'xs:dateTime'}
+{'name': 'CONTROL_POINT'}
+{'name': 'CONTACT', 'type': 'CONTACT'}
+{}
+{'name': 'CONTACTS'}
+{'name': 'PHONE', 'type': 'PHONE', 'minOccurs': '0', 'maxOccurs': 'unbounded'}
+{'maxOccurs': 'unbounded'}
+{'name': 'CONTACTMETHODS'}
+{'name': 'type', 'type': 'contactType'}
+{'name': 'name', 'type': 'xs:string'}
+{'name': 'CONTACTMETHODS', 'type': 'CONTACTMETHODS'}
+{}
+{'name': 'CONTACT'}
+{'name': 'TYPESOFLOSS', 'type': 'TYPESOFLOSS'}
+{}
+{'name': 'ADM'}
+{'name': 'XACTDOC', 'type': 'XACTDOC'}
+{'elementFormDefault': 'qualified', 'attributeFormDefault': 'unqualified'}
+ 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+{'value': '[0-9]*'}
+{'value': '20'}
+{'base': 'xs:string'}
+{'name': 'phoneExt20'}
+{'value': '[0-9]{3,4}\\-[0-9]{3}\\-[0-9]{4}|[0-9]*'}
+{'value': '12'}
+{'base': 'xs:string'}
+{'name': 'phoneNumber'}
+{'value': 'Office'}
+{'base': 'xs:string'}
+{'name': 'phoneType'}
+{'value': 'ClaimRep'}
+{'base': 'xs:string'}
+{'name': 'contactType'}
+{'value': '1'}
+{'value': '0'}
+{'base': 'xs:string'}
+{'name': 'bool'}
+{'name': 'origTransactionId', 'type': 'xs:string'}
+{'name': 'transactionId', 'type': 'xs:string'}
+{'name': 'recipientsXM8UserId', 'type': 'xs:string'}
+{'name': 'recipientsXNAddress', 'type': 'xs:string'}
+{'name': 'CONTROL_POINTS', 'type': 'CONTROL_POINTS'}
+{}
+{'name': 'XACTNET_INFO'}
+{'name': 'ADM', 'type': 'ADM'}
+{'name': 'CONTACTS', 'type': 'CONTACTS'}
+{'name': 'XACTNET_INFO', 'type': 'XACTNET_INFO'}
+{}
+{'name': 'XACTDOC'}
+{'name': 'TYPEOFLOSS', 'type': 'TYPEOFLOSS'}
+{}
+{'name': 'TYPESOFLOSS'}
+{'name': 'claimNumber', 'type': 'xs:string'}
+{'name': 'TYPEOFLOSS'}
+{'name': 'type', 'type': 'phoneType'}
+{'name': 'number', 'type': 'phoneNumber'}
+{'name': 'extension', 'type': 'phoneExt20'}
+{'name': 'PHONE'}
+{'name': 'CONTROL_POINT', 'type': 'CONTROL_POINT'}
+{}
+{'name': 'CONTROL_POINTS'}
+{'name': 'type', 'type': 'xs:string'}
+{'name': 'stamp', 'type': 'xs:dateTime'}
+{'name': 'CONTROL_POINT'}
+{'name': 'CONTACT', 'type': 'CONTACT'}
+{}
+{'name': 'CONTACTS'}
+{'name': 'PHONE', 'type': 'PHONE', 'minOccurs': '0', 'maxOccurs': 'unbounded'}
+{'maxOccurs': 'unbounded'}
+{'name': 'CONTACTMETHODS'}
+{'name': 'type', 'type': 'contactType'}
+{'name': 'name', 'type': 'xs:string'}
+{'name': 'CONTACTMETHODS', 'type': 'CONTACTMETHODS'}
+{}
+{'name': 'CONTACT'}
+{'name': 'TYPESOFLOSS', 'type': 'TYPESOFLOSS'}
+{}
+{'name': 'ADM'}
+{'name': 'XACTDOC', 'type': 'XACTDOC'}
+{'elementFormDefault': 'qualified', 'attributeFormDefault': 'unqualified'}
+ 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+{'value': '[0-9]*'}
+{'value': '20'}
+{'base': 'xs:string'}
+{'name': 'phoneExt20'}
+{'value': '[0-9]{3,4}\\-[0-9]{3}\\-[0-9]{4}|[0-9]*'}
+{'value': '12'}
+{'base': 'xs:string'}
+{'name': 'phoneNumber'}
+{'value': 'Office'}
+{'base': 'xs:string'}
+{'name': 'phoneType'}
+{'value': 'ClaimRep'}
+{'base': 'xs:string'}
+{'name': 'contactType'}
+{'value': '1'}
+{'value': '0'}
+{'base': 'xs:string'}
+{'name': 'bool'}
+{'name': 'origTransactionId', 'type': 'xs:string'}
+{'name': 'transactionId', 'type': 'xs:string'}
+{'name': 'recipientsXM8UserId', 'type': 'xs:string'}
+{'name': 'recipientsXNAddress', 'type': 'xs:string'}
+{'name': 'CONTROL_POINTS', 'type': 'CONTROL_POINTS'}
+{}
+{'name': 'XACTNET_INFO'}
+{'name': 'ADM', 'type': 'ADM'}
+{'name': 'CONTACTS', 'type': 'CONTACTS'}
+{'name': 'XACTNET_INFO', 'type': 'XACTNET_INFO'}
+{}
+{'name': 'XACTDOC'}
+{'name': 'TYPEOFLOSS', 'type': 'TYPEOFLOSS'}
+{}
+{'name': 'TYPESOFLOSS'}
+{'name': 'claimNumber', 'type': 'xs:string'}
+{'name': 'TYPEOFLOSS'}
+{'name': 'type', 'type': 'phoneType'}
+{'name': 'number', 'type': 'phoneNumber'}
+{'name': 'extension', 'type': 'phoneExt20'}
+{'name': 'PHONE'}
+{'name': 'CONTROL_POINT', 'type': 'CONTROL_POINT'}
+{}
+{'name': 'CONTROL_POINTS'}
+{'name': 'type', 'type': 'xs:string'}
+{'name': 'stamp', 'type': 'xs:dateTime'}
+{'name': 'CONTROL_POINT'}
+{'name': 'CONTACT', 'type': 'CONTACT'}
+{}
+{'name': 'CONTACTS'}
+{'name': 'PHONE', 'type': 'PHONE', 'minOccurs': '0', 'maxOccurs': 'unbounded'}
+{'maxOccurs': 'unbounded'}
+{'name': 'CONTACTMETHODS'}
+{'name': 'type', 'type': 'contactType'}
+{'name': 'name', 'type': 'xs:string'}
+{'name': 'CONTACTMETHODS', 'type': 'CONTACTMETHODS'}
+{}
+{'name': 'CONTACT'}
+{'name': 'TYPESOFLOSS', 'type': 'TYPESOFLOSS'}
+{}
+{'name': 'ADM'}
+{'name': 'XACTDOC', 'type': 'XACTDOC'}
+{'elementFormDefault': 'qualified', 'attributeFormDefault': 'unqualified'}
+ 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+{'value': '[0-9]*'}
+{'value': '20'}
+{'base': 'xs:string'}
+{'name': 'phoneExt20'}
+{'value': '[0-9]{3,4}\\-[0-9]{3}\\-[0-9]{4}|[0-9]*'}
+{'value': '12'}
+{'base': 'xs:string'}
+{'name': 'phoneNumber'}
+{'value': 'Office'}
+{'base': 'xs:string'}
+{'name': 'phoneType'}
+{'value': 'ClaimRep'}
+{'base': 'xs:string'}
+{'name': 'contactType'}
+{'value': '1'}
+{'value': '0'}
+{'base': 'xs:string'}
+{'name': 'bool'}
+{'name': 'origTransactionId', 'type': 'xs:string'}
+{'name': 'transactionId', 'type': 'xs:string'}
+{'name': 'recipientsXM8UserId', 'type': 'xs:string'}
+{'name': 'recipientsXNAddress', 'type': 'xs:string'}
+{'name': 'CONTROL_POINTS', 'type': 'CONTROL_POINTS'}
+{}
+{'name': 'XACTNET_INFO'}
+{'name': 'ADM', 'type': 'ADM'}
+{'name': 'CONTACTS', 'type': 'CONTACTS'}
+{'name': 'XACTNET_INFO', 'type': 'XACTNET_INFO'}
+{}
+{'name': 'XACTDOC'}
+{'name': 'TYPEOFLOSS', 'type': 'TYPEOFLOSS'}
+{}
+{'name': 'TYPESOFLOSS'}
+{'name': 'claimNumber', 'type': 'xs:string'}
+{'name': 'TYPEOFLOSS'}
+{'name': 'type', 'type': 'phoneType'}
+{'name': 'number', 'type': 'phoneNumber'}
+{'name': 'extension', 'type': 'phoneExt20'}
+{'name': 'PHONE'}
+{'name': 'CONTROL_POINT', 'type': 'CONTROL_POINT'}
+{}
+{'name': 'CONTROL_POINTS'}
+{'name': 'type', 'type': 'xs:string'}
+{'name': 'stamp', 'type': 'xs:dateTime'}
+{'name': 'CONTROL_POINT'}
+{'name': 'CONTACT', 'type': 'CONTACT'}
+{}
+{'name': 'CONTACTS'}
+{'name': 'PHONE', 'type': 'PHONE', 'minOccurs': '0', 'maxOccurs': 'unbounded'}
+{'maxOccurs': 'unbounded'}
+{'name': 'CONTACTMETHODS'}
+{'name': 'type', 'type': 'contactType'}
+{'name': 'name', 'type': 'xs:string'}
+{'name': 'CONTACTMETHODS', 'type': 'CONTACTMETHODS'}
+{}
+{'name': 'CONTACT'}
+{'name': 'TYPESOFLOSS', 'type': 'TYPESOFLOSS'}
+{}
+{'name': 'ADM'}
+{'name': 'XACTDOC', 'type': 'XACTDOC'}
+{'elementFormDefault': 'qualified', 'attributeFormDefault': 'unqualified'}
+ 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+{'value': '[0-9]*'}
+{'value': '20'}
+{'base': 'xs:string'}
+{'name': 'phoneExt20'}
+{'value': '[0-9]{3,4}\\-[0-9]{3}\\-[0-9]{4}|[0-9]*'}
+{'value': '12'}
+{'base': 'xs:string'}
+{'name': 'phoneNumber'}
+{'value': 'Office'}
+{'base': 'xs:string'}
+{'name': 'phoneType'}
+{'value': 'ClaimRep'}
+{'base': 'xs:string'}
+{'name': 'contactType'}
+{'value': '1'}
+{'value': '0'}
+{'base': 'xs:string'}
+{'name': 'bool'}
+{'name': 'origTransactionId', 'type': 'xs:string'}
+{'name': 'transactionId', 'type': 'xs:string'}
+{'name': 'recipientsXM8UserId', 'type': 'xs:string'}
+{'name': 'recipientsXNAddress', 'type': 'xs:string'}
+{'name': 'CONTROL_POINTS', 'type': 'CONTROL_POINTS'}
+{}
+{'name': 'XACTNET_INFO'}
+{'name': 'ADM', 'type': 'ADM'}
+{'name': 'CONTACTS', 'type': 'CONTACTS'}
+{'name': 'XACTNET_INFO', 'type': 'XACTNET_INFO'}
+{}
+{'name': 'XACTDOC'}
+{'name': 'TYPEOFLOSS', 'type': 'TYPEOFLOSS'}
+{}
+{'name': 'TYPESOFLOSS'}
+{'name': 'claimNumber', 'type': 'xs:string'}
+{'name': 'TYPEOFLOSS'}
+{'name': 'type', 'type': 'phoneType'}
+{'name': 'number', 'type': 'phoneNumber'}
+{'name': 'extension', 'type': 'phoneExt20'}
+{'name': 'PHONE'}
+{'name': 'CONTROL_POINT', 'type': 'CONTROL_POINT'}
+{}
+{'name': 'CONTROL_POINTS'}
+{'name': 'type', 'type': 'xs:string'}
+{'name': 'stamp', 'type': 'xs:dateTime'}
+{'name': 'CONTROL_POINT'}
+{'name': 'CONTACT', 'type': 'CONTACT'}
+{}
+{'name': 'CONTACTS'}
+{'name': 'PHONE', 'type': 'PHONE', 'minOccurs': '0', 'maxOccurs': 'unbounded'}
+{'maxOccurs': 'unbounded'}
+{'name': 'CONTACTMETHODS'}
+{'name': 'type', 'type': 'contactType'}
+{'name': 'name', 'type': 'xs:string'}
+{'name': 'CONTACTMETHODS', 'type': 'CONTACTMETHODS'}
+{}
+{'name': 'CONTACT'}
+{'name': 'TYPESOFLOSS', 'type': 'TYPESOFLOSS'}
+{}
+{'name': 'ADM'}
+{'name': 'XACTDOC', 'type': 'XACTDOC'}
+{'elementFormDefault': 'qualified', 'attributeFormDefault': 'unqualified'}
+ 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+{'value': '[0-9]*'}
+{'value': '20'}
+{'base': 'xs:string'}
+{'name': 'phoneExt20'}
+{'value': '[0-9]{3,4}\\-[0-9]{3}\\-[0-9]{4}|[0-9]*'}
+{'value': '12'}
+{'base': 'xs:string'}
+{'name': 'phoneNumber'}
+{'value': 'Office'}
+{'base': 'xs:string'}
+{'name': 'phoneType'}
+{'value': 'ClaimRep'}
+{'base': 'xs:string'}
+{'name': 'contactType'}
+{'value': '1'}
+{'value': '0'}
+{'base': 'xs:string'}
+{'name': 'bool'}
+{'name': 'origTransactionId', 'type': 'xs:string'}
+{'name': 'transactionId', 'type': 'xs:string'}
+{'name': 'recipientsXM8UserId', 'type': 'xs:string'}
+{'name': 'recipientsXNAddress', 'type': 'xs:string'}
+{'name': 'CONTROL_POINTS', 'type': 'CONTROL_POINTS'}
+{}
+{'name': 'XACTNET_INFO'}
+{'name': 'ADM', 'type': 'ADM'}
+{'name': 'CONTACTS', 'type': 'CONTACTS'}
+{'name': 'XACTNET_INFO', 'type': 'XACTNET_INFO'}
+{}
+{'name': 'XACTDOC'}
+{'name': 'TYPEOFLOSS', 'type': 'TYPEOFLOSS'}
+{}
+{'name': 'TYPESOFLOSS'}
+{'name': 'claimNumber', 'type': 'xs:string'}
+{'name': 'TYPEOFLOSS'}
+{'name': 'type', 'type': 'phoneType'}
+{'name': 'number', 'type': 'phoneNumber'}
+{'name': 'extension', 'type': 'phoneExt20'}
+{'name': 'PHONE'}
+{'name': 'CONTROL_POINT', 'type': 'CONTROL_POINT'}
+{}
+{'name': 'CONTROL_POINTS'}
+{'name': 'type', 'type': 'xs:string'}
+{'name': 'stamp', 'type': 'xs:dateTime'}
+{'name': 'CONTROL_POINT'}
+{'name': 'CONTACT', 'type': 'CONTACT'}
+{}
+{'name': 'CONTACTS'}
+{'name': 'PHONE', 'type': 'PHONE', 'minOccurs': '0', 'maxOccurs': 'unbounded'}
+{'maxOccurs': 'unbounded'}
+{'name': 'CONTACTMETHODS'}
+{'name': 'type', 'type': 'contactType'}
+{'name': 'name', 'type': 'xs:string'}
+{'name': 'CONTACTMETHODS', 'type': 'CONTACTMETHODS'}
+{}
+{'name': 'CONTACT'}
+{'name': 'TYPESOFLOSS', 'type': 'TYPESOFLOSS'}
+{}
+{'name': 'ADM'}
+{'name': 'XACTDOC', 'type': 'XACTDOC'}
+{'elementFormDefault': 'qualified', 'attributeFormDefault': 'unqualified'}
+ 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+{'value': '[0-9]*'}
+{'value': '20'}
+{'base': 'xs:string'}
+{'name': 'phoneExt20'}
+{'value': '[0-9]{3,4}\\-[0-9]{3}\\-[0-9]{4}|[0-9]*'}
+{'value': '12'}
+{'base': 'xs:string'}
+{'name': 'phoneNumber'}
+{'value': 'Office'}
+{'base': 'xs:string'}
+{'name': 'phoneType'}
+{'value': 'ClaimRep'}
+{'base': 'xs:string'}
+{'name': 'contactType'}
+{'value': '1'}
+{'value': '0'}
+{'base': 'xs:string'}
+{'name': 'bool'}
+{'name': 'origTransactionId', 'type': 'xs:string'}
+{'name': 'transactionId', 'type': 'xs:string'}
+{'name': 'recipientsXM8UserId', 'type': 'xs:string'}
+{'name': 'recipientsXNAddress', 'type': 'xs:string'}
+{'name': 'CONTROL_POINTS', 'type': 'CONTROL_POINTS'}
+{}
+{'name': 'XACTNET_INFO'}
+{'name': 'ADM', 'type': 'ADM'}
+{'name': 'CONTACTS', 'type': 'CONTACTS'}
+{'name': 'XACTNET_INFO', 'type': 'XACTNET_INFO'}
+{}
+{'name': 'XACTDOC'}
+{'name': 'TYPEOFLOSS', 'type': 'TYPEOFLOSS'}
+{}
+{'name': 'TYPESOFLOSS'}
+{'name': 'claimNumber', 'type': 'xs:string'}
+{'name': 'TYPEOFLOSS'}
+{'name': 'type', 'type': 'phoneType'}
+{'name': 'number', 'type': 'phoneNumber'}
+{'name': 'extension', 'type': 'phoneExt20'}
+{'name': 'PHONE'}
+{'name': 'CONTROL_POINT', 'type': 'CONTROL_POINT'}
+{}
+{'name': 'CONTROL_POINTS'}
+{'name': 'type', 'type': 'xs:string'}
+{'name': 'stamp', 'type': 'xs:dateTime'}
+{'name': 'CONTROL_POINT'}
+{'name': 'CONTACT', 'type': 'CONTACT'}
+{}
+{'name': 'CONTACTS'}
+{'name': 'PHONE', 'type': 'PHONE', 'minOccurs': '0', 'maxOccurs': 'unbounded'}
+{'maxOccurs': 'unbounded'}
+{'name': 'CONTACTMETHODS'}
+{'name': 'type', 'type': 'contactType'}
+{'name': 'name', 'type': 'xs:string'}
+{'name': 'CONTACTMETHODS', 'type': 'CONTACTMETHODS'}
+{}
+{'name': 'CONTACT'}
+{'name': 'TYPESOFLOSS', 'type': 'TYPESOFLOSS'}
+{}
+{'name': 'ADM'}
+{'name': 'XACTDOC', 'type': 'XACTDOC'}
+{'elementFormDefault': 'qualified', 'attributeFormDefault': 'unqualified'}
+ 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+{'value': '[0-9]*'}
+{'value': '20'}
+{'base': 'xs:string'}
+{'name': 'phoneExt20'}
+{'value': '[0-9]{3,4}\\-[0-9]{3}\\-[0-9]{4}|[0-9]*'}
+{'value': '12'}
+{'base': 'xs:string'}
+{'name': 'phoneNumber'}
+{'value': 'Office'}
+{'base': 'xs:string'}
+{'name': 'phoneType'}
+{'value': 'ClaimRep'}
+{'base': 'xs:string'}
+{'name': 'contactType'}
+{'value': '1'}
+{'value': '0'}
+{'base': 'xs:string'}
+{'name': 'bool'}
+{'name': 'origTransactionId', 'type': 'xs:string'}
+{'name': 'transactionId', 'type': 'xs:string'}
+{'name': 'recipientsXM8UserId', 'type': 'xs:string'}
+{'name': 'recipientsXNAddress', 'type': 'xs:string'}
+{'name': 'CONTROL_POINTS', 'type': 'CONTROL_POINTS'}
+{}
+{'name': 'XACTNET_INFO'}
+{'name': 'ADM', 'type': 'ADM'}
+{'name': 'CONTACTS', 'type': 'CONTACTS'}
+{'name': 'XACTNET_INFO', 'type': 'XACTNET_INFO'}
+{}
+{'name': 'XACTDOC'}
+{'name': 'TYPEOFLOSS', 'type': 'TYPEOFLOSS'}
+{}
+{'name': 'TYPESOFLOSS'}
+{'name': 'claimNumber', 'type': 'xs:string'}
+{'name': 'TYPEOFLOSS'}
+{'name': 'type', 'type': 'phoneType'}
+{'name': 'number', 'type': 'phoneNumber'}
+{'name': 'extension', 'type': 'phoneExt20'}
+{'name': 'PHONE'}
+{'name': 'CONTROL_POINT', 'type': 'CONTROL_POINT'}
+{}
+{'name': 'CONTROL_POINTS'}
+{'name': 'type', 'type': 'xs:string'}
+{'name': 'stamp', 'type': 'xs:dateTime'}
+{'name': 'CONTROL_POINT'}
+{'name': 'CONTACT', 'type': 'CONTACT'}
+{}
+{'name': 'CONTACTS'}
+{'name': 'PHONE', 'type': 'PHONE', 'minOccurs': '0', 'maxOccurs': 'unbounded'}
+{'maxOccurs': 'unbounded'}
+{'name': 'CONTACTMETHODS'}
+{'name': 'type', 'type': 'contactType'}
+{'name': 'name', 'type': 'xs:string'}
+{'name': 'CONTACTMETHODS', 'type': 'CONTACTMETHODS'}
+{}
+{'name': 'CONTACT'}
+{'name': 'TYPESOFLOSS', 'type': 'TYPESOFLOSS'}
+{}
+{'name': 'ADM'}
+{'name': 'XACTDOC', 'type': 'XACTDOC'}
+{'elementFormDefault': 'qualified', 'attributeFormDefault': 'unqualified'}
+ 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+{'value': '[0-9]*'}
+{'value': '20'}
+{'base': 'xs:string'}
+{'name': 'phoneExt20'}
+{'value': '[0-9]{3,4}\\-[0-9]{3}\\-[0-9]{4}|[0-9]*'}
+{'value': '12'}
+{'base': 'xs:string'}
+{'name': 'phoneNumber'}
+{'value': 'Office'}
+{'base': 'xs:string'}
+{'name': 'phoneType'}
+{'value': 'ClaimRep'}
+{'base': 'xs:string'}
+{'name': 'contactType'}
+{'value': '1'}
+{'value': '0'}
+{'base': 'xs:string'}
+{'name': 'bool'}
+{'name': 'origTransactionId', 'type': 'xs:string'}
+{'name': 'transactionId', 'type': 'xs:string'}
+{'name': 'recipientsXM8UserId', 'type': 'xs:string'}
+{'name': 'recipientsXNAddress', 'type': 'xs:string'}
+{'name': 'CONTROL_POINTS', 'type': 'CONTROL_POINTS'}
+{}
+{'name': 'XACTNET_INFO'}
+{'name': 'ADM', 'type': 'ADM'}
+{'name': 'CONTACTS', 'type': 'CONTACTS'}
+{'name': 'XACTNET_INFO', 'type': 'XACTNET_INFO'}
+{}
+{'name': 'XACTDOC'}
+{'name': 'TYPEOFLOSS', 'type': 'TYPEOFLOSS'}
+{}
+{'name': 'TYPESOFLOSS'}
+{'name': 'claimNumber', 'type': 'xs:string'}
+{'name': 'TYPEOFLOSS'}
+{'name': 'type', 'type': 'phoneType'}
+{'name': 'number', 'type': 'phoneNumber'}
+{'name': 'extension', 'type': 'phoneExt20'}
+{'name': 'PHONE'}
+{'name': 'CONTROL_POINT', 'type': 'CONTROL_POINT'}
+{}
+{'name': 'CONTROL_POINTS'}
+{'name': 'type', 'type': 'xs:string'}
+{'name': 'stamp', 'type': 'xs:dateTime'}
+{'name': 'CONTROL_POINT'}
+{'name': 'CONTACT', 'type': 'CONTACT'}
+{}
+{'name': 'CONTACTS'}
+{'name': 'PHONE', 'type': 'PHONE', 'minOccurs': '0', 'maxOccurs': 'unbounded'}
+{'maxOccurs': 'unbounded'}
+{'name': 'CONTACTMETHODS'}
+{'name': 'type', 'type': 'contactType'}
+{'name': 'name', 'type': 'xs:string'}
+{'name': 'CONTACTMETHODS', 'type': 'CONTACTMETHODS'}
+{}
+{'name': 'CONTACT'}
+{'name': 'TYPESOFLOSS', 'type': 'TYPESOFLOSS'}
+{}
+{'name': 'ADM'}
+{'name': 'XACTDOC', 'type': 'XACTDOC'}
+{'elementFormDefault': 'qualified', 'attributeFormDefault': 'unqualified'}
+ 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+{'value': '[0-9]*'}
+{'value': '20'}
+{'base': 'xs:string'}
+{'name': 'phoneExt20'}
+{'value': '[0-9]{3,4}\\-[0-9]{3}\\-[0-9]{4}|[0-9]*'}
+{'value': '12'}
+{'base': 'xs:string'}
+{'name': 'phoneNumber'}
+{'value': 'Office'}
+{'base': 'xs:string'}
+{'name': 'phoneType'}
+{'value': 'ClaimRep'}
+{'base': 'xs:string'}
+{'name': 'contactType'}
+{'value': '1'}
+{'value': '0'}
+{'base': 'xs:string'}
+{'name': 'bool'}
+{'name': 'origTransactionId', 'type': 'xs:string'}
+{'name': 'transactionId', 'type': 'xs:string'}
+{'name': 'recipientsXM8UserId', 'type': 'xs:string'}
+{'name': 'recipientsXNAddress', 'type': 'xs:string'}
+{'name': 'CONTROL_POINTS', 'type': 'CONTROL_POINTS'}
+{}
+{'name': 'XACTNET_INFO'}
+{'name': 'ADM', 'type': 'ADM'}
+{'name': 'CONTACTS', 'type': 'CONTACTS'}
+{'name': 'XACTNET_INFO', 'type': 'XACTNET_INFO'}
+{}
+{'name': 'XACTDOC'}
+{'name': 'TYPEOFLOSS', 'type': 'TYPEOFLOSS'}
+{}
+{'name': 'TYPESOFLOSS'}
+{'name': 'claimNumber', 'type': 'xs:string'}
+{'name': 'TYPEOFLOSS'}
+{'name': 'type', 'type': 'phoneType'}
+{'name': 'number', 'type': 'phoneNumber'}
+{'name': 'extension', 'type': 'phoneExt20'}
+{'name': 'PHONE'}
+{'name': 'CONTROL_POINT', 'type': 'CONTROL_POINT'}
+{}
+{'name': 'CONTROL_POINTS'}
+{'name': 'type', 'type': 'xs:string'}
+{'name': 'stamp', 'type': 'xs:dateTime'}
+{'name': 'CONTROL_POINT'}
+{'name': 'CONTACT', 'type': 'CONTACT'}
+{}
+{'name': 'CONTACTS'}
+{'name': 'PHONE', 'type': 'PHONE', 'minOccurs': '0', 'maxOccurs': 'unbounded'}
+{'maxOccurs': 'unbounded'}
+{'name': 'CONTACTMETHODS'}
+{'name': 'type', 'type': 'contactType'}
+{'name': 'name', 'type': 'xs:string'}
+{'name': 'CONTACTMETHODS', 'type': 'CONTACTMETHODS'}
+{}
+{'name': 'CONTACT'}
+{'name': 'TYPESOFLOSS', 'type': 'TYPESOFLOSS'}
+{}
+{'name': 'ADM'}
+{'name': 'XACTDOC', 'type': 'XACTDOC'}
+{'elementFormDefault': 'qualified', 'attributeFormDefault': 'unqualified'}
+ 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+{'value': '[0-9]*'}
+{'value': '20'}
+{'base': 'xs:string'}
+{'name': 'phoneExt20'}
+{'value': '[0-9]{3,4}\\-[0-9]{3}\\-[0-9]{4}|[0-9]*'}
+{'value': '12'}
+{'base': 'xs:string'}
+{'name': 'phoneNumber'}
+{'value': 'Office'}
+{'base': 'xs:string'}
+{'name': 'phoneType'}
+{'value': 'ClaimRep'}
+{'base': 'xs:string'}
+{'name': 'contactType'}
+{'value': '1'}
+{'value': '0'}
+{'base': 'xs:string'}
+{'name': 'bool'}
+{'name': 'origTransactionId', 'type': 'xs:string'}
+{'name': 'transactionId', 'type': 'xs:string'}
+{'name': 'recipientsXM8UserId', 'type': 'xs:string'}
+{'name': 'recipientsXNAddress', 'type': 'xs:string'}
+{'name': 'CONTROL_POINTS', 'type': 'CONTROL_POINTS'}
+{}
+{'name': 'XACTNET_INFO'}
+{'name': 'ADM', 'type': 'ADM'}
+{'name': 'CONTACTS', 'type': 'CONTACTS'}
+{'name': 'XACTNET_INFO', 'type': 'XACTNET_INFO'}
+{}
+{'name': 'XACTDOC'}
+{'name': 'TYPEOFLOSS', 'type': 'TYPEOFLOSS'}
+{}
+{'name': 'TYPESOFLOSS'}
+{'name': 'claimNumber', 'type': 'xs:string'}
+{'name': 'TYPEOFLOSS'}
+{'name': 'type', 'type': 'phoneType'}
+{'name': 'number', 'type': 'phoneNumber'}
+{'name': 'extension', 'type': 'phoneExt20'}
+{'name': 'PHONE'}
+{'name': 'CONTROL_POINT', 'type': 'CONTROL_POINT'}
+{}
+{'name': 'CONTROL_POINTS'}
+{'name': 'type', 'type': 'xs:string'}
+{'name': 'stamp', 'type': 'xs:dateTime'}
+{'name': 'CONTROL_POINT'}
+{'name': 'CONTACT', 'type': 'CONTACT'}
+{}
+{'name': 'CONTACTS'}
+{'name': 'PHONE', 'type': 'PHONE', 'minOccurs': '0', 'maxOccurs': 'unbounded'}
+{'maxOccurs': 'unbounded'}
+{'name': 'CONTACTMETHODS'}
+{'name': 'type', 'type': 'contactType'}
+{'name': 'name', 'type': 'xs:string'}
+{'name': 'CONTACTMETHODS', 'type': 'CONTACTMETHODS'}
+{}
+{'name': 'CONTACT'}
+{'name': 'TYPESOFLOSS', 'type': 'TYPESOFLOSS'}
+{}
+{'name': 'ADM'}
+{'name': 'XACTDOC', 'type': 'XACTDOC'}
+{'elementFormDefault': 'qualified', 'attributeFormDefault': 'unqualified'}
+ 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+{'value': '[0-9]*'}
+{'value': '20'}
+{'base': 'xs:string'}
+{'name': 'phoneExt20'}
+{'value': '[0-9]{3,4}\\-[0-9]{3}\\-[0-9]{4}|[0-9]*'}
+{'value': '12'}
+{'base': 'xs:string'}
+{'name': 'phoneNumber'}
+{'value': 'Office'}
+{'base': 'xs:string'}
+{'name': 'phoneType'}
+{'value': 'ClaimRep'}
+{'base': 'xs:string'}
+{'name': 'contactType'}
+{'value': '1'}
+{'value': '0'}
+{'base': 'xs:string'}
+{'name': 'bool'}
+{'name': 'origTransactionId', 'type': 'xs:string'}
+{'name': 'transactionId', 'type': 'xs:string'}
+{'name': 'recipientsXM8UserId', 'type': 'xs:string'}
+{'name': 'recipientsXNAddress', 'type': 'xs:string'}
+{'name': 'CONTROL_POINTS', 'type': 'CONTROL_POINTS'}
+{}
+{'name': 'XACTNET_INFO'}
+{'name': 'ADM', 'type': 'ADM'}
+{'name': 'CONTACTS', 'type': 'CONTACTS'}
+{'name': 'XACTNET_INFO', 'type': 'XACTNET_INFO'}
+{}
+{'name': 'XACTDOC'}
+{'name': 'TYPEOFLOSS', 'type': 'TYPEOFLOSS'}
+{}
+{'name': 'TYPESOFLOSS'}
+{'name': 'claimNumber', 'type': 'xs:string'}
+{'name': 'TYPEOFLOSS'}
+{'name': 'type', 'type': 'phoneType'}
+{'name': 'number', 'type': 'phoneNumber'}
+{'name': 'extension', 'type': 'phoneExt20'}
+{'name': 'PHONE'}
+{'name': 'CONTROL_POINT', 'type': 'CONTROL_POINT'}
+{}
+{'name': 'CONTROL_POINTS'}
+{'name': 'type', 'type': 'xs:string'}
+{'name': 'stamp', 'type': 'xs:dateTime'}
+{'name': 'CONTROL_POINT'}
+{'name': 'CONTACT', 'type': 'CONTACT'}
+{}
+{'name': 'CONTACTS'}
+{'name': 'PHONE', 'type': 'PHONE', 'minOccurs': '0', 'maxOccurs': 'unbounded'}
+{'maxOccurs': 'unbounded'}
+{'name': 'CONTACTMETHODS'}
+{'name': 'type', 'type': 'contactType'}
+{'name': 'name', 'type': 'xs:string'}
+{'name': 'CONTACTMETHODS', 'type': 'CONTACTMETHODS'}
+{}
+{'name': 'CONTACT'}
+{'name': 'TYPESOFLOSS', 'type': 'TYPESOFLOSS'}
+{}
+{'name': 'ADM'}
+{'name': 'XACTDOC', 'type': 'XACTDOC'}
+{'elementFormDefault': 'qualified', 'attributeFormDefault': 'unqualified'}
+ 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+{'value': '[0-9]*'}
+{'value': '20'}
+{'base': 'xs:string'}
+{'name': 'phoneExt20'}
+{'value': '[0-9]{3,4}\\-[0-9]{3}\\-[0-9]{4}|[0-9]*'}
+{'value': '12'}
+{'base': 'xs:string'}
+{'name': 'phoneNumber'}
+{'value': 'Office'}
+{'base': 'xs:string'}
+{'name': 'phoneType'}
+{'value': 'ClaimRep'}
+{'base': 'xs:string'}
+{'name': 'contactType'}
+{'value': '1'}
+{'value': '0'}
+{'base': 'xs:string'}
+{'name': 'bool'}
+{'name': 'origTransactionId', 'type': 'xs:string'}
+{'name': 'transactionId', 'type': 'xs:string'}
+{'name': 'recipientsXM8UserId', 'type': 'xs:string'}
+{'name': 'recipientsXNAddress', 'type': 'xs:string'}
+{'name': 'CONTROL_POINTS', 'type': 'CONTROL_POINTS'}
+{}
+{'name': 'XACTNET_INFO'}
+{'name': 'ADM', 'type': 'ADM'}
+{'name': 'CONTACTS', 'type': 'CONTACTS'}
+{'name': 'XACTNET_INFO', 'type': 'XACTNET_INFO'}
+{}
+{'name': 'XACTDOC'}
+{'name': 'TYPEOFLOSS', 'type': 'TYPEOFLOSS'}
+{}
+{'name': 'TYPESOFLOSS'}
+{'name': 'claimNumber', 'type': 'xs:string'}
+{'name': 'TYPEOFLOSS'}
+{'name': 'type', 'type': 'phoneType'}
+{'name': 'number', 'type': 'phoneNumber'}
+{'name': 'extension', 'type': 'phoneExt20'}
+{'name': 'PHONE'}
+{'name': 'CONTROL_POINT', 'type': 'CONTROL_POINT'}
+{}
+{'name': 'CONTROL_POINTS'}
+{'name': 'type', 'type': 'xs:string'}
+{'name': 'stamp', 'type': 'xs:dateTime'}
+{'name': 'CONTROL_POINT'}
+{'name': 'CONTACT', 'type': 'CONTACT'}
+{}
+{'name': 'CONTACTS'}
+{'name': 'PHONE', 'type': 'PHONE', 'minOccurs': '0', 'maxOccurs': 'unbounded'}
+{'maxOccurs': 'unbounded'}
+{'name': 'CONTACTMETHODS'}
+{'name': 'type', 'type': 'contactType'}
+{'name': 'name', 'type': 'xs:string'}
+{'name': 'CONTACTMETHODS', 'type': 'CONTACTMETHODS'}
+{}
+{'name': 'CONTACT'}
+{'name': 'TYPESOFLOSS', 'type': 'TYPESOFLOSS'}
+{}
+{'name': 'ADM'}
+{'name': 'XACTDOC', 'type': 'XACTDOC'}
+{'elementFormDefault': 'qualified', 'attributeFormDefault': 'unqualified'}
+ 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+{'value': '[0-9]*'}
+{'value': '20'}
+{'base': 'xs:string'}
+{'name': 'phoneExt20'}
+{'value': '[0-9]{3,4}\\-[0-9]{3}\\-[0-9]{4}|[0-9]*'}
+{'value': '12'}
+{'base': 'xs:string'}
+{'name': 'phoneNumber'}
+{'value': 'Office'}
+{'base': 'xs:string'}
+{'name': 'phoneType'}
+{'value': 'ClaimRep'}
+{'base': 'xs:string'}
+{'name': 'contactType'}
+{'value': '1'}
+{'value': '0'}
+{'base': 'xs:string'}
+{'name': 'bool'}
+{'name': 'origTransactionId', 'type': 'xs:string'}
+{'name': 'transactionId', 'type': 'xs:string'}
+{'name': 'recipientsXM8UserId', 'type': 'xs:string'}
+{'name': 'recipientsXNAddress', 'type': 'xs:string'}
+{'name': 'CONTROL_POINTS', 'type': 'CONTROL_POINTS'}
+{}
+{'name': 'XACTNET_INFO'}
+{'name': 'ADM', 'type': 'ADM'}
+{'name': 'CONTACTS', 'type': 'CONTACTS'}
+{'name': 'XACTNET_INFO', 'type': 'XACTNET_INFO'}
+{}
+{'name': 'XACTDOC'}
+{'name': 'TYPEOFLOSS', 'type': 'TYPEOFLOSS'}
+{}
+{'name': 'TYPESOFLOSS'}
+{'name': 'claimNumber', 'type': 'xs:string'}
+{'name': 'TYPEOFLOSS'}
+{'name': 'type', 'type': 'phoneType'}
+{'name': 'number', 'type': 'phoneNumber'}
+{'name': 'extension', 'type': 'phoneExt20'}
+{'name': 'PHONE'}
+{'name': 'CONTROL_POINT', 'type': 'CONTROL_POINT'}
+{}
+{'name': 'CONTROL_POINTS'}
+{'name': 'type', 'type': 'xs:string'}
+{'name': 'stamp', 'type': 'xs:dateTime'}
+{'name': 'CONTROL_POINT'}
+{'name': 'CONTACT', 'type': 'CONTACT'}
+{}
+{'name': 'CONTACTS'}
+{'name': 'PHONE', 'type': 'PHONE', 'minOccurs': '0', 'maxOccurs': 'unbounded'}
+{'maxOccurs': 'unbounded'}
+{'name': 'CONTACTMETHODS'}
+{'name': 'type', 'type': 'contactType'}
+{'name': 'name', 'type': 'xs:string'}
+{'name': 'CONTACTMETHODS', 'type': 'CONTACTMETHODS'}
+{}
+{'name': 'CONTACT'}
+{'name': 'TYPESOFLOSS', 'type': 'TYPESOFLOSS'}
+{}
+{'name': 'ADM'}
+{'name': 'XACTDOC', 'type': 'XACTDOC'}
+{'elementFormDefault': 'qualified', 'attributeFormDefault': 'unqualified'}
+ 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+{'value': '[0-9]*'}
+{'value': '20'}
+{'base': 'xs:string'}
+{'name': 'phoneExt20'}
+{'value': '[0-9]{3,4}\\-[0-9]{3}\\-[0-9]{4}|[0-9]*'}
+{'value': '12'}
+{'base': 'xs:string'}
+{'name': 'phoneNumber'}
+{'value': 'Office'}
+{'base': 'xs:string'}
+{'name': 'phoneType'}
+{'value': 'ClaimRep'}
+{'base': 'xs:string'}
+{'name': 'contactType'}
+{'value': '1'}
+{'value': '0'}
+{'base': 'xs:string'}
+{'name': 'bool'}
+{'name': 'origTransactionId', 'type': 'xs:string'}
+{'name': 'transactionId', 'type': 'xs:string'}
+{'name': 'recipientsXM8UserId', 'type': 'xs:string'}
+{'name': 'recipientsXNAddress', 'type': 'xs:string'}
+{'name': 'CONTROL_POINTS', 'type': 'CONTROL_POINTS'}
+{}
+{'name': 'XACTNET_INFO'}
+{'name': 'ADM', 'type': 'ADM'}
+{'name': 'CONTACTS', 'type': 'CONTACTS'}
+{'name': 'XACTNET_INFO', 'type': 'XACTNET_INFO'}
+{}
+{'name': 'XACTDOC'}
+{'name': 'TYPEOFLOSS', 'type': 'TYPEOFLOSS'}
+{}
+{'name': 'TYPESOFLOSS'}
+{'name': 'claimNumber', 'type': 'xs:string'}
+{'name': 'TYPEOFLOSS'}
+{'name': 'type', 'type': 'phoneType'}
+{'name': 'number', 'type': 'phoneNumber'}
+{'name': 'extension', 'type': 'phoneExt20'}
+{'name': 'PHONE'}
+{'name': 'CONTROL_POINT', 'type': 'CONTROL_POINT'}
+{}
+{'name': 'CONTROL_POINTS'}
+{'name': 'type', 'type': 'xs:string'}
+{'name': 'stamp', 'type': 'xs:dateTime'}
+{'name': 'CONTROL_POINT'}
+{'name': 'CONTACT', 'type': 'CONTACT'}
+{}
+{'name': 'CONTACTS'}
+{'name': 'PHONE', 'type': 'PHONE', 'minOccurs': '0', 'maxOccurs': 'unbounded'}
+{'maxOccurs': 'unbounded'}
+{'name': 'CONTACTMETHODS'}
+{'name': 'type', 'type': 'contactType'}
+{'name': 'name', 'type': 'xs:string'}
+{'name': 'CONTACTMETHODS', 'type': 'CONTACTMETHODS'}
+{}
+{'name': 'CONTACT'}
+{'name': 'TYPESOFLOSS', 'type': 'TYPESOFLOSS'}
+{}
+{'name': 'ADM'}
+{'name': 'XACTDOC', 'type': 'XACTDOC'}
+{'elementFormDefault': 'qualified', 'attributeFormDefault': 'unqualified'}
+ 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+{'value': '[0-9]*'}
+{'value': '20'}
+{'base': 'xs:string'}
+{'name': 'phoneExt20'}
+{'value': '[0-9]{3,4}\\-[0-9]{3}\\-[0-9]{4}|[0-9]*'}
+{'value': '12'}
+{'base': 'xs:string'}
+{'name': 'phoneNumber'}
+{'value': 'Office'}
+{'base': 'xs:string'}
+{'name': 'phoneType'}
+{'value': 'ClaimRep'}
+{'base': 'xs:string'}
+{'name': 'contactType'}
+{'value': '1'}
+{'value': '0'}
+{'base': 'xs:string'}
+{'name': 'bool'}
+{'name': 'origTransactionId', 'type': 'xs:string'}
+{'name': 'transactionId', 'type': 'xs:string'}
+{'name': 'recipientsXM8UserId', 'type': 'xs:string'}
+{'name': 'recipientsXNAddress', 'type': 'xs:string'}
+{'name': 'CONTROL_POINTS', 'type': 'CONTROL_POINTS'}
+{}
+{'name': 'XACTNET_INFO'}
+{'name': 'ADM', 'type': 'ADM'}
+{'name': 'CONTACTS', 'type': 'CONTACTS'}
+{'name': 'XACTNET_INFO', 'type': 'XACTNET_INFO'}
+{}
+{'name': 'XACTDOC'}
+{'name': 'TYPEOFLOSS', 'type': 'TYPEOFLOSS'}
+{}
+{'name': 'TYPESOFLOSS'}
+{'name': 'claimNumber', 'type': 'xs:string'}
+{'name': 'TYPEOFLOSS'}
+{'name': 'type', 'type': 'phoneType'}
+{'name': 'number', 'type': 'phoneNumber'}
+{'name': 'extension', 'type': 'phoneExt20'}
+{'name': 'PHONE'}
+{'name': 'CONTROL_POINT', 'type': 'CONTROL_POINT'}
+{}
+{'name': 'CONTROL_POINTS'}
+{'name': 'type', 'type': 'xs:string'}
+{'name': 'stamp', 'type': 'xs:dateTime'}
+{'name': 'CONTROL_POINT'}
+{'name': 'CONTACT', 'type': 'CONTACT'}
+{}
+{'name': 'CONTACTS'}
+{'name': 'PHONE', 'type': 'PHONE', 'minOccurs': '0', 'maxOccurs': 'unbounded'}
+{'maxOccurs': 'unbounded'}
+{'name': 'CONTACTMETHODS'}
+{'name': 'type', 'type': 'contactType'}
+{'name': 'name', 'type': 'xs:string'}
+{'name': 'CONTACTMETHODS', 'type': 'CONTACTMETHODS'}
+{}
+{'name': 'CONTACT'}
+{'name': 'TYPESOFLOSS', 'type': 'TYPESOFLOSS'}
+{}
+{'name': 'ADM'}
+{'name': 'XACTDOC', 'type': 'XACTDOC'}
+{'elementFormDefault': 'qualified', 'attributeFormDefault': 'unqualified'}
+ 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+{'value': '[0-9]*'}
+{'value': '20'}
+{'base': 'xs:string'}
+{'name': 'phoneExt20'}
+{'value': '[0-9]{3,4}\\-[0-9]{3}\\-[0-9]{4}|[0-9]*'}
+{'value': '12'}
+{'base': 'xs:string'}
+{'name': 'phoneNumber'}
+{'value': 'Office'}
+{'base': 'xs:string'}
+{'name': 'phoneType'}
+{'value': 'ClaimRep'}
+{'base': 'xs:string'}
+{'name': 'contactType'}
+{'value': '1'}
+{'value': '0'}
+{'base': 'xs:string'}
+{'name': 'bool'}
+{'name': 'origTransactionId', 'type': 'xs:string'}
+{'name': 'transactionId', 'type': 'xs:string'}
+{'name': 'recipientsXM8UserId', 'type': 'xs:string'}
+{'name': 'recipientsXNAddress', 'type': 'xs:string'}
+{'name': 'CONTROL_POINTS', 'type': 'CONTROL_POINTS'}
+{}
+{'name': 'XACTNET_INFO'}
+{'name': 'ADM', 'type': 'ADM'}
+{'name': 'CONTACTS', 'type': 'CONTACTS'}
+{'name': 'XACTNET_INFO', 'type': 'XACTNET_INFO'}
+{}
+{'name': 'XACTDOC'}
+{'name': 'TYPEOFLOSS', 'type': 'TYPEOFLOSS'}
+{}
+{'name': 'TYPESOFLOSS'}
+{'name': 'claimNumber', 'type': 'xs:string'}
+{'name': 'TYPEOFLOSS'}
+{'name': 'type', 'type': 'phoneType'}
+{'name': 'number', 'type': 'phoneNumber'}
+{'name': 'extension', 'type': 'phoneExt20'}
+{'name': 'PHONE'}
+{'name': 'CONTROL_POINT', 'type': 'CONTROL_POINT'}
+{}
+{'name': 'CONTROL_POINTS'}
+{'name': 'type', 'type': 'xs:string'}
+{'name': 'stamp', 'type': 'xs:dateTime'}
+{'name': 'CONTROL_POINT'}
+{'name': 'CONTACT', 'type': 'CONTACT'}
+{}
+{'name': 'CONTACTS'}
+{'name': 'PHONE', 'type': 'PHONE', 'minOccurs': '0', 'maxOccurs': 'unbounded'}
+{'maxOccurs': 'unbounded'}
+{'name': 'CONTACTMETHODS'}
+{'name': 'type', 'type': 'contactType'}
+{'name': 'name', 'type': 'xs:string'}
+{'name': 'CONTACTMETHODS', 'type': 'CONTACTMETHODS'}
+{}
+{'name': 'CONTACT'}
+{'name': 'TYPESOFLOSS', 'type': 'TYPESOFLOSS'}
+{}
+{'name': 'ADM'}
+{'name': 'XACTDOC', 'type': 'XACTDOC'}
+{'elementFormDefault': 'qualified', 'attributeFormDefault': 'unqualified'}
+ 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+{'value': '[0-9]*'}
+{'value': '20'}
+{'base': 'xs:string'}
+{'name': 'phoneExt20'}
+{'value': '[0-9]{3,4}\\-[0-9]{3}\\-[0-9]{4}|[0-9]*'}
+{'value': '12'}
+{'base': 'xs:string'}
+{'name': 'phoneNumber'}
+{'value': 'Office'}
+{'base': 'xs:string'}
+{'name': 'phoneType'}
+{'value': 'ClaimRep'}
+{'base': 'xs:string'}
+{'name': 'contactType'}
+{'value': '1'}
+{'value': '0'}
+{'base': 'xs:string'}
+{'name': 'bool'}
+{'name': 'origTransactionId', 'type': 'xs:string'}
+{'name': 'transactionId', 'type': 'xs:string'}
+{'name': 'recipientsXM8UserId', 'type': 'xs:string'}
+{'name': 'recipientsXNAddress', 'type': 'xs:string'}
+{'name': 'CONTROL_POINTS', 'type': 'CONTROL_POINTS'}
+{}
+{'name': 'XACTNET_INFO'}
+{'name': 'ADM', 'type': 'ADM'}
+{'name': 'CONTACTS', 'type': 'CONTACTS'}
+{'name': 'XACTNET_INFO', 'type': 'XACTNET_INFO'}
+{}
+{'name': 'XACTDOC'}
+{'name': 'TYPEOFLOSS', 'type': 'TYPEOFLOSS'}
+{}
+{'name': 'TYPESOFLOSS'}
+{'name': 'claimNumber', 'type': 'xs:string'}
+{'name': 'TYPEOFLOSS'}
+{'name': 'type', 'type': 'phoneType'}
+{'name': 'number', 'type': 'phoneNumber'}
+{'name': 'extension', 'type': 'phoneExt20'}
+{'name': 'PHONE'}
+{'name': 'CONTROL_POINT', 'type': 'CONTROL_POINT'}
+{}
+{'name': 'CONTROL_POINTS'}
+{'name': 'type', 'type': 'xs:string'}
+{'name': 'stamp', 'type': 'xs:dateTime'}
+{'name': 'CONTROL_POINT'}
+{'name': 'CONTACT', 'type': 'CONTACT'}
+{}
+{'name': 'CONTACTS'}
+{'name': 'PHONE', 'type': 'PHONE', 'minOccurs': '0', 'maxOccurs': 'unbounded'}
+{'maxOccurs': 'unbounded'}
+{'name': 'CONTACTMETHODS'}
+{'name': 'type', 'type': 'contactType'}
+{'name': 'name', 'type': 'xs:string'}
+{'name': 'CONTACTMETHODS', 'type': 'CONTACTMETHODS'}
+{}
+{'name': 'CONTACT'}
+{'name': 'TYPESOFLOSS', 'type': 'TYPESOFLOSS'}
+{}
+{'name': 'ADM'}
+{'name': 'XACTDOC', 'type': 'XACTDOC'}
+{'elementFormDefault': 'qualified', 'attributeFormDefault': 'unqualified'}
+ 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+{'value': '[0-9]*'}
+{'value': '20'}
+{'base': 'xs:string'}
+{'name': 'phoneExt20'}
+{'value': '[0-9]{3,4}\\-[0-9]{3}\\-[0-9]{4}|[0-9]*'}
+{'value': '12'}
+{'base': 'xs:string'}
+{'name': 'phoneNumber'}
+{'value': 'Office'}
+{'base': 'xs:string'}
+{'name': 'phoneType'}
+{'value': 'ClaimRep'}
+{'base': 'xs:string'}
+{'name': 'contactType'}
+{'value': '1'}
+{'value': '0'}
+{'base': 'xs:string'}
+{'name': 'bool'}
+{'name': 'origTransactionId', 'type': 'xs:string'}
+{'name': 'transactionId', 'type': 'xs:string'}
+{'name': 'recipientsXM8UserId', 'type': 'xs:string'}
+{'name': 'recipientsXNAddress', 'type': 'xs:string'}
+{'name': 'CONTROL_POINTS', 'type': 'CONTROL_POINTS'}
+{}
+{'name': 'XACTNET_INFO'}
+{'name': 'ADM', 'type': 'ADM'}
+{'name': 'CONTACTS', 'type': 'CONTACTS'}
+{'name': 'XACTNET_INFO', 'type': 'XACTNET_INFO'}
+{}
+{'name': 'XACTDOC'}
+{'name': 'TYPEOFLOSS', 'type': 'TYPEOFLOSS'}
+{}
+{'name': 'TYPESOFLOSS'}
+{'name': 'claimNumber', 'type': 'xs:string'}
+{'name': 'TYPEOFLOSS'}
+{'name': 'type', 'type': 'phoneType'}
+{'name': 'number', 'type': 'phoneNumber'}
+{'name': 'extension', 'type': 'phoneExt20'}
+{'name': 'PHONE'}
+{'name': 'CONTROL_POINT', 'type': 'CONTROL_POINT'}
+{}
+{'name': 'CONTROL_POINTS'}
+{'name': 'type', 'type': 'xs:string'}
+{'name': 'stamp', 'type': 'xs:dateTime'}
+{'name': 'CONTROL_POINT'}
+{'name': 'CONTACT', 'type': 'CONTACT'}
+{}
+{'name': 'CONTACTS'}
+{'name': 'PHONE', 'type': 'PHONE', 'minOccurs': '0', 'maxOccurs': 'unbounded'}
+{'maxOccurs': 'unbounded'}
+{'name': 'CONTACTMETHODS'}
+{'name': 'type', 'type': 'contactType'}
+{'name': 'name', 'type': 'xs:string'}
+{'name': 'CONTACTMETHODS', 'type': 'CONTACTMETHODS'}
+{}
+{'name': 'CONTACT'}
+{'name': 'TYPESOFLOSS', 'type': 'TYPESOFLOSS'}
+{}
+{'name': 'ADM'}
+{'name': 'XACTDOC', 'type': 'XACTDOC'}
+{'elementFormDefault': 'qualified', 'attributeFormDefault': 'unqualified'}
+ 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+{'value': '[0-9]*'}
+{'value': '20'}
+{'base': 'xs:string'}
+{'name': 'phoneExt20'}
+{'value': '[0-9]{3,4}\\-[0-9]{3}\\-[0-9]{4}|[0-9]*'}
+{'value': '12'}
+{'base': 'xs:string'}
+{'name': 'phoneNumber'}
+{'value': 'Office'}
+{'base': 'xs:string'}
+{'name': 'phoneType'}
+{'value': 'ClaimRep'}
+{'base': 'xs:string'}
+{'name': 'contactType'}
+{'value': '1'}
+{'value': '0'}
+{'base': 'xs:string'}
+{'name': 'bool'}
+{'name': 'origTransactionId', 'type': 'xs:string'}
+{'name': 'transactionId', 'type': 'xs:string'}
+{'name': 'recipientsXM8UserId', 'type': 'xs:string'}
+{'name': 'recipientsXNAddress', 'type': 'xs:string'}
+{'name': 'CONTROL_POINTS', 'type': 'CONTROL_POINTS'}
+{}
+{'name': 'XACTNET_INFO'}
+{'name': 'ADM', 'type': 'ADM'}
+{'name': 'CONTACTS', 'type': 'CONTACTS'}
+{'name': 'XACTNET_INFO', 'type': 'XACTNET_INFO'}
+{}
+{'name': 'XACTDOC'}
+{'name': 'TYPEOFLOSS', 'type': 'TYPEOFLOSS'}
+{}
+{'name': 'TYPESOFLOSS'}
+{'name': 'claimNumber', 'type': 'xs:string'}
+{'name': 'TYPEOFLOSS'}
+{'name': 'type', 'type': 'phoneType'}
+{'name': 'number', 'type': 'phoneNumber'}
+{'name': 'extension', 'type': 'phoneExt20'}
+{'name': 'PHONE'}
+{'name': 'CONTROL_POINT', 'type': 'CONTROL_POINT'}
+{}
+{'name': 'CONTROL_POINTS'}
+{'name': 'type', 'type': 'xs:string'}
+{'name': 'stamp', 'type': 'xs:dateTime'}
+{'name': 'CONTROL_POINT'}
+{'name': 'CONTACT', 'type': 'CONTACT'}
+{}
+{'name': 'CONTACTS'}
+{'name': 'PHONE', 'type': 'PHONE', 'minOccurs': '0', 'maxOccurs': 'unbounded'}
+{'maxOccurs': 'unbounded'}
+{'name': 'CONTACTMETHODS'}
+{'name': 'type', 'type': 'contactType'}
+{'name': 'name', 'type': 'xs:string'}
+{'name': 'CONTACTMETHODS', 'type': 'CONTACTMETHODS'}
+{}
+{'name': 'CONTACT'}
+{'name': 'TYPESOFLOSS', 'type': 'TYPESOFLOSS'}
+{}
+{'name': 'ADM'}
+{'name': 'XACTDOC', 'type': 'XACTDOC'}
+{'elementFormDefault': 'qualified', 'attributeFormDefault': 'unqualified'}
+ 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+{'value': '[0-9]*'}
+{'value': '20'}
+{'base': 'xs:string'}
+{'name': 'phoneExt20'}
+{'value': '[0-9]{3,4}\\-[0-9]{3}\\-[0-9]{4}|[0-9]*'}
+{'value': '12'}
+{'base': 'xs:string'}
+{'name': 'phoneNumber'}
+{'value': 'Office'}
+{'base': 'xs:string'}
+{'name': 'phoneType'}
+{'value': 'ClaimRep'}
+{'base': 'xs:string'}
+{'name': 'contactType'}
+{'value': '1'}
+{'value': '0'}
+{'base': 'xs:string'}
+{'name': 'bool'}
+{'name': 'origTransactionId', 'type': 'xs:string'}
+{'name': 'transactionId', 'type': 'xs:string'}
+{'name': 'recipientsXM8UserId', 'type': 'xs:string'}
+{'name': 'recipientsXNAddress', 'type': 'xs:string'}
+{'name': 'CONTROL_POINTS', 'type': 'CONTROL_POINTS'}
+{}
+{'name': 'XACTNET_INFO'}
+{'name': 'ADM', 'type': 'ADM'}
+{'name': 'CONTACTS', 'type': 'CONTACTS'}
+{'name': 'XACTNET_INFO', 'type': 'XACTNET_INFO'}
+{}
+{'name': 'XACTDOC'}
+{'name': 'TYPEOFLOSS', 'type': 'TYPEOFLOSS'}
+{}
+{'name': 'TYPESOFLOSS'}
+{'name': 'claimNumber', 'type': 'xs:string'}
+{'name': 'TYPEOFLOSS'}
+{'name': 'type', 'type': 'phoneType'}
+{'name': 'number', 'type': 'phoneNumber'}
+{'name': 'extension', 'type': 'phoneExt20'}
+{'name': 'PHONE'}
+{'name': 'CONTROL_POINT', 'type': 'CONTROL_POINT'}
+{}
+{'name': 'CONTROL_POINTS'}
+{'name': 'type', 'type': 'xs:string'}
+{'name': 'stamp', 'type': 'xs:dateTime'}
+{'name': 'CONTROL_POINT'}
+{'name': 'CONTACT', 'type': 'CONTACT'}
+{}
+{'name': 'CONTACTS'}
+{'name': 'PHONE', 'type': 'PHONE', 'minOccurs': '0', 'maxOccurs': 'unbounded'}
+{'maxOccurs': 'unbounded'}
+{'name': 'CONTACTMETHODS'}
+{'name': 'type', 'type': 'contactType'}
+{'name': 'name', 'type': 'xs:string'}
+{'name': 'CONTACTMETHODS', 'type': 'CONTACTMETHODS'}
+{}
+{'name': 'CONTACT'}
+{'name': 'TYPESOFLOSS', 'type': 'TYPESOFLOSS'}
+{}
+{'name': 'ADM'}
+{'name': 'XACTDOC', 'type': 'XACTDOC'}
+{'elementFormDefault': 'qualified', 'attributeFormDefault': 'unqualified'}
+ 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+{'value': '[0-9]*'}
+{'value': '20'}
+{'base': 'xs:string'}
+{'name': 'phoneExt20'}
+{'value': '[0-9]{3,4}\\-[0-9]{3}\\-[0-9]{4}|[0-9]*'}
+{'value': '12'}
+{'base': 'xs:string'}
+{'name': 'phoneNumber'}
+{'value': 'Office'}
+{'base': 'xs:string'}
+{'name': 'phoneType'}
+{'value': 'ClaimRep'}
+{'base': 'xs:string'}
+{'name': 'contactType'}
+{'value': '1'}
+{'value': '0'}
+{'base': 'xs:string'}
+{'name': 'bool'}
+{'name': 'origTransactionId', 'type': 'xs:string'}
+{'name': 'transactionId', 'type': 'xs:string'}
+{'name': 'recipientsXM8UserId', 'type': 'xs:string'}
+{'name': 'recipientsXNAddress', 'type': 'xs:string'}
+{'name': 'CONTROL_POINTS', 'type': 'CONTROL_POINTS'}
+{}
+{'name': 'XACTNET_INFO'}
+{'name': 'ADM', 'type': 'ADM'}
+{'name': 'CONTACTS', 'type': 'CONTACTS'}
+{'name': 'XACTNET_INFO', 'type': 'XACTNET_INFO'}
+{}
+{'name': 'XACTDOC'}
+{'name': 'TYPEOFLOSS', 'type': 'TYPEOFLOSS'}
+{}
+{'name': 'TYPESOFLOSS'}
+{'name': 'claimNumber', 'type': 'xs:string'}
+{'name': 'TYPEOFLOSS'}
+{'name': 'type', 'type': 'phoneType'}
+{'name': 'number', 'type': 'phoneNumber'}
+{'name': 'extension', 'type': 'phoneExt20'}
+{'name': 'PHONE'}
+{'name': 'CONTROL_POINT', 'type': 'CONTROL_POINT'}
+{}
+{'name': 'CONTROL_POINTS'}
+{'name': 'type', 'type': 'xs:string'}
+{'name': 'stamp', 'type': 'xs:dateTime'}
+{'name': 'CONTROL_POINT'}
+{'name': 'CONTACT', 'type': 'CONTACT'}
+{}
+{'name': 'CONTACTS'}
+{'name': 'PHONE', 'type': 'PHONE', 'minOccurs': '0', 'maxOccurs': 'unbounded'}
+{'maxOccurs': 'unbounded'}
+{'name': 'CONTACTMETHODS'}
+{'name': 'type', 'type': 'contactType'}
+{'name': 'name', 'type': 'xs:string'}
+{'name': 'CONTACTMETHODS', 'type': 'CONTACTMETHODS'}
+{}
+{'name': 'CONTACT'}
+{'name': 'TYPESOFLOSS', 'type': 'TYPESOFLOSS'}
+{}
+{'name': 'ADM'}
+{'name': 'XACTDOC', 'type': 'XACTDOC'}
+{'elementFormDefault': 'qualified', 'attributeFormDefault': 'unqualified'}
+ 

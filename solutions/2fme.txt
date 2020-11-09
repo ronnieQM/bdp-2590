@@ -1,0 +1,520 @@
+-----------------inside of 'get_parent_of_type, level: 1--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}element' at 0x7feaaba77d10>
+{'name': 'XACTDOC', 'type': 'XACTDOC'}
+ YES!!!!
+So, we'll save the DLL to a list
+ 
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}complexType' at 0x7feaaba77db0>
+{'name': 'ADM'}
+NO!!!!
+So we'll check the child of that node
+ 
+-----------------inside of 'get_parent_of_type, level: 2--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}all' at 0x7feaaba77e50>
+{}
+NO!!!!
+So we'll check the child of that node
+ 
+-----------------inside of 'get_parent_of_type, level: 3--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}element' at 0x7feaaba77ea0>
+{'name': 'TYPESOFLOSS', 'type': 'TYPESOFLOSS'}
+ YES!!!!
+So, we'll save the DLL to a list
+ 
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}complexType' at 0x7feaaba77ef0>
+{'name': 'CONTACT'}
+NO!!!!
+So we'll check the child of that node
+ 
+-----------------inside of 'get_parent_of_type, level: 2--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}all' at 0x7feaaba77f40>
+{}
+NO!!!!
+So we'll check the child of that node
+ 
+-----------------inside of 'get_parent_of_type, level: 3--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}element' at 0x7feaaba77f90>
+{'name': 'CONTACTMETHODS', 'type': 'CONTACTMETHODS'}
+ YES!!!!
+So, we'll save the DLL to a list
+ 
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}attribute' at 0x7feaaba7b090>
+{'name': 'name', 'type': 'xs:string'}
+ YES!!!!
+So, we'll save the DLL to a list
+ 
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}attribute' at 0x7feaaba7b0e0>
+{'name': 'type', 'type': 'contactType'}
+ YES!!!!
+So, we'll save the DLL to a list
+ 
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}complexType' at 0x7feaaba7b130>
+{'name': 'CONTACTMETHODS'}
+NO!!!!
+So we'll check the child of that node
+ 
+-----------------inside of 'get_parent_of_type, level: 2--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}choice' at 0x7feaaba7b1d0>
+{'maxOccurs': 'unbounded'}
+NO!!!!
+So we'll check the child of that node
+ 
+-----------------inside of 'get_parent_of_type, level: 3--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}element' at 0x7feaaba7b220>
+{'name': 'PHONE', 'type': 'PHONE', 'minOccurs': '0', 'maxOccurs': 'unbounded'}
+ YES!!!!
+So, we'll save the DLL to a list
+ 
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}complexType' at 0x7feaaba7b270>
+{'name': 'CONTACTS'}
+NO!!!!
+So we'll check the child of that node
+ 
+-----------------inside of 'get_parent_of_type, level: 2--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}all' at 0x7feaaba7b2c0>
+{}
+NO!!!!
+So we'll check the child of that node
+ 
+-----------------inside of 'get_parent_of_type, level: 3--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}element' at 0x7feaaba7b310>
+{'name': 'CONTACT', 'type': 'CONTACT'}
+ YES!!!!
+So, we'll save the DLL to a list
+ 
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}complexType' at 0x7feaaba7b360>
+{'name': 'CONTROL_POINT'}
+NO!!!!
+So we'll check the child of that node
+ 
+-----------------inside of 'get_parent_of_type, level: 2--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}attribute' at 0x7feaaba7b3b0>
+{'name': 'stamp', 'type': 'xs:dateTime'}
+ YES!!!!
+So, we'll save the DLL to a list
+ 
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}attribute' at 0x7feaaba7b400>
+{'name': 'type', 'type': 'xs:string'}
+ YES!!!!
+So, we'll save the DLL to a list
+ 
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}complexType' at 0x7feaaba7b450>
+{'name': 'CONTROL_POINTS'}
+NO!!!!
+So we'll check the child of that node
+ 
+-----------------inside of 'get_parent_of_type, level: 2--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}all' at 0x7feaaba7b4a0>
+{}
+NO!!!!
+So we'll check the child of that node
+ 
+-----------------inside of 'get_parent_of_type, level: 3--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}element' at 0x7feaaba7b4f0>
+{'name': 'CONTROL_POINT', 'type': 'CONTROL_POINT'}
+ YES!!!!
+So, we'll save the DLL to a list
+ 
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}complexType' at 0x7feaaba7b540>
+{'name': 'PHONE'}
+NO!!!!
+So we'll check the child of that node
+ 
+-----------------inside of 'get_parent_of_type, level: 2--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}attribute' at 0x7feaaba7b590>
+{'name': 'extension', 'type': 'phoneExt20'}
+ YES!!!!
+So, we'll save the DLL to a list
+ 
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}attribute' at 0x7feaaba7b5e0>
+{'name': 'number', 'type': 'phoneNumber'}
+ YES!!!!
+So, we'll save the DLL to a list
+ 
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}attribute' at 0x7feaaba7b630>
+{'name': 'type', 'type': 'phoneType'}
+ YES!!!!
+So, we'll save the DLL to a list
+ 
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}complexType' at 0x7feaaba7b680>
+{'name': 'TYPEOFLOSS'}
+NO!!!!
+So we'll check the child of that node
+ 
+-----------------inside of 'get_parent_of_type, level: 2--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}attribute' at 0x7feaaba7b6d0>
+{'name': 'claimNumber', 'type': 'xs:string'}
+ YES!!!!
+So, we'll save the DLL to a list
+ 
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}complexType' at 0x7feaaba7b720>
+{'name': 'TYPESOFLOSS'}
+NO!!!!
+So we'll check the child of that node
+ 
+-----------------inside of 'get_parent_of_type, level: 2--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}all' at 0x7feaaba7b770>
+{}
+NO!!!!
+So we'll check the child of that node
+ 
+-----------------inside of 'get_parent_of_type, level: 3--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}element' at 0x7feaaba7b7c0>
+{'name': 'TYPEOFLOSS', 'type': 'TYPEOFLOSS'}
+ YES!!!!
+So, we'll save the DLL to a list
+ 
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}complexType' at 0x7feaaba7b810>
+{'name': 'XACTDOC'}
+NO!!!!
+So we'll check the child of that node
+ 
+-----------------inside of 'get_parent_of_type, level: 2--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}all' at 0x7feaaba7b860>
+{}
+NO!!!!
+So we'll check the child of that node
+ 
+-----------------inside of 'get_parent_of_type, level: 3--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}element' at 0x7feaaba7b8b0>
+{'name': 'XACTNET_INFO', 'type': 'XACTNET_INFO'}
+ YES!!!!
+So, we'll save the DLL to a list
+ 
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}element' at 0x7feaaba7b900>
+{'name': 'CONTACTS', 'type': 'CONTACTS'}
+ YES!!!!
+So, we'll save the DLL to a list
+ 
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}element' at 0x7feaaba7b950>
+{'name': 'ADM', 'type': 'ADM'}
+ YES!!!!
+So, we'll save the DLL to a list
+ 
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}complexType' at 0x7feaaba7b9a0>
+{'name': 'XACTNET_INFO'}
+NO!!!!
+So we'll check the child of that node
+ 
+-----------------inside of 'get_parent_of_type, level: 2--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}all' at 0x7feaaba7b9f0>
+{}
+NO!!!!
+So we'll check the child of that node
+ 
+-----------------inside of 'get_parent_of_type, level: 3--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}element' at 0x7feaaba7ba40>
+{'name': 'CONTROL_POINTS', 'type': 'CONTROL_POINTS'}
+ YES!!!!
+So, we'll save the DLL to a list
+ 
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}attribute' at 0x7feaaba7bae0>
+{'name': 'recipientsXNAddress', 'type': 'xs:string'}
+ YES!!!!
+So, we'll save the DLL to a list
+ 
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}attribute' at 0x7feaaba7bb80>
+{'name': 'recipientsXM8UserId', 'type': 'xs:string'}
+ YES!!!!
+So, we'll save the DLL to a list
+ 
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}attribute' at 0x7feaaba7bbd0>
+{'name': 'transactionId', 'type': 'xs:string'}
+ YES!!!!
+So, we'll save the DLL to a list
+ 
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}attribute' at 0x7feaaba7bc70>
+{'name': 'origTransactionId', 'type': 'xs:string'}
+ YES!!!!
+So, we'll save the DLL to a list
+ 
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}simpleType' at 0x7feaaba7bd10>
+{'name': 'bool'}
+NO!!!!
+So we'll check the child of that node
+ 
+-----------------inside of 'get_parent_of_type, level: 2--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}restriction' at 0x7feaaba7bdb0>
+{'base': 'xs:string'}
+NO!!!!
+So we'll check the child of that node
+ 
+-----------------inside of 'get_parent_of_type, level: 3--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}enumeration' at 0x7feaaba7be50>
+{'value': '0'}
+NO!!!!
+So we'll check the child of that node
+ 
+-----------------inside of 'get_parent_of_type, level: 4--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}enumeration' at 0x7feaaba7bea0>
+{'value': '1'}
+NO!!!!
+So we'll check the child of that node
+ 
+-----------------inside of 'get_parent_of_type, level: 4--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}simpleType' at 0x7feaaba7bef0>
+{'name': 'contactType'}
+NO!!!!
+So we'll check the child of that node
+ 
+-----------------inside of 'get_parent_of_type, level: 2--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}restriction' at 0x7feaaba7bf40>
+{'base': 'xs:string'}
+NO!!!!
+So we'll check the child of that node
+ 
+-----------------inside of 'get_parent_of_type, level: 3--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}enumeration' at 0x7feaaba7bf90>
+{'value': 'ClaimRep'}
+NO!!!!
+So we'll check the child of that node
+ 
+-----------------inside of 'get_parent_of_type, level: 4--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}simpleType' at 0x7feaaba82040>
+{'name': 'phoneType'}
+NO!!!!
+So we'll check the child of that node
+ 
+-----------------inside of 'get_parent_of_type, level: 2--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}restriction' at 0x7feaaba82090>
+{'base': 'xs:string'}
+NO!!!!
+So we'll check the child of that node
+ 
+-----------------inside of 'get_parent_of_type, level: 3--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}enumeration' at 0x7feaaba820e0>
+{'value': 'Office'}
+NO!!!!
+So we'll check the child of that node
+ 
+-----------------inside of 'get_parent_of_type, level: 4--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}simpleType' at 0x7feaaba82130>
+{'name': 'phoneNumber'}
+NO!!!!
+So we'll check the child of that node
+ 
+-----------------inside of 'get_parent_of_type, level: 2--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}restriction' at 0x7feaaba82180>
+{'base': 'xs:string'}
+NO!!!!
+So we'll check the child of that node
+ 
+-----------------inside of 'get_parent_of_type, level: 3--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}maxLength' at 0x7feaaba82220>
+{'value': '12'}
+NO!!!!
+So we'll check the child of that node
+ 
+-----------------inside of 'get_parent_of_type, level: 4--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}pattern' at 0x7feaaba822c0>
+{'value': '[0-9]{3,4}\\-[0-9]{3}\\-[0-9]{4}|[0-9]*'}
+NO!!!!
+So we'll check the child of that node
+ 
+-----------------inside of 'get_parent_of_type, level: 4--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}simpleType' at 0x7feaaba82310>
+{'name': 'phoneExt20'}
+NO!!!!
+So we'll check the child of that node
+ 
+-----------------inside of 'get_parent_of_type, level: 2--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}restriction' at 0x7feaaba82360>
+{'base': 'xs:string'}
+NO!!!!
+So we'll check the child of that node
+ 
+-----------------inside of 'get_parent_of_type, level: 3--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}maxLength' at 0x7feaaba823b0>
+{'value': '20'}
+NO!!!!
+So we'll check the child of that node
+ 
+-----------------inside of 'get_parent_of_type, level: 4--------------
+this is the node, & does it have a type? 
+<Element '{http://www.w3.org/2001/XMLSchema}pattern' at 0x7feaaba82400>
+{'value': '[0-9]*'}
+NO!!!!
+So we'll check the child of that node
+ 
+-----------------inside of 'get_parent_of_type, level: 4--------------
+this is how many things there are in list_of_dlls
+23
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+{'name': 'XACTDOC', 'type': 'XACTDOC'}
+{'elementFormDefault': 'qualified', 'attributeFormDefault': 'unqualified'}
+ 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+{'name': 'TYPESOFLOSS', 'type': 'TYPESOFLOSS'}
+{}
+ 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+{'name': 'CONTACTMETHODS', 'type': 'CONTACTMETHODS'}
+{}
+ 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+{'name': 'type', 'type': 'contactType'}
+{'name': 'name', 'type': 'xs:string'}
+{'name': 'CONTACT'}
+ 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+{'name': 'type', 'type': 'contactType'}
+{'name': 'name', 'type': 'xs:string'}
+{'name': 'CONTACT'}
+ 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+{'name': 'PHONE', 'type': 'PHONE', 'minOccurs': '0', 'maxOccurs': 'unbounded'}
+{'maxOccurs': 'unbounded'}
+ 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+{'name': 'CONTACT', 'type': 'CONTACT'}
+{}
+ 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+{'name': 'type', 'type': 'xs:string'}
+{'name': 'stamp', 'type': 'xs:dateTime'}
+{'name': 'CONTROL_POINT'}
+ 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+{'name': 'type', 'type': 'xs:string'}
+{'name': 'stamp', 'type': 'xs:dateTime'}
+{'name': 'CONTROL_POINT'}
+ 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+{'name': 'CONTROL_POINT', 'type': 'CONTROL_POINT'}
+{}
+ 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+{'name': 'type', 'type': 'phoneType'}
+{'name': 'number', 'type': 'phoneNumber'}
+{'name': 'extension', 'type': 'phoneExt20'}
+{'name': 'PHONE'}
+ 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+{'name': 'type', 'type': 'phoneType'}
+{'name': 'number', 'type': 'phoneNumber'}
+{'name': 'extension', 'type': 'phoneExt20'}
+{'name': 'PHONE'}
+ 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+{'name': 'type', 'type': 'phoneType'}
+{'name': 'number', 'type': 'phoneNumber'}
+{'name': 'extension', 'type': 'phoneExt20'}
+{'name': 'PHONE'}
+ 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+{'name': 'claimNumber', 'type': 'xs:string'}
+{'name': 'TYPEOFLOSS'}
+ 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+{'name': 'TYPEOFLOSS', 'type': 'TYPEOFLOSS'}
+{}
+ 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+{'name': 'ADM', 'type': 'ADM'}
+{'name': 'CONTACTS', 'type': 'CONTACTS'}
+{'name': 'XACTNET_INFO', 'type': 'XACTNET_INFO'}
+{}
+ 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+{'name': 'ADM', 'type': 'ADM'}
+{'name': 'CONTACTS', 'type': 'CONTACTS'}
+{'name': 'XACTNET_INFO', 'type': 'XACTNET_INFO'}
+{}
+ 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+{'name': 'ADM', 'type': 'ADM'}
+{'name': 'CONTACTS', 'type': 'CONTACTS'}
+{'name': 'XACTNET_INFO', 'type': 'XACTNET_INFO'}
+{}
+ 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+{'name': 'CONTROL_POINTS', 'type': 'CONTROL_POINTS'}
+{}
+ 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+{'name': 'origTransactionId', 'type': 'xs:string'}
+{'name': 'transactionId', 'type': 'xs:string'}
+{'name': 'recipientsXM8UserId', 'type': 'xs:string'}
+{'name': 'recipientsXNAddress', 'type': 'xs:string'}
+{'name': 'XACTNET_INFO'}
+ 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+{'name': 'origTransactionId', 'type': 'xs:string'}
+{'name': 'transactionId', 'type': 'xs:string'}
+{'name': 'recipientsXM8UserId', 'type': 'xs:string'}
+{'name': 'recipientsXNAddress', 'type': 'xs:string'}
+{'name': 'XACTNET_INFO'}
+ 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+{'name': 'origTransactionId', 'type': 'xs:string'}
+{'name': 'transactionId', 'type': 'xs:string'}
+{'name': 'recipientsXM8UserId', 'type': 'xs:string'}
+{'name': 'recipientsXNAddress', 'type': 'xs:string'}
+{'name': 'XACTNET_INFO'}
+ 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+{'name': 'origTransactionId', 'type': 'xs:string'}
+{'name': 'transactionId', 'type': 'xs:string'}
+{'name': 'recipientsXM8UserId', 'type': 'xs:string'}
+{'name': 'recipientsXNAddress', 'type': 'xs:string'}
+{'name': 'XACTNET_INFO'}
+ 

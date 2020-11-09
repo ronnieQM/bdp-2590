@@ -1,6 +1,23 @@
 # TODO
 # make rdbs schema out of py
 
+
+
+# def bullocks():
+#     counting = DLL()
+#     counting.push(1)
+#     counting.push(2)
+#     counting.push(3)
+#     counting.push(4)
+#     counting.push(5)
+#
+#     print('here we go!')
+#     # counting.listprint(counting.head)
+#     print(counting.getlen())
+#     print(len(counting))
+#     # print(type(counting.head.next))
+#     # print(counting.head.next.next)
+
 g = list(tree.iter())
 
 from xml.dom import minidom

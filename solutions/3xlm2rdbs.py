@@ -65,6 +65,23 @@ dll_list = []
 xcount = 1
 rcount = 0
 
+class GenericDataDictionaryClass:
+    """This is a representations of a generic class file"""
+
+    def __init__(self, elem, attr, val, desc):
+        self.element = elem
+        self.attribute = attr
+        self.value = val
+        self.description = desc
+
+    def __str__(self):
+        return """
+            element: {}
+            attribute: {}
+            value: {}
+            description: {}
+            """.format(self.element, self.attribute, self.value, self.description)
+
 class Node:
     def __init__(self, data):
         """Initialize this node with the given dataa"""
