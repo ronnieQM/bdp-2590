@@ -27,14 +27,21 @@ data_dir = os.path.join(project_dir, 'data')  # define data/
 # data subdirectories
 status_dir = os.path.join(data_dir, 'status')
 # status_dir = os.path.join(data_dir, 'status_test')
-note_dir = os.path.join(data_dir, 'note')
-estimate_dir = os.path.join(data_dir, 'estimate')
 customDoc_dir = os.path.join(data_dir, 'customDoc')
+estimate_dir = os.path.join(data_dir, 'estimate')
+note_dir = os.path.join(data_dir, 'note')
 
 # xsds_dir, data_dict_dir
-xsds_dir = os.path.join(project_dir, 'xsds')
 data_dict_dir = os.path.join(project_dir, 'data_dicts')
-status_xsd = os.path.join(xsds_dir, 'StandardStatusExport.xsd')
+xsds_dir = os.path.join(project_dir, 'xsds')
+
+# XSD paths
+generic_first_draft_xsd = os.path.join(xsds_dir, 'generic_roughdraft_7.9.18.xsd')
+standard_carrier_xsd = os.path.join(xsds_dir, 'StandardCarrierExport-v1.7.xsd')
+standard_status_xsd = os.path.join(xsds_dir, 'StandardStatusExport.xsd')
+activity_diary_xsd = os.path.join(xsds_dir, 'DefaultActivityDiaryExport.xsd')
+standard_note_xsd = os.path.join(xsds_dir, 'StandardNoteExport.xsd')
+custom_doc_xsd = os.path.join(xsds_dir, 'CustomDocExport.xsd')
 
 schema_dictionary = {
     "name": None,
@@ -59,11 +66,16 @@ convert_data_dict = {
 indicator_list = []
 table_list = []
 allelems = []
-
 type_elems = []
 dll_list = []
+elems_with_bi_types = []
+elems_with_global_types = []
+elems_simple = []
+elems_with_base = []
+
 xcount = 1
 rcount = 0
+
 
 class Node:
     def __init__(self, data):
@@ -75,6 +87,7 @@ class Node:
     def __repr__(self):
         """"Return a string representation of this node"""
         return 'Node {}'.format(self.data)
+
 
 class DLL:
     def __init__(self):
@@ -92,7 +105,7 @@ class DLL:
 
     def listprint(self, node=None):
         if node is None:
-            node=self.head
+            node = self.head
         while node is not None:
             print(node.data)
             last = node
@@ -101,10 +114,10 @@ class DLL:
     def iterate(self, node=None):
         elem_list = []
         if node is Node:
-            node=self.head
+            node = self.head
         while node is not None:
             elem_list.append(node)
-            node=node.next
+            node = node.next
         return elem_list
 
     def getlen(self):
@@ -113,14 +126,15 @@ class DLL:
 
     def __len__(self, node=None):
         if node is None:
-            node=self.head
+            node = self.head
         c = 0
         while node is not None:
             c += 1
             node = node.next
         return c
 
-def another_one(node, level=0):
+
+def recursive_iterate(node, level=0):
     """takes in element xml.etree.ElementTree.Element | ET.parse(XML_file).getroot()"""
     global rcount
     global allelems
@@ -134,6 +148,7 @@ def another_one(node, level=0):
         if len(subnode) != 0:
             another_one(subnode, level)
     return rcount, allelems
+
 
 def get_parent_of_type(etree_elem, level=0, dll=None):
     """takes in element xml.etree.ElementTree.Element | ET.parse(XML_file).getroot()"""
@@ -153,118 +168,14 @@ def get_parent_of_type(etree_elem, level=0, dll=None):
         new_dll = copy.deepcopy(dll)
         new_dll.push(subnode)
         if 'type' in subnode.attrib.keys():
-            type_elems.append(subnode)          # list of elements with 'type' in it
-            dll_list.append(new_dll)                # list of DLLs
+            type_elems.append(subnode)  # list of elements with 'type' in it
+            dll_list.append(new_dll)  # list of DLLs
         else:
             if len(subnode) >= 1:
                 get_parent_of_type(subnode, level, new_dll)
 
-
     return xcount, type_elems, dll_list
 
-def firstpass():
-    print('--inside firstpass--')
-    #############################
-    #         sample files      #
-    #############################
-    path, dirs, files = next(os.walk(xsds_dir))
-    status_schema = files[0]
-    status_schema_path = os.path.join(path, status_schema)
-    tree = ET.parse(status_schema_path, parser=None)
-    root = tree.getroot()
-
-    elems_with_bi_types = []
-    elems_with_global_types = []
-    elems_simple = []
-    elems_with_base = []
-    typescount, y, z = get_parent_of_type(root)
-    print(len(z))
-    slist = []
-    for i in z:
-        # i.listprint(i.head)
-        etree_element = i.head.data
-        parent_element = i.head.next.data
-        # print('parent element', ET.tostring(parent_element))
-        try:
-            x = parent_element.attrib['name']
-            # print(x)
-            slist.append(x)
-        except:
-            pass
-            # print('!')
-    print(slist)
-
-    # print(t, 'type element', ET.tostring(etree_element))
-    # print(t, etree_element)
-    return None
-    for node in tree.iter():
-        for subnode in node:
-            if 'type' in subnode.attrib.keys():
-                print('~ ' * 15)
-                print('parent node:')
-                print(node)
-                try:
-                    print(node.attrib['name'])
-                except:
-                    print('NO NAME')
-
-                print(node.attrib)
-                print('node that has a type:')
-                print(subnode)
-                print(subnode.attrib)
-                print(' ')
-
-        # for subnode in node:
-        #     if 'type' in subnode.attrib.keys():
-
-    # print(attrib)
-    # print('# of nodes: ', len(node))
-    # print('node:')
-    # print(node)
-    # if runner node.!= 0:
-    #     if node in runner:
-    #         print(t, '--- runner:')
-    #         print(t, runner)
-    #         print(t, 'bing!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
-    #         print(t, i.tag.split('}')[1])
-    # counter = 0
-    #
-    # runner = node
-    # c += 1
-    # if c == 14:
-    #     quit()
-    #
-    # tag = node.tag.split('}')[1]  # type: str
-    # # elems w/ built-in types
-    # if 'type' in node.attrib.keys():
-    #     if node.attrib['type'].startswith('xs:'):
-    #         elems_with_bi_types.append(node)
-    #         parent_child[node] = parentX
-    #         elems_with_bi_types_parents.append(parent_child)
-    #         print(node.attrib)
-    #         print('parent: ', node.tag.split('}')[1])
-    #         print('parent: ', parentX.attrib['name'])
-    #         print(' ')
-    #     else:
-    #         # elems w/ global types
-    #         elems_with_global_types.append(node)
-    # # elems simple
-    # if tag == 'simpleType':
-    #     elems_simple.append(node)
-    # # elems w/ base / restriction
-    # if 'base' in node.attrib.keys():
-    #     elems_with_base.append(node)
-    # runner = node
-    # parentX = node
-    #
-    # for i in elems_with_bi_types:
-    #     print(ET.tostring(i))
-    #
-    # for i in elems_with_bi_types_parents:
-    #     for x, y in i.items():
-    #         x = ET.tostring(x)
-    #         y = ET.tostring(y)
-    # temp_list = elems_with_bi_types + elems_with_global_types + elems_simple + elems_with_base
 
 def create_table(list_of_columns, table_name):
     table_name = table_name.replace(" ", "_")
@@ -281,6 +192,7 @@ def create_table(list_of_columns, table_name):
     print(y)
     return
 
+
 def get_tid(file_name):
     tracking_list = []
     d_list = []  # duplicates
@@ -296,169 +208,6 @@ def get_tid(file_name):
             d_list.append(tid)
     return tid  # type: str
 
-def main():
-    print('--inside main--')
-    header_list = ['ID int']
-    temp_dictionary = {
-        "table": None,
-        "column": None,
-        "value": None,
-        "xmlDataType": None,
-        "sqlDataType": None,
-    }
-
-    path, dirs, files = next(os.walk(xsds_dir))
-    xml_schema = files[0]
-    xml_schema_path = os.path.join(path, xml_schema)
-    tree = ET.parse(xml_schema_path, parser=None)
-    root = tree.getroot()
-
-    v = 0
-    for i in tree.iter():
-        v += 1
-    print('-----------------------------------')
-    print(t, 'XSD files (xml schemas):')
-    for i in files:
-        print(t, t, i)
-    print(' ')
-    print(t, 'Current file: ', xml_schema)
-    print(t, xml_schema_path)
-    print(t, tree)
-    print(t, 'node count:', v)
-    print('-----------------------------------')
-
-    breakpoint()
-    clearit()
-    time.sleep(.0005)
-
-    all_attrs_w_type = []  # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-    list_of_all_data_types = []
-    elems_with_type = []
-    elems_no_type_with_name = []
-    elems_no_type_no_name = []
-    list_of_built_in_data_types = []
-    list_of_global_types = []
-    type_count = {}
-
-    # parse through tree and gather elements for later
-    for child in tree.iter():
-        attr = child.attrib
-        type_of_element = child.tag.split('}')[1]
-
-        ################################# THESE ARE ALL TYPES
-        if 'type' in attr.keys():
-
-            elems_with_type.append(child)
-
-            attr_name = attr['name']
-            attr_type = attr['type']
-
-            # get repeating list of types
-            r = attr_type
-            all_attrs_w_type.append(attr)
-            if r not in list_of_all_data_types:
-                list_of_all_data_types.append(r)
-            # create UNIQUE list of built in data types & global types
-            if r.startswith('xs:'):
-                if r not in list_of_built_in_data_types:
-                    list_of_built_in_data_types.append(r)
-            # create UNIQUE list of global(custom) types
-            else:
-                list_of_global_types.append(r)
-            if r not in type_count.keys():
-                type_count[r] = 1
-            else:
-                type_count[r] += 1
-
-        ################################# THESE ARE ALL TYPES
-        if 'type' not in attr.keys():
-            if 'name' in attr.keys():
-
-                elems_no_type_with_name.append(child)
-
-                attr_name = attr['name']
-                # print(ET.tostring(child))
-                # print(child.tag)
-                # print(attr)
-                # print('TYPE OF ELEMENT: ', type_of_element)
-                # print('THIS IS THE ELEMENT NAME: ', attr_name)
-                # print('- ')
-                # create list of elements that DON'T have type
-                if type_of_element not in elems_no_type_with_name:
-                    elems_no_type_with_name.append(child.tag)
-
-                # ***********
-
-            # NO type NO name | indicators
-            if 'name' not in attr.keys():
-                if type_of_element not in indicator_list:
-                    indicator_list.append(type_of_element)
-                elems_no_type_no_name.append(child)
-
-    for child in elems_with_type:
-        if child.attrib['type'].startswith('xs:'):
-            attr = child.attrib
-            attr_name = attr['name']
-            attr_type = attr['type']
-            type_of_element = child.tag.split('}')[1]
-            #################### LOGIC ###########################3
-            if attr_type in convert_data_dict.keys():
-                sql_data_type = convert_data_dict[attr_type]
-                temp = attr_name + ' ' + sql_data_type
-                header_list.append(temp)
-        # else:
-        #     print('!!!!!!!!!!!!!!!!!!!!!!!!')
-        #     attr = child.attrib
-        #     attr_name = attr['name']
-        #     type_of_element = child.tag.split('}')[1]
-        #     attr_type = attr['type']
-        #     print(ET.tostring(child))
-        #     print(child.tag)
-        #     print(attr)
-        #     print('TYPE OF ELEMENT: ', type_of_element)
-        #     print('THIS IS THE DATA TYPE: ', attr_type)
-        #     print('ATTR NAME NAME: ', attr_name)
-        #     print('- ')
-        #     ########################### More Logic
-        #     # table, column, value, xmlDataType, sqlDataType
-
-    # create_table(header_list, test_table)
-    field_list = header_list
-
-    print('\nall elements with type')
-    for i in elems_with_type:
-        print(i)
-
-    print('\nlist of data types uses in this schema')
-    for i in list_of_all_data_types:
-        print(i)
-
-    print('\nlist of global data types')
-    for i in list_of_global_types:
-        print(i)
-
-    breakpoint()
-    clearit()
-    time.sleep(.005)
-
-    print('\ntype count:')
-    for i, j in type_count.items():
-        print(i, ' : ', j)
-
-    breakpoint()
-    clearit()
-    time.sleep(.005)
-
-    print('~ ' * 70)
-    print('this function returns this: \n')
-    with open('sql_create_table statement.txt', 'w')as f:
-        for i in field_list:
-            f.write('%s\n' % i)
-    for i in header_list:
-        print(i)
-    print('~ ' * 70)
-    return header_list
 
 def data2db(xml_file: str):
     print('--inside data2db --')
@@ -558,6 +307,32 @@ def data2db(xml_file: str):
     return headers, rows, value_dict
     return 'something'
 
+
+def firstpass():
+    print('--inside firstpass--')
+    #############################
+    #         sample files      #
+    #############################
+    status_schema = status_xsd
+    tree = ET.parse(status_schema_path, parser=None)
+    root = tree.getroot()
+
+    typescount, y, z = get_parent_of_type(root)
+    print(len(z))
+    slist = []
+    for i in z:
+        etree_element = i.head.data
+        parent_element = i.head.next.data
+        try:
+            x = parent_element.attrib['name']
+            slist.append(x)
+        except:
+            pass
+    print(slist)
+
+    return None
+
+
 def demo2():
     path, dirs, files = next(os.walk(xsds_dir))
     status_schema = files[0]
@@ -572,7 +347,7 @@ def demo2():
     print(' ')
 
     for i in dll_list:
-        print('- '*45)
+        print('- ' * 45)
         dll_node = i.head
         while dll_node is not None:
             etree_elem = dll_node.data
@@ -581,8 +356,9 @@ def demo2():
         print(' ')
 
     for i in dll_list.__iter__():
-        print('- '*45)
+        print('- ' * 45)
         print(i.head.data.tag.split('}')[1], ' | ', i.head.data.attrib)
+
 
 def demo():
     print('--inside demo--')
@@ -618,9 +394,10 @@ def demo():
     print('TOTAL FILES PROCESSED')
     print('Lenght of list: ', len(list_of_value_dicts))
 
+
 if __name__ == '__main__':
     # main()
     # demo()
-    demo2s()
-    # firstpass()
+    # demo2s()
+    firstpass()
     # create_table(these_columns, this_table)
