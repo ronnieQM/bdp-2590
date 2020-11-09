@@ -76,7 +76,6 @@ elems_with_base = []
 xcount = 1
 rcount = 0
 
-
 class Node:
     def __init__(self, data):
         """Initialize this node with the given dataa"""
@@ -87,7 +86,6 @@ class Node:
     def __repr__(self):
         """"Return a string representation of this node"""
         return 'Node {}'.format(self.data)
-
 
 class DLL:
     def __init__(self):
@@ -133,7 +131,6 @@ class DLL:
             node = node.next
         return c
 
-
 def recursive_iterate(node, level=0):
     """takes in element xml.etree.ElementTree.Element | ET.parse(XML_file).getroot()"""
     global rcount
@@ -148,7 +145,6 @@ def recursive_iterate(node, level=0):
         if len(subnode) != 0:
             another_one(subnode, level)
     return rcount, allelems
-
 
 def get_parent_of_type(etree_elem, level=0, dll=None):
     """takes in element xml.etree.ElementTree.Element | ET.parse(XML_file).getroot()"""
