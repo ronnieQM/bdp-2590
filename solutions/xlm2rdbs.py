@@ -203,6 +203,9 @@ def create_table(list_of_columns, table_name):
     print(y)
     return
 
+def insert_query(table, list_of_vals):
+    a = 'INSERT INTO '
+
 def get_tid(file_name):
     tracking_list = []
     d_list = []  # duplicates
@@ -218,7 +221,7 @@ def get_tid(file_name):
             d_list.append(tid)
     return tid  # type: str
 
-def data2db(xml_file: str):
+def data2db(xml_file):
     print('--inside data2db --')
     xf = os.path.basename(xml_file)
     pk = get_tid(xf)
@@ -246,7 +249,24 @@ def data2db(xml_file: str):
         'claimNumber': None,
         'origTransactionId': None,
     }
-    list_of_format_dict = []
+    # value_dict = {
+    #     'pk': 'id',
+    #     'transactionId': 'VARCHAR(255)',
+    #     'recipientsXNAddress': 'VARCHAR(255)',
+    #     'recipientsXM8UserId': 'VARCHAR(255)' ,
+    #     'stamp': 'VARCHAR(255)',
+    #     'CONTROL_POINT_type':'VARCHAR(255)',
+    #     'CONTACT_type': 'VARCHAR(255)',
+    #     'contact_name':'VARCHAR(255)',
+    #     'PHONE_type': 'VARCHAR(255)',
+    #     'number': 'VARCHAR(255)',
+    #     'extension': 'VARCHAR(255)',
+    #     'claimNumber': 'VARCHAR(255)',
+    #     'origTransactionId': 'VARCHAR(255)',
+    # }
+
+
+
     print(dummy_list)
     headers = ['ID']
     list_of_headers = []
@@ -309,7 +329,7 @@ def data2db(xml_file: str):
     # prettyprint = PrettyTable(headers)
     # prettyprint.add_row(reallist)
     # print(prettyprint)
-    # print('-----------------------------------------------^^^^^----------------------------------------------')
+    print('-----------------------------------------------^^^^^----------------------------------------------')
 
     rows = reallist
     return headers, rows, value_dict
@@ -335,15 +355,13 @@ def demo2():
         mc -= 1
         c += 1
 
-    if not os.path.isfile('status_list_of_value_dicts.pkl'):
-        with open('status_list_of_value_dicts.pkl', 'wb') as f:
-            pickle.dump(list_of_value_dicts, f)
-    else:
-        print('pickle exists')
-        print('pickle exists')
-        print('pickle exists')
-        print('pickle exists')
+    # if not os.path.isfile('status_list_of_value_dicts.pkl'):
+    #     with open('status_list_of_value_dicts.pkl', 'wb') as f:
+    #         pickle.dump(list_of_value_dicts, f)
+    # else:
+    #     print('pickle exists')
 
+    """
     print(c)
     headers = list(list_of_value_dicts[0].keys())
     prettyprint = PrettyTable(headers)
@@ -352,11 +370,27 @@ def demo2():
         row = list(i.values())
         prettyprint.add_row(row)
         c += 1
-        if c == 15:
-            break
     print(prettyprint)
+    """
+
+    header_list = []
+    # headers = list([0].keys())
+    print(headers)
+    print(headers)
+    print(headers)
+    vals = []
+    for i in list_of_value_dicts:
+        row = list(i.values())
+        vals.append(row)
+
+    for i in vals:
+        print(i)
+
+    print(len(vals))
     print('TOTAL FILES PROCESSED')
-    print('Lenght of list: ', len(list_of_value_dicts))
+    print('Length of list: ', len(list_of_value_dicts))
+
+
 
 def demo1():
     print('--- inside demo1 ---')
@@ -364,16 +398,17 @@ def demo1():
     tree = ET.parse(file, parser=None)
     root = tree.getroot()
 
-    if file == generic_first_draft_xsd:
-        print('!!!!!!!!!')
-        try:
-            with open('list_of_dll.pkl', 'rb') as f:
-                list_of_dll = pickle.load(f)
-                print('opened pickle!')
-        except Exception as ex:
-            print(ex)
-    else:
-        xcount, list_of_elems_w_type, list_of_dll = get_parent_of_type(root)
+    # if file == generic_first_draft_xsd:
+    #     print('!!!!!!!!!')
+    #     try:
+    #         with open('list_of_dll.pkl', 'rb') as f:
+    #             list_of_dll = pickle.load(f)
+    #             print('opened pickle!')
+    #     except Exception as ex:
+    #         print(ex)
+    # else:
+    #     xcount, list_of_elems_w_type, list_of_dll = get_parent_of_type(root)
+    xcount, list_of_elems_w_type, list_of_dll = get_parent_of_type(root)
 
     print('this is how many elements there are according to etree.iter(): {}'.format(tree_iter(tree)))
     print('this is how many element get_parents_of_type iterates through: {}'.format(xcount))
@@ -383,20 +418,33 @@ def demo1():
     #     pickle.dump(list_of_dll, f)
 
     tables = []
-    headers = []
 
-    for i in dll_list:
-        print('- ' * 45)
-        dll_node = i.head
-        while dll_node is not None:
-            etree_elem = dll_node.data
-            print(etree_elem.tag.split('}')[1], ' | ', etree_elem.attrib)
-            dll_node = dll_node.next
-        print(' ')
+    elems_with_type = list_of_elems_w_type
 
-    # for i in list_of_elems_w_type:
-    #     print
-    #     print(i)
+    # for i in dll_list:
+    #     print('- ' * 45)
+    #     dll_node = i.head
+    #     while dll_node is not None:
+    #         etree_elem = dll_node.data
+    #         print(etree_elem.tag.split('}')[1], ' | ', etree_elem.attrib)
+    #         dll_node = dll_node.next
+    #     print(' ')
+
+
+
+    for child in elems_with_type:
+        if child.attrib['type'].startswith('xs:'):
+            attr = child.attrib
+            attr_name = attr['name']
+            attr_type = attr['type']
+            type_of_element = child.tag.split('}')[1]
+            #################### LOGIC ###########################3
+            if attr_type in convert_data_dict.keys():
+                sql_data_type = convert_data_dict[attr_type]
+                temp = attr_name + ' ' + sql_data_type
+                header_list.append(temp)
+
+    create_table(headers, test_table)
 
 if __name__ == '__main__':
     # main()
