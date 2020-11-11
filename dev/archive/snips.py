@@ -51,6 +51,20 @@ class GeneralTree:
                 i.search_with_structure(query, x)
 
 
+def create_table(list_of_columns, table_name):
+    table_name = table_name.replace(" ", "_")
+    l = len(list_of_columns) - 1
+    s = ""
+    for i in list_of_columns:
+        if list_of_columns.index(i) != l:
+            s += i + ', \n'
+        else:
+            s += i
+
+    x = 'CREATE TABLE ' + table_name + ' ('
+    y = x + s + ');'
+    print(y)
+    return
 
 def playing2():
     root = 'the roots'
