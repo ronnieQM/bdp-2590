@@ -5,7 +5,7 @@ import os
 os.chdir((os.path.dirname(os.path.abspath(__file__))))  # change dir to dir where python scripts reside # project/scripts
 sys.path.insert(1,os.path.dirname(os.getcwd()))
 
-from solutions.sql_formatter import field_formatter, generate_create_query, values_formatter, generate_insert_query
+from xml_framework.xml_framework.sql_formatter import field_formatter, generate_create_query, values_formatter, generate_insert_query
 
 
 
