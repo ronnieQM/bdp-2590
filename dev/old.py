@@ -1,8 +1,9 @@
 import os
 import sys
+
 os.chdir((os.path.dirname(os.path.abspath(__file__))))  # change dir to dir where python scripts reside # project/scripts
 sys.path.insert(1,os.path.dirname(os.getcwd()))
-from xml_framework import get_tid, data2db, tree_iter, get_parent_of_type, recursive_iterate
+from xml_framework import get_tid, data2db, get_elem_count, recursive_search, recursive_iterate
 
 t = '\t'
 n = '\n'
@@ -34,6 +35,10 @@ standard_status_xsd = os.path.join(xsds_dir, 'StandardStatusExport.xsd')
 activity_diary_xsd = os.path.join(xsds_dir, 'DefaultActivityDiaryExport.xsd')
 standard_note_xsd = os.path.join(xsds_dir, 'StandardNoteExport.xsd')
 custom_doc_xsd = os.path.join(xsds_dir, 'CustomDocExport.xsd')
+# XSD paths
+
+# list of XSD files
+path, dir, files = next(os.walk(xsds_dir))
 
 print(standard_carrier_xsd)
 print(project_dir)
@@ -182,9 +187,9 @@ def demo1():
     #         print(ex)
     # else:
     #     xcount, list_of_elems_w_type, list_of_dll = get_parent_of_type(root)
-    xcount, list_of_elems_w_type, list_of_dll = get_parent_of_type(root)
+    xcount, list_of_elems_w_type, list_of_dll = recursive_search(root)
 
-    print('this is how many elements there are according to etree.iter(): {}'.format(tree_iter(tree)))
+    print('this is how many elements there are according to etree.iter(): {}'.format(get_elem_count(tree)))
     print('this is how many element get_parents_of_type iterates through: {}'.format(xcount))
     print('this is how many things there are in list_of_dlls: {}'.format(len(list_of_dll)))
 
