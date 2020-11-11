@@ -1,13 +1,12 @@
 import sys
 import os
-
 from prettytable import PrettyTable
 os.chdir((os.path.dirname(os.path.abspath(__file__))))  # change dir to dir where python scripts reside # project/scripts
 sys.path.insert(1,os.path.dirname(os.getcwd()))
 
 from solutions.xlm2rdbs import *
+from solutions.sql_formatter import field_formatter, generate_create_query, values_formatter,generate_insert_query
 from solutions.quick_tools import breakout,clearit,breakpoint
-from solutions.sql_formatter import field_formatter, generate_create_query, values_formatter, generate_insert_query
 
 t = '\t'
 n = '\n'

@@ -9,10 +9,9 @@ import pickle
 from xml.dom import minidom
 import xml.etree.ElementTree as ET
 
-
-import pandas as pd
-from sql_formatter import field_formatter, generate_create_query, values_formatter, generate_insert_query
-from quick_tools import breakout, clearit, breakpoint
+# import pandas as pd
+from .sql_formatter import field_formatter, generate_create_query, values_formatter, generate_insert_query
+from .quick_tools import breakout, clearit, breakpoint
 
 schema_dictionary = {
     "name": None,
