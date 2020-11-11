@@ -5,7 +5,7 @@ import os
 os.chdir((os.path.dirname(os.path.abspath(__file__))))  # change dir to dir where python scripts reside # project/scripts
 sys.path.insert(1,os.path.dirname(os.getcwd()))
 
-from xml_framework.xml_framework.sql_formatter import field_formatter, generate_create_query, values_formatter, generate_insert_query
+from xml_framework import field_formatter,generate_create_query, values_formatter, generate_insert_query
 
 
 
@@ -27,15 +27,15 @@ type_dictionary = {
 
 dummy_fields = ['name', 'age', 'phone', 'email']
 
-arow = ['robert', '39', '5144076571', 'juan@gmail.com']
-brows =[
+one_row = ['robert', '39', '5144076571', 'juan@gmail.com']
+many_rows =[
     ['mark', '21', '232-343-1236', ' '],
     ['eric', '51', '839-446-1786', 'eric@gmail.com'],
     ['mark', '21', '232-343-1236', 'mark@gmail.com']
 ]
 dummy_table = 'scratch_db.clients'
 # ------------------------------------------------ insert values into table -----------------------------------------------
-x = values_formatter(brows)
+x = values_formatter(many_rows)
 c = generate_insert_query(dummy_table, x)
 print(c)
 

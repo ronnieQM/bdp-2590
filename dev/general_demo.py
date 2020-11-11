@@ -1,10 +1,5 @@
-import sys
 import os
-
-os.chdir((os.path.dirname(os.path.abspath(__file__))))  # change dir to dir where python scripts reside # project/scripts
-sys.path.insert(1,os.path.dirname(os.getcwd()))
-
-# from xml_framework.xml_framework.asdf import *
+from xml_framework import *
 
 t = '\t'
 n = '\n'
@@ -36,6 +31,12 @@ standard_status_xsd = os.path.join(xsds_dir, 'StandardStatusExport.xsd')
 activity_diary_xsd = os.path.join(xsds_dir, 'DefaultActivityDiaryExport.xsd')
 standard_note_xsd = os.path.join(xsds_dir, 'StandardNoteExport.xsd')
 custom_doc_xsd = os.path.join(xsds_dir, 'CustomDocExport.xsd')
+
+print(standard_carrier_xsd)
+print(project_dir)
+print(data_dict_dir)
+print(data_dir)
+print(script_dir)
 
 def demo2():
     """ XML DATA --> DATABASE """
