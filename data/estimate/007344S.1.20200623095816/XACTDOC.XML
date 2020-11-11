@@ -1,0 +1,412 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+  <XACTDOC>
+    <XACTNET_INFO
+      assignmentType = "1"
+      transactionId = "007344S"
+      carrierId = "1860800"
+      senderId = "1200000"
+      createdByReassignment = "1"
+      sourceTransactionId = "007344F"
+      recipientsXNAddress = "ACSC.TEST.PT"
+      recipientsXM8UserId = "TORRES.P"
+      sendersXNAddress = "ACSC.HOME.WEB"
+      carrierAttribute2 = "ClaimsPortalACSC"
+      carrierOffice1 = "California"
+      carrierOffice2 = "San Bernardino"
+      carrierOffice3 = "San Bernardino"
+      sendersOfficeDescription1 = "California"
+      sendersOfficeDescription2 = "San Bernardino"
+      sendersOfficeDescription3 = "San Bernardino"
+      recipientsId = "E648727"
+      creatorsUserNumber = "34296B3572"
+      rotationTrade = "General"
+      jobSizeCode = "2"
+      emergency = "0"
+      transactionType = "EST,ASG"
+      estimateCount = "1"
+      carrierName = "ACE - Staff"
+      mitigation = "0"
+      profileCode = "76"
+      creatorsFirstName = "Paola"
+      creatorsLastName = "Torres"
+      creatorsEmailAddress = "Torres.Paola@aaa-calif.com"
+    >
+      <CONTROL_POINTS
+        testAssignment = "0"
+      />
+      <ATTACHMENTS>
+        <ATT_FILE
+          fileName = "GENERIC_ROUGHDRAFT.XML"
+          fileDesc = "Rough Draft XML"
+          fileDate = "2020-06-23T09:56:23"
+          fileType = "XML"
+        />
+        <ATT_FILE
+          fileName = "VARIATION_REPORT.PDF"
+          fileDesc = "VARIATION REPORT"
+          fileDate = "2020-06-23T09:56:23"
+          fileType = "PDF"
+        />
+        <ATT_FILE
+          fileName = "FINAL_DRAFT_BY_COVERAGE_TYPE_Report.PDF"
+          fileDesc = "FINAL DRAFT BY COVERAGE TYPE Report"
+          fileDate = "2020-06-23T09:56:23"
+          fileType = "PDF"
+        />
+        <ATT_FILE
+          fileName = "Report_Rough_Draft.PDF"
+          fileDesc = "Report Rough Draft"
+          fileDate = "2020-06-23T09:56:23"
+          fileType = "PDF"
+        />
+        <ATT_FILE
+          fileName = "FINAL_DRAFT_WITH_AGE_LIFE_AND_CONDITION_Report.PDF"
+          fileDesc = "FINAL DRAFT WITH AGE LIFE AND CONDITION Report"
+          fileDate = "2020-06-23T09:56:23"
+          fileType = "PDF"
+        />
+        <ATT_FILE
+          fileName = "ESTIMATE_AUDIT_REPORT.PDF"
+          fileDesc = "ESTIMATE AUDIT REPORT"
+          fileDate = "2020-06-23T09:56:23"
+          fileType = "PDF"
+        />
+        <ATT_FILE
+          fileName = "XACTDOC.XML"
+          fileDesc = "Stndard Carrier Export XML"
+          fileDate = "2020-06-23T09:56:23"
+          fileType = "XML"
+        />
+      </ATTACHMENTS>
+      <SUMMARY
+        homeOwnerItems = "0.00"
+        contractorItems = "5827.34"
+        estimateLineItemTotal = "5505.80"
+        minimumChargeAdjustments = "0.00"
+        overhead = "0.00"
+        profit = "0.00"
+        salesTax = "321.54"
+        grossEstimate = "5827.34"
+        recoverableDepreciation = "0.00"
+        nonRecoverableDepreciation = "0.00"
+        netEstimate = "5827.34"
+        priceListLineItemTotal = "5505.80"
+        deductible = "0.00"
+      />
+    </XACTNET_INFO>
+    <CONTACTS>
+      <CONTACT
+        type = "Client"
+        name = "NONEMAKER, JEFFREY &#38; NONEMAKER, PATTI"
+        qcode = ""
+        birthDate = ""
+        reference = ""
+        language = ""
+        title = ""
+      >
+        <ADDRESSES>
+          <ADDRESS
+            type = "Home"
+            street = "842 MESA VIEW ST"
+            city = "UPLAND"
+            state = "CA"
+            postal = "91784-8012"
+            country = "US"
+          />
+          <ADDRESS
+            type = "Property"
+            street = "842 MESA VIEW ST"
+            city = "UPLAND"
+            state = "CA"
+            postal = "91784-8012"
+            country = "US"
+            lat = "34.1253"
+            lon = "-117.6398"
+          />
+        </ADDRESSES>
+        <CONTACTMETHODS>
+          <PHONE
+            type = "Business"
+            number = "222-222-2222"
+          />
+          <PHONE
+            type = "Home"
+            number = "909-981-1544"
+          />
+          <EMAIL
+            address = ""
+          />
+        </CONTACTMETHODS>
+      </CONTACT>
+      <CONTACT
+        type = "Estimator"
+        name = "Paola Torres"
+        qcode = "PAOLA"
+        birthDate = ""
+        reference = ""
+        language = ""
+        position = "EP"
+        title = ""
+      >
+        <ADDRESSES/>
+        <CONTACTMETHODS>
+          <PHONE
+            type = "Business"
+            number = "714-111-1111"
+          />
+          <EMAIL
+            address = ""
+          />
+        </CONTACTMETHODS>
+      </CONTACT>
+      <CONTACT
+        type = "ClaimRep"
+        name = "Paola Torres"
+        qcode = "PAOLA"
+        birthDate = ""
+        reference = ""
+        language = ""
+        title = ""
+      >
+        <ADDRESSES/>
+        <CONTACTMETHODS>
+          <PHONE
+            type = "Business"
+            number = "714-111-1111"
+          />
+          <EMAIL
+            address = ""
+          />
+        </CONTACTMETHODS>
+      </CONTACT>
+      <CONTACT
+        type = "Claimant"
+        name = ""
+        qcode = ""
+        birthDate = ""
+        reference = ""
+        language = ""
+        title = ""
+      >
+        <ADDRESSES/>
+        <CONTACTMETHODS>
+          <EMAIL
+            address = ""
+          />
+        </CONTACTMETHODS>
+      </CONTACT>
+    </CONTACTS>
+    <PROJECT_INFO
+      assignmentCode = "005044808-8-"
+      name = "NONEMAKER__JEFFREY_&#38;"
+      version = "16"
+      profile = "76"
+      xactnetAddress = "ACSC.HOME.WEB"
+      created = "2020-06-23T15:54:51Z"
+      userId = "TORRES.P"
+      status = "Completed"
+      showIADeskAdjuster = "1"
+      showDeskAdjuster = "1"
+    >
+      <NOTES><![CDATA[From: ACE - Staff
+
+ASSIGNMENT PROFILE:
+Type: Normal
+Claim Rep: 
+Date of Loss: 06/23/2020
+Claim Number: 005044808-8-X
+Insured Name: NONEMAKER, JEFFREY & NONEMAKER, PATTI
+Day Phone: (222) 222-2222
+Evening Phone: (909) 981-1544
+
+Type of Loss: Other
+Job Type: General
+Location of Property: 842 MESA VIEW ST, UPLAND, CA 91784-8012
+
+Instructions:
+
+Years of Membership: 015
+
+2395 Amendatory Endorsement
+HO404 AAA YourHome Advantage Package
+HO216 Alarm Or Fire Protection System Endorsement
+Other Perils Deductible: 500
+Water Deductible: 5000
+Policy Type: HOB
+Square Footage: 1595
+Year of Construction: 1986
+
+Roof Year 1986
+Roof Type Tile
+test
+
+
+Assignment Received by XactAnalysis:  06/23/2020 09:52AM MT
+(XactAnalysis ID: 007344S)
+]]></NOTES>
+    </PROJECT_INFO>
+    <ADM
+      dateOfLoss = "2020-06-23T00:00:01"
+      dateInspected = "2020-06-23T00:00:00"
+      dateReceived = "2020-06-23T00:00:01"
+      dateEntered = "2020-06-23T15:54:51Z"
+      dateProjCompleted = "2020-06-23T15:56:02Z"
+      dateContacted = "2020-06-23T00:00:00"
+      agentCode = ""
+      fileNumber = "005044808-8-X"
+      denial = "Covered Loss"
+    >
+      <COVERAGE_LOSS
+        claimNumber = "005044808-8-X"
+        policyNumber = "CHO004697237"
+        catastrophe = ""
+        policyStart = "2019-07-28"
+        policyEnd = "2020-07-28"
+        dateInitCov = "2005-07-28"
+      >
+        <TOL
+          code = "OTHER"
+          desc = "Other"
+        />
+        <COVERAGES
+          lossOfUseReserve = "0"
+          lossOfUse = "0"
+          doNotApplyLimits = "0"
+        >
+          <COVERAGE
+            covName = "Dwelling"
+            id = "COV1"
+            covType = "0"
+            policyLimit = "390000"
+            deductible = "0"
+            applyTo = "0"
+            coins = "0"
+            reserveAmt = "0"
+          >
+            <LOSS_DATA
+              deductApplied = "0"
+              overLimits = "0"
+            />
+          </COVERAGE>
+          <COVERAGE
+            covName = "Green Coverage"
+            id = "COV19"
+            covType = "0"
+            policyLimit = "25000"
+            deductible = "0"
+            applyTo = "0"
+            coins = "0"
+            reserveAmt = "0"
+          >
+            <LOSS_DATA
+              deductApplied = "0"
+              overLimits = "0"
+            />
+          </COVERAGE>
+          <COVERAGE
+            covName = "Other Structures"
+            id = "COV20"
+            covType = "0"
+            policyLimit = "39000"
+            deductible = "0"
+            applyTo = "0"
+            coins = "0"
+            reserveAmt = "0"
+          >
+            <LOSS_DATA
+              deductApplied = "0"
+              overLimits = "0"
+            />
+          </COVERAGE>
+          <COVERAGE
+            covName = "Personal Property"
+            id = "COV30"
+            covType = "0"
+            policyLimit = "292500"
+            deductible = "0"
+            applyTo = "0"
+            coins = "0"
+            reserveAmt = "0"
+          >
+            <LOSS_DATA
+              deductApplied = "0"
+              overLimits = "0"
+            />
+          </COVERAGE>
+          <COVERAGE
+            covName = "Personal Property Off Premises"
+            id = "COV60"
+            covType = "0"
+            policyLimit = "29250"
+            deductible = "0"
+            applyTo = "0"
+            coins = "0"
+            reserveAmt = "0"
+          >
+            <LOSS_DATA
+              deductApplied = "0"
+              overLimits = "0"
+            />
+          </COVERAGE>
+          <COVERAGE
+            covName = "Identity Fraud Expense Coverage"
+            id = "COV72"
+            covType = "0"
+            policyLimit = "25000"
+            deductible = "0"
+            applyTo = "0"
+            coins = "0"
+            reserveAmt = "0"
+          >
+            <LOSS_DATA
+              deductApplied = "0"
+              overLimits = "0"
+            />
+          </COVERAGE>
+          <COVERAGE
+            covName = "Loss of Use"
+            id = "COV80"
+            covType = "0"
+            policyLimit = "78000"
+            deductible = "0"
+            applyTo = "0"
+            coins = "0"
+            reserveAmt = "0"
+          >
+            <LOSS_DATA
+              deductApplied = "0"
+              overLimits = "0"
+            />
+          </COVERAGE>
+        </COVERAGES>
+      </COVERAGE_LOSS>
+    </ADM>
+    <CLAIM_INFO>
+      <ADMIN_INFO
+        branch = "San Bernardino"
+      />
+    </CLAIM_INFO>
+    <PARAMS
+      priceList = "CABD8X_JUN20"
+      taxJurisdiction = "7.75%"
+      checkpointPL = "CABD8X_JUN20"
+      overhead = "0"
+      profit = "0"
+      cumulativeOP = "0"
+      plModifiedDateTime = "2020-06-01T01:00:00"
+      defaultRepairedBy = "Contractor"
+      depMat = "1"
+      maxDepr = "100"
+    />
+    <EMBEDDED_PL>
+      <MINIMUMS>
+        <MINIMUM
+          id = "MIN1"
+          desc = "Cabinetry labor minimum"
+          amount = "198.68"
+          cat = "CAB"
+          sel = "MN-A"
+        />
+      </MINIMUMS>
+    </EMBEDDED_PL>
+  </XACTDOC>

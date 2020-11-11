@@ -1,0 +1,388 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+  <XACTDOC>
+    <XACTNET_INFO
+      assignmentType = "1"
+      transactionId = "00733WN"
+      carrierId = "1860800"
+      senderId = "1200000"
+      recipientsXNAddress = "ACSC.TEST.PT"
+      recipientsXM8UserId = "TORRES.P"
+      sendersXNAddress = "ACSC-NON-IRP.HOME.WEB"
+      carrierAttribute2 = "ClaimsPortalACSC"
+      carrierOffice1 = "California"
+      carrierOffice2 = "Los Angeles"
+      carrierOffice3 = "Los Angeles"
+      sendersOfficeDescription1 = "California"
+      sendersOfficeDescription2 = "Los Angeles"
+      sendersOfficeDescription3 = "Los Angeles"
+      recipientsId = "FIELD_Q"
+      rotationTrade = "General"
+      jobSizeCode = "2"
+      emergency = "0"
+      transactionType = "EST,ASG"
+      estimateCount = "1"
+      carrierName = "ACE - Staff"
+      mitigation = "0"
+      profileCode = "76"
+    >
+      <CONTROL_POINTS
+        testAssignment = "0"
+      />
+      <ATTACHMENTS>
+        <ATT_FILE
+          fileName = "GENERIC_ROUGHDRAFT.XML"
+          fileDesc = "Rough Draft XML"
+          fileDate = "2020-06-23T09:27:29"
+          fileType = "XML"
+        />
+        <ATT_FILE
+          fileName = "FINAL_DRAFT_BY_COVERAGE_TYPE_Report.PDF"
+          fileDesc = "FINAL DRAFT BY COVERAGE TYPE Report"
+          fileDate = "2020-06-23T09:27:29"
+          fileType = "PDF"
+        />
+        <ATT_FILE
+          fileName = "FINAL_DRAFT_WITH_AGE_LIFE_AND_CONDITION_Report.PDF"
+          fileDesc = "FINAL DRAFT WITH AGE LIFE AND CONDITION Report"
+          fileDate = "2020-06-23T09:27:29"
+          fileType = "PDF"
+        />
+        <ATT_FILE
+          fileName = "VARIATION_REPORT.PDF"
+          fileDesc = "VARIATION REPORT"
+          fileDate = "2020-06-23T09:27:29"
+          fileType = "PDF"
+        />
+        <ATT_FILE
+          fileName = "ESTIMATE_AUDIT_REPORT.PDF"
+          fileDesc = "ESTIMATE AUDIT REPORT"
+          fileDate = "2020-06-23T09:27:29"
+          fileType = "PDF"
+        />
+        <ATT_FILE
+          fileName = "Report_Rough_Draft.PDF"
+          fileDesc = "Report Rough Draft"
+          fileDate = "2020-06-23T09:27:29"
+          fileType = "PDF"
+        />
+        <ATT_FILE
+          fileName = "XACTDOC.XML"
+          fileDesc = "Stndard Carrier Export XML"
+          fileDate = "2020-06-23T09:27:29"
+          fileType = "XML"
+        />
+      </ATTACHMENTS>
+      <SUMMARY
+        homeOwnerItems = "0.00"
+        contractorItems = "5656.93"
+        estimateLineItemTotal = "5339.80"
+        minimumChargeAdjustments = "0.00"
+        overhead = "0.00"
+        profit = "0.00"
+        salesTax = "317.13"
+        grossEstimate = "5656.93"
+        recoverableDepreciation = "300.44"
+        nonRecoverableDepreciation = "0.00"
+        netEstimate = "5356.49"
+        priceListLineItemTotal = "5339.80"
+        deductible = "0.00"
+      />
+    </XACTNET_INFO>
+    <CONTACTS>
+      <CONTACT
+        type = "Client"
+        name = "PELLICCIONE, SUGIRTHARAJ &#38; PELLICCIONE, SOURENE"
+        qcode = ""
+        birthDate = ""
+        reference = ""
+        language = ""
+        title = ""
+      >
+        <ADDRESSES>
+          <ADDRESS
+            type = "Home"
+            street = "1523 ELTON AVE"
+            city = "LOS ANGELES"
+            state = "CA"
+            postal = "90022-4204"
+            country = "US"
+          />
+          <ADDRESS
+            type = "Property"
+            street = "1523 ELTON AVE"
+            city = "LOS ANGELES"
+            state = "CA"
+            postal = "90022-4204"
+            country = "US"
+            lat = "34.01"
+            lon = "-118.1448"
+          />
+        </ADDRESSES>
+        <CONTACTMETHODS>
+          <PHONE
+            type = "Home"
+            number = "846-242-2579"
+          />
+          <EMAIL
+            address = ""
+          />
+        </CONTACTMETHODS>
+      </CONTACT>
+      <CONTACT
+        type = "Estimator"
+        name = "Paola Torres"
+        qcode = "PAOLA"
+        birthDate = ""
+        reference = ""
+        language = ""
+        position = "EP"
+        title = ""
+      >
+        <ADDRESSES/>
+        <CONTACTMETHODS>
+          <PHONE
+            type = "Business"
+            number = "714-111-1111"
+          />
+          <EMAIL
+            address = ""
+          />
+        </CONTACTMETHODS>
+      </CONTACT>
+      <CONTACT
+        type = "ClaimRep"
+        name = "Paola Torres"
+        qcode = "PAOLA"
+        birthDate = ""
+        reference = ""
+        language = ""
+        title = ""
+      >
+        <ADDRESSES/>
+        <CONTACTMETHODS>
+          <PHONE
+            type = "Business"
+            number = "714-111-1111"
+          />
+          <EMAIL
+            address = ""
+          />
+        </CONTACTMETHODS>
+      </CONTACT>
+      <CONTACT
+        type = "Claimant"
+        name = ""
+        qcode = ""
+        birthDate = ""
+        reference = ""
+        language = ""
+        title = ""
+      >
+        <ADDRESSES/>
+        <CONTACTMETHODS>
+          <EMAIL
+            address = ""
+          />
+        </CONTACTMETHODS>
+      </CONTACT>
+    </CONTACTS>
+    <PROJECT_INFO
+      assignmentCode = "WEB"
+      name = "PELLICCIONE__SUGIRT1"
+      version = "16"
+      profile = "76"
+      xactnetAddress = "ACSC-NON-IRP.HOME.WEB"
+      created = "2020-06-23T15:25:17Z"
+      userId = "TORRES.P"
+      status = "Completed"
+      showIADeskAdjuster = "1"
+      showDeskAdjuster = "1"
+    >
+      <NOTES><![CDATA[From: ACE - Staff
+
+ASSIGNMENT PROFILE:
+Type: Normal
+Claim Rep: 
+Date of Loss: 04/07/2020
+Claim Number: 003112612-8-W
+Insured Name: PELLICCIONE, SUGIRTHARAJ & PELLICCIONE, SOURENE
+Day Phone: (000) 000-0000
+Evening Phone: (846) 242-2579
+
+Type of Loss: Other
+Job Type: General
+Location of Property: 1523 ELTON AVE, LOS ANGELES, CA 90022-4204
+
+Instructions:
+
+Years of Membership: 036
+
+438OTH Other Interests Endorsement
+HO216 Alarm Or Fire Protection System Endorsement
+2395 Amendatory Endorsement
+HO402 AAA YourHome Package
+Other Perils Deductible: 500
+Water Deductible: 500
+Policy Type: HOB
+Square Footage: 872
+Year of Construction: 1939
+
+Roof Year 1990
+Roof Type Composition
+1232
+
+
+Assignment Received by XactAnalysis:  06/23/2020 08:21AM MT
+(XactAnalysis ID: 00733WN)
+]]></NOTES>
+    </PROJECT_INFO>
+    <ADM
+      dateOfLoss = "2020-04-07T00:00:01"
+      dateInspected = "2020-06-23T08:22:11"
+      dateReceived = "2020-06-23T00:00:01"
+      dateEntered = "2020-06-23T15:25:17Z"
+      dateProjCompleted = "2020-06-23T15:26:56Z"
+      dateContacted = "2020-06-23T08:21:29"
+      agentCode = ""
+      fileNumber = "003112612-8-W"
+      denial = "Covered Loss"
+    >
+      <COVERAGE_LOSS
+        claimNumber = "003112612-8-W"
+        policyNumber = "CHO012200018"
+        catastrophe = ""
+        policyStart = "2019-05-20"
+        policyEnd = "2020-05-20"
+        dateInitCov = "2004-05-20"
+      >
+        <TOL
+          code = "OTHER"
+          desc = "Other"
+        />
+        <COVERAGES
+          lossOfUseReserve = "0"
+          lossOfUse = "0"
+          doNotApplyLimits = "0"
+        >
+          <COVERAGE
+            covName = "Dwelling"
+            id = "COV1"
+            covType = "0"
+            policyLimit = "347000"
+            deductible = "0"
+            applyTo = "0"
+            coins = "0"
+            reserveAmt = "0"
+          >
+            <LOSS_DATA
+              deductApplied = "0"
+              overLimits = "0"
+            />
+          </COVERAGE>
+          <COVERAGE
+            covName = "Extended Replacement Cost (HO280)"
+            id = "COV4"
+            covType = "0"
+            policyLimit = "86750"
+            deductible = "0"
+            applyTo = "0"
+            coins = "0"
+            reserveAmt = "0"
+          >
+            <LOSS_DATA
+              deductApplied = "0"
+              overLimits = "0"
+            />
+          </COVERAGE>
+          <COVERAGE
+            covName = "Other Structures"
+            id = "COV20"
+            covType = "0"
+            policyLimit = "34700"
+            deductible = "0"
+            applyTo = "0"
+            coins = "0"
+            reserveAmt = "0"
+          >
+            <LOSS_DATA
+              deductApplied = "0"
+              overLimits = "0"
+            />
+          </COVERAGE>
+          <COVERAGE
+            covName = "Personal Property"
+            id = "COV30"
+            covType = "0"
+            policyLimit = "260250"
+            deductible = "0"
+            applyTo = "0"
+            coins = "0"
+            reserveAmt = "0"
+          >
+            <LOSS_DATA
+              deductApplied = "0"
+              overLimits = "0"
+            />
+          </COVERAGE>
+          <COVERAGE
+            covName = "Personal Property Off Premises"
+            id = "COV60"
+            covType = "0"
+            policyLimit = "26025"
+            deductible = "0"
+            applyTo = "0"
+            coins = "0"
+            reserveAmt = "0"
+          >
+            <LOSS_DATA
+              deductApplied = "0"
+              overLimits = "0"
+            />
+          </COVERAGE>
+          <COVERAGE
+            covName = "Loss of Use"
+            id = "COV80"
+            covType = "0"
+            policyLimit = "69400"
+            deductible = "0"
+            applyTo = "0"
+            coins = "0"
+            reserveAmt = "0"
+          >
+            <LOSS_DATA
+              deductApplied = "0"
+              overLimits = "0"
+            />
+          </COVERAGE>
+        </COVERAGES>
+      </COVERAGE_LOSS>
+    </ADM>
+    <CLAIM_INFO>
+      <ADMIN_INFO
+        branch = ""
+      />
+    </CLAIM_INFO>
+    <PARAMS
+      priceList = "CALA8X_JUN20"
+      taxJurisdiction = "9.5%"
+      checkpointPL = "CALA8X_JUN20"
+      overhead = "0"
+      profit = "0"
+      cumulativeOP = "0"
+      plModifiedDateTime = "2020-06-01T01:00:00"
+      defaultRepairedBy = "Contractor"
+      depMat = "1"
+      maxDepr = "100"
+    />
+    <EMBEDDED_PL>
+      <MINIMUMS>
+        <MINIMUM
+          id = "MIN1"
+          desc = "Cabinetry labor minimum"
+          amount = "205.05"
+          cat = "CAB"
+          sel = "MN-A"
+        />
+      </MINIMUMS>
+    </EMBEDDED_PL>
+  </XACTDOC>

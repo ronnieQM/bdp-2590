@@ -1,0 +1,363 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+  <XACTDOC>
+    <XACTNET_INFO
+      assignmentType = "1"
+      transactionId = "00733YG"
+      carrierId = "1860800"
+      senderId = "1200000"
+      recipientsXNAddress = "ACSC.TEST.PT"
+      recipientsXM8UserId = "TORRES.P"
+      sendersXNAddress = "ACSC-NON-IRP.HOME.WEB"
+      carrierAttribute2 = "ClaimsPortalACSC"
+      carrierOffice1 = "Missouri"
+      carrierOffice2 = "Missouri"
+      carrierOffice3 = "St. Charles"
+      sendersOfficeDescription1 = "Missouri"
+      sendersOfficeDescription2 = "Missouri"
+      sendersOfficeDescription3 = "St. Charles"
+      recipientsId = "FIELD_Q"
+      rotationTrade = "General"
+      jobSizeCode = "2"
+      emergency = "0"
+      transactionType = "EST,ASG"
+      estimateCount = "1"
+      carrierName = "ACE - Staff"
+      mitigation = "0"
+      profileCode = "76"
+    >
+      <CONTROL_POINTS
+        testAssignment = "0"
+      />
+      <ATTACHMENTS>
+        <ATT_FILE
+          fileName = "GENERIC_ROUGHDRAFT.XML"
+          fileDesc = "Rough Draft XML"
+          fileDate = "2020-06-23T09:38:50"
+          fileType = "XML"
+        />
+        <ATT_FILE
+          fileName = "ESTIMATE_AUDIT_REPORT.PDF"
+          fileDesc = "ESTIMATE AUDIT REPORT"
+          fileDate = "2020-06-23T09:38:50"
+          fileType = "PDF"
+        />
+        <ATT_FILE
+          fileName = "FINAL_DRAFT_BY_COVERAGE_TYPE_Report.PDF"
+          fileDesc = "FINAL DRAFT BY COVERAGE TYPE Report"
+          fileDate = "2020-06-23T09:38:50"
+          fileType = "PDF"
+        />
+        <ATT_FILE
+          fileName = "FINAL_DRAFT_WITH_AGE_LIFE_AND_CONDITION_Report.PDF"
+          fileDesc = "FINAL DRAFT WITH AGE LIFE AND CONDITION Report"
+          fileDate = "2020-06-23T09:38:50"
+          fileType = "PDF"
+        />
+        <ATT_FILE
+          fileName = "Report_Rough_Draft.PDF"
+          fileDesc = "Report Rough Draft"
+          fileDate = "2020-06-23T09:38:50"
+          fileType = "PDF"
+        />
+        <ATT_FILE
+          fileName = "VARIATION_REPORT.PDF"
+          fileDesc = "VARIATION REPORT"
+          fileDate = "2020-06-23T09:38:50"
+          fileType = "PDF"
+        />
+        <ATT_FILE
+          fileName = "XACTDOC.XML"
+          fileDesc = "Stndard Carrier Export XML"
+          fileDate = "2020-06-23T09:38:50"
+          fileType = "XML"
+        />
+      </ATTACHMENTS>
+      <SUMMARY
+        homeOwnerItems = "0.00"
+        contractorItems = "7011.76"
+        estimateLineItemTotal = "6619.20"
+        minimumChargeAdjustments = "0.00"
+        overhead = "0.00"
+        profit = "0.00"
+        salesTax = "392.56"
+        grossEstimate = "7011.76"
+        recoverableDepreciation = "1086.34"
+        nonRecoverableDepreciation = "0.00"
+        netEstimate = "5925.42"
+        priceListLineItemTotal = "6619.20"
+        deductible = "0.00"
+      />
+    </XACTNET_INFO>
+    <CONTACTS>
+      <CONTACT
+        type = "Client"
+        name = "DAMBOWY, KATIIE"
+        qcode = ""
+        mortgageHolder = "FIRST COMMUNITY CREDIT UNION ISAOA"
+        birthDate = ""
+        reference = ""
+        language = ""
+        title = ""
+      >
+        <ADDRESSES>
+          <ADDRESS
+            type = "Home"
+            street = "107 KING DR"
+            city = "SAINT CHARLES"
+            state = "MO"
+            postal = "63303-3501"
+            country = "US"
+          />
+          <ADDRESS
+            type = "Property"
+            street = "107 KING DR"
+            city = "SAINT CHARLES"
+            state = "MO"
+            postal = "63303-3501"
+            country = "US"
+            lat = "38.7796"
+            lon = "-90.526"
+          />
+        </ADDRESSES>
+        <CONTACTMETHODS>
+          <PHONE
+            type = "Business"
+            number = "864-401-2507"
+          />
+          <PHONE
+            type = "Home"
+            number = "864-401-2507"
+          />
+          <EMAIL
+            address = ""
+          />
+        </CONTACTMETHODS>
+      </CONTACT>
+      <CONTACT
+        type = "Estimator"
+        name = "Paola Torres"
+        qcode = "PAOLA"
+        birthDate = ""
+        reference = ""
+        language = ""
+        position = "EP"
+        title = ""
+      >
+        <ADDRESSES/>
+        <CONTACTMETHODS>
+          <PHONE
+            type = "Business"
+            number = "714-111-1111"
+          />
+          <EMAIL
+            address = ""
+          />
+        </CONTACTMETHODS>
+      </CONTACT>
+      <CONTACT
+        type = "ClaimRep"
+        name = "Paola Torres"
+        qcode = "PAOLA"
+        birthDate = ""
+        reference = ""
+        language = ""
+        title = ""
+      >
+        <ADDRESSES/>
+        <CONTACTMETHODS>
+          <PHONE
+            type = "Business"
+            number = "714-111-1111"
+          />
+          <EMAIL
+            address = ""
+          />
+        </CONTACTMETHODS>
+      </CONTACT>
+      <CONTACT
+        type = "Claimant"
+        name = ""
+        qcode = ""
+        birthDate = ""
+        reference = ""
+        language = ""
+        title = ""
+      >
+        <ADDRESSES/>
+        <CONTACTMETHODS>
+          <EMAIL
+            address = ""
+          />
+        </CONTACTMETHODS>
+      </CONTACT>
+    </CONTACTS>
+    <PROJECT_INFO
+      assignmentCode = "WEB"
+      name = "DAMBOWY__KATIIE1"
+      version = "16"
+      profile = "76"
+      xactnetAddress = "ACSC-NON-IRP.HOME.WEB"
+      created = "2020-06-23T15:36:39Z"
+      userId = "TORRES.P"
+      status = "Completed"
+      showIADeskAdjuster = "1"
+      showDeskAdjuster = "1"
+    >
+      <NOTES><![CDATA[From: ACE - Staff
+
+ASSIGNMENT PROFILE:
+Type: Normal
+Claim Rep: 
+Date of Loss: 06/23/2020
+Claim Number: 003112619-8-W
+Insured Name: DAMBOWY, KATIIE
+Day Phone: (864) 401-2507
+Evening Phone: (864) 401-2507
+
+Type of Loss: Ice/Snow
+Job Type: General
+Location of Property: 107 KING DR, SAINT CHARLES, MO 63303-3501
+
+Instructions:
+
+Years of Membership: 004
+
+CO0490 Personal Property Replacement Cost
+CO0021 Policy Number Change Endorsement
+CO0416 Premises Alarm Or Fire Protection System
+CO0495 Water Back Up and Sump Overflow
+CO0124 Special Provisions
+Risk Deductible: 1000
+Policy Type: CON
+Square Footage: 914
+Year of Construction: 1986
+
+Roof Year 1986
+Roof Type Composition
+test
+
+
+Assignment Received by XactAnalysis:  06/23/2020 08:54AM MT
+(XactAnalysis ID: 00733YG)
+]]></NOTES>
+    </PROJECT_INFO>
+    <ADM
+      dateOfLoss = "2020-06-23T00:00:01"
+      dateInspected = "2020-06-23T08:55:36"
+      dateReceived = "2020-06-23T00:00:01"
+      dateEntered = "2020-06-23T13:36:39Z"
+      dateProjCompleted = "2020-06-23T13:38:25Z"
+      dateContacted = "2020-06-23T08:56:11"
+      agentCode = ""
+      fileNumber = "003112619-8-W"
+      denial = "Covered Loss"
+    >
+      <COVERAGE_LOSS
+        claimNumber = "003112619-8-W"
+        policyNumber = "MOH155120019"
+        catastrophe = ""
+        policyStart = "2019-07-13"
+        policyEnd = "2020-07-13"
+        dateInitCov = "2015-07-13"
+      >
+        <TOL
+          code = "ICE/SNOW"
+          desc = "Ice/Snow"
+        />
+        <COVERAGES
+          lossOfUseReserve = "0"
+          lossOfUse = "0"
+          doNotApplyLimits = "0"
+        >
+          <COVERAGE
+            covName = "Building Property"
+            id = "COV16"
+            covType = "0"
+            policyLimit = "72000"
+            deductible = "0"
+            applyTo = "0"
+            coins = "0"
+            reserveAmt = "0"
+          >
+            <LOSS_DATA
+              deductApplied = "0"
+              overLimits = "0"
+            />
+          </COVERAGE>
+          <COVERAGE
+            covName = "Personal Property"
+            id = "COV30"
+            covType = "0"
+            policyLimit = "54000"
+            deductible = "0"
+            applyTo = "0"
+            coins = "0"
+            reserveAmt = "0"
+          >
+            <LOSS_DATA
+              deductApplied = "0"
+              overLimits = "0"
+            />
+          </COVERAGE>
+          <COVERAGE
+            covName = "Personal Property Off Premises"
+            id = "COV60"
+            covType = "0"
+            policyLimit = "5400"
+            deductible = "0"
+            applyTo = "0"
+            coins = "0"
+            reserveAmt = "0"
+          >
+            <LOSS_DATA
+              deductApplied = "0"
+              overLimits = "0"
+            />
+          </COVERAGE>
+          <COVERAGE
+            covName = "Loss of Use"
+            id = "COV80"
+            covType = "0"
+            policyLimit = "16200"
+            deductible = "0"
+            applyTo = "0"
+            coins = "0"
+            reserveAmt = "0"
+          >
+            <LOSS_DATA
+              deductApplied = "0"
+              overLimits = "0"
+            />
+          </COVERAGE>
+        </COVERAGES>
+      </COVERAGE_LOSS>
+    </ADM>
+    <CLAIM_INFO>
+      <ADMIN_INFO
+        branch = ""
+      />
+    </CLAIM_INFO>
+    <PARAMS
+      priceList = "MOSL8X_JUN20"
+      taxJurisdiction = "7.95%"
+      checkpointPL = "MOSL8X_JUN20"
+      overhead = "0"
+      profit = "0"
+      cumulativeOP = "0"
+      plModifiedDateTime = "2020-06-01T01:00:00"
+      defaultRepairedBy = "Contractor"
+      depMat = "1"
+      maxDepr = "100"
+    />
+    <EMBEDDED_PL>
+      <MINIMUMS>
+        <MINIMUM
+          id = "MIN1"
+          desc = "Cabinetry labor minimum"
+          amount = "175.41"
+          cat = "CAB"
+          sel = "MN-A"
+        />
+      </MINIMUMS>
+    </EMBEDDED_PL>
+  </XACTDOC>
