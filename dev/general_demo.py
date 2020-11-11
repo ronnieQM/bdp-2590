@@ -1,5 +1,8 @@
 import os
-from xml_framework import *
+import sys
+os.chdir((os.path.dirname(os.path.abspath(__file__))))  # change dir to dir where python scripts reside # project/scripts
+sys.path.insert(1,os.path.dirname(os.getcwd()))
+from xml_framework import get_tid, data2db, tree_iter, get_parent_of_type, recursive_iterate
 
 t = '\t'
 n = '\n'
