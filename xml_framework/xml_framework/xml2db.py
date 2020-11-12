@@ -42,7 +42,6 @@ elems_with_global_types = []
 elems_simple = []
 elems_with_base = []
 
-rcount = 0
 
 
 class Node:
@@ -113,8 +112,6 @@ class DLL:
 
 tree = None
 root = None
-
-
 def get_tree(xml_file_path):
     logging.info('inside xml2db.get_tree')
     global tree
@@ -124,6 +121,7 @@ def get_tree(xml_file_path):
     return tree, root
 
 
+rcount = 0
 def recursive_iterate(node, level=0):
     """takes in element xml.etree.ElementTree.Element | ET.parse(XML_file).getroot()"""
     global rcount
@@ -344,7 +342,6 @@ def data2db(xml_file):
 
     rows = reallist
     return headers, rows, value_dict
-
 
 def generate_bd_schema(xml_file_path):
     logging.info('inside xml2db.generate_bd_schema')
