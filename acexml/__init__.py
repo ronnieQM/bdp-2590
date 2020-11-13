@@ -1,0 +1,1 @@
+# from .xml_parser import generate_db_schema
