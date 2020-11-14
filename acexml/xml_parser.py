@@ -79,10 +79,11 @@ class xElement:
     len = number of element subelements
     """
 
-    def __init__(self, etreeElement, tag, parent=None, attrib={}):
+    def __init__(self, etreeElement, tag, simple_tag, parent=None, attrib={}):
         if not isinstance(attrib, dict):
             raise TypeError("attrib must be dict, not {} ".format(attrib.__class__.__name__))
         self.tag = tag
+        self.simple_tag = simple_tag
         self.parent = None
         self.children = []
         self.attrib = {**attrib}
@@ -149,22 +150,48 @@ class xElement:
             x = self.parent.findroot()
             return x
 
-    def print_all_sub_elements(self):
-        for i in self.children:
-            print(i)
-            if len(i.children) != 0:
-                i.print_all_sub_elements()
+    def print_all_sub_elements(self, names=False):
+        if self.isroot():
+            print(self.simple_tag)
+        if names is True:
+            for i in self.children:
+                if 'name' in i.attrib.keys()
+                    print(i.simple_tag, ' | ', i.attrib['name'])
+                else:
+                    print(i.simple_tag, ' | ')
+                if len(i.children) != 0:
+                    i.print_all_sub_elements(names)
+        else:
+            for i in self.children:
+                print(i)
+                if len(i.children) != 0:
+                    i.print_all_sub_elements()
 
-    def pretty_print(self, count=0):
-        tabs = '  '
+    def pretty_print(self,count=0):
+        spaces = '     '
+        v = '│'
+        c = '├──'
+        e = '└──'
+        # v=v*count
+        spaces = spaces * count
+        count+=1
+        if self.isroot():
+            print('ROOT:')
+            print(self.simple_tag, )
         for i in self.children:
-            print(i)
-            count = count + 1
-            tabs = tabs * count
-            print(tabs, '|')
-            print(tabs, i)
-            if len(i.children) >= 1:
-                i.pretty_print(count)
+            if count == 1:
+                if i != self.children[-1]:
+                    print(c, i.simple_tag)
+                else:
+                    print(e, i.simple_tag)
+            else:
+                if i != self.children[-1]:
+                    # print('21342134')
+                    print(v+spaces+c, i.simple_tag)
+                else:
+                    # print('asdfasdf')
+                    print(v+spaces+e, i.simple_tag)
+            i.pretty_print(count)
 
     # def iscustomtype(self):
     #     if self.data_type
@@ -208,6 +235,7 @@ def get_etree(xml_file_path):
 def construct_xelem(elem, parent=None):
     node = elem
     tag = node.tag
+    simple_tag = node.tag.split('}')[1]
     if tag == 'complexType':
         complextype = True
     else:
@@ -229,7 +257,7 @@ def construct_xelem(elem, parent=None):
         data_type = []
         hastype = False
     text = node.text
-    xelem = xElement(node, tag, parent, attrib)
+    xelem = xElement(node, tag, simple_tag, parent, attrib)
     # - - - - - - - - - - - - - - - - - - - -
     xelem.hastype = hastype
     xelem.data_type = data_type
@@ -268,11 +296,11 @@ def build_xtree(etree_elem, parent=None, level=1, elem_count=1):
 def generate_db_schema(xml_file_path, database_name=None):
     _, root = get_etree(xml_file_path)
 
-    # -----------------------------------------------------------------------s\
+    # dev -----------------------------------------------------------------------
     tables = ['StandardStatusExports', 'Contacts', 'Phones']
     db_name = 'bd_work'
     database = Database(tables, db_name)
-    # -----------------------------------------------------------------------s\
+    # -----------------------------------------------------------------------/dev
     x = build_xtree(root)
     database = x
 
