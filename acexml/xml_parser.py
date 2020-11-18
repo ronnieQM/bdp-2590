@@ -220,6 +220,19 @@ class xElement:
         yield self
         for i in self.children:
             yield from i.iter()
+    # def print_parents(self):
+
+
+    def get_parents(self, count=0):
+        if count==0:
+            yield self
+            yield self.parent
+        else:
+            yield self.parent
+        if self.parent is not None:
+            for i in self.parent.get_parents(count=1):
+                if i is not None:
+                    yield i
 
 def subelement(parent, etreeElement):
     xelement = parent.makeelement(etreeElement)
@@ -479,6 +492,17 @@ class DataBase:
 
 
 class Table:
-    def __init__(self,name, columns):
+    def __init__(self,name, columns,parent, child):
         self.name=name
-        self.columns=[]
+        self.columns=columns
+        self.child_elem=parent
+        self.parent_elem=child
+
+    def to_string(self):
+        text="""
+        table: {}
+        columns: {}
+        *table_elem: {}
+        *max_occurs_elem:{}
+        """.format(self.name, self.columns, self.child_elem.withattrs(),self.parent_elem.withattrs())
+        return text
